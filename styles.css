@@ -993,8 +993,8 @@ body {
     }
 
     .q-sc {
-        margin-top: 20%;
-        margin-left: 65%;
+        margin-top: 22%;
+        margin-left: 70%;
     }
 
     .qs {
@@ -1003,36 +1003,36 @@ body {
     }
 
     .qs2 {
-        margin-top: 15%;
-        margin-left: 7%;
-    }
-
-    .qe {
-        margin-top: 7%;
+        margin-top: 20%;
         margin-left: 2%;
     }
 
+    .qe {
+        margin-top: 12%;
+        margin-left: 7%;
+    }
+
     .qe2 {
-        margin-top: 16%;
-        margin-left: 12%;
+        margin-top: 23%;
+        margin-left: 25%;
     }
 
     .qe3 {
-        margin-left: 34%;
-        margin-top: -1%;
+        margin-left: 53%;
+        margin-top: 0%;
     }
 
     .qe4 {
-        margin-left: 64%;
-        margin-top: -12%;
+        margin-left: 75%;
+        margin-top: -1%;
     }
 
     .qbs {
-        margin-top: 6%;
+        margin-top: 9%;
     }
 
     .qps {
-        margin-left: 40%;
+        margin-left: 55%;
     }
 
     .qc {
@@ -1353,12 +1353,69 @@ body {
         margin-top: -3%;
     }
 
+    .q-sc {
+        margin-top: 22%;
+        margin-left: 59%;
+    }
+
+    .qs {
+        margin-top: -5%;
+        margin-left: -16%;
+    }
+
+    .qs2 {
+        margin-top: 15%;
+        margin-left: 5%;
+    }
+
+    .qe {
+        margin-top: 7%;
+        margin-left: -1%;
+    }
+
+    .qe2 {
+        margin-top: 13%;
+        margin-left: 14%;
+    }
+
+    .qe3 {
+        margin-left: 29%;
+        margin-top: 0%;
+    }
+
+    .qe4 {
+        margin-left: 55%;
+        margin-top: -1%;
+    }
+
+    .qbs {
+        margin-left: 30%;
+        margin-top: 5%;
+    }
+
+    .qps {
+        margin-left: 30%;
+    }
+
+    .qc {
+        margin-top: 16%;
+    }
+
+    .lif-desc {
+        font-size: 2.4rem;
+        width: 50%;
+    }
+
+    .lif-desc h1 {
+        font-size: 10rem;
+    }
+
     .lif-desc span {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .students {
-        background-position-x: 12%;
+        background-position-x: 22%;
     }
 
     .steps h2 {
