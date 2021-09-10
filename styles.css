@@ -1463,6 +1463,15 @@ body {
         margin-bottom: 30%;
     }
 
+    .list-three {
+        margin: 7.5% 2% 0 35%;
+    }
+
+    .step-three {
+        margin-top: 10%;
+        margin-left: 50%;
+    }
+
     /* METHODS CIRCLE AND STARS */
 
     .methods .green-circle {
@@ -1488,6 +1497,10 @@ body {
     .methods .blue-circle {
         margin-left: 60%;
         margin-top: -32%;
+    }
+
+    .goals {
+        width: 95%;
     }
 
     .goals h3 {
