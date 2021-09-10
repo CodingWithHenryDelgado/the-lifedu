@@ -17,20 +17,24 @@ body {
 /* HEADER */
 
 .header {
+    background-color: #FFF;
     font-family: 'Abril Fatface', cursive;
+    position: fixed;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
-    width: 95%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .nav {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    margin-top: 5%;
+    align-items: flex-end;
+    margin-bottom: 2%;
 }
 
 .nav ul>li {
@@ -42,6 +46,10 @@ body {
     color: #000;
     margin: 0 5px;
     text-decoration: none;
+}
+
+.logo {
+    margin-top: 5%;
 }
 
 #login {
@@ -67,7 +75,7 @@ body {
     flex-direction: column;
     font-family: 'Lato', sans-serif;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 35%;
     width: 90%;
 }
 
@@ -255,7 +263,7 @@ body {
     align-items: center;
     flex-direction: column;
     font-family: 'Lato', sans-serif;
-    margin-top: 5em;
+    margin-top: 5%;
     height: 500px;
     text-align: center;
     width: 95%;
@@ -302,6 +310,13 @@ body {
     left: 47%;
     margin-top: -126px !important;
     width: 30% !important;
+    z-index: -2;
+}
+
+.mouse-arrows {
+    animation-duration: 2s;
+    animation-name: mouse-down;
+    animation-iteration-count: infinite;
     z-index: -2;
 }
 
@@ -428,7 +443,7 @@ body {
     font-size: 1.4rem;
     font-weight: bold;
     margin-top: 10%;
-    width: 95%;
+    width: 90%;
 }
 
 .goals span {
@@ -644,19 +659,23 @@ body {
 @media only screen and (min-width: 768px) {
 
     #home {
-        margin: 0;
+        margin-top: 10%;
     }
 
     .header {
         font-size: 1.5rem;
         flex-direction: row;
-        align-items: flex-end;
+        justify-content: flex-start;
+        padding-top: 2%;
+    }
+
+    .logo {
+        margin-top: 0%;
         margin-left: 5%;
-        width: 100%;
     }
 
     .nav {
-        width: 70%;
+        width: 65%;
     }
 
     /* END OF HEADER TABLET */
@@ -779,6 +798,7 @@ body {
         flex-direction: row;
         margin-top: 1rem;
         margin-bottom: 0;
+        margin-left: 8%;
     }
 
     .lif-desc {
@@ -849,8 +869,8 @@ body {
 
     .step-two {
         position: absolute;
-        margin-left: -10%;
-        margin-bottom: 55%;
+        margin-right: 10%;
+        margin-bottom: 50%;
         width: 70%;
     }
 
@@ -953,7 +973,6 @@ body {
 
     .header {
         font-size: 1.1rem;
-        margin: 0;
     }
 
     .question {
@@ -974,10 +993,6 @@ body {
         width: 50%;
     }
 
-    .logo {
-        margin-left: 2%;
-    }
-
     .nav {
         margin: 2% 0;
     }
@@ -989,7 +1004,8 @@ body {
     /* END OF HEADER */
 
     #home {
-        width: 95%;
+        margin-top: 15%;
+        margin-left: 5%;
     }
 
     .q-sc {
@@ -1129,7 +1145,7 @@ body {
     }
 
     .step-one {
-        margin-left: -75%;
+        margin-right: 6%;
         margin-top: 20%;
         text-align: left;
         width: 25%;
@@ -1140,7 +1156,7 @@ body {
     }
 
     .step-two {
-        margin-top: 25%;
+        margin-bottom: 45%;
         width: 50%;
     }
 
@@ -1149,7 +1165,7 @@ body {
     }
 
     .step-three {
-        margin-left: 50%;
+        margin-left: 51%;
         text-align: right;
         width: 45%;
     }
@@ -1205,15 +1221,16 @@ body {
 
     /* END OF METHODS */
 
+    .goals {
+        text-align: left;
+        font-size: 1.4rem;
+        width: 90%;
+    }
+
     .goals h3 {
         font-size: 2rem;
         text-align: center;
         width: 50%;
-    }
-
-    .goals {
-        text-align: left;
-        font-size: 1.4rem;
     }
 
     .safegoal {
@@ -1253,6 +1270,10 @@ body {
     }
 
     /* END OF GOALS */
+
+    .change {
+        width: 90%;
+    }
 
     .messy-change {
         margin-top: -8.5%;
@@ -1305,11 +1326,10 @@ body {
         justify-content: flex-end;
         align-items: center;
         flex-direction: row;
-        width: 100%;
     }
 
     .footer-info {
-        margin-left: 2%;
+        margin-left: 5%;
         flex-direction: row;
     }
 
@@ -1323,6 +1343,7 @@ body {
         align-items: flex-end;
         font-size: 1rem;
         margin-top: 15%;
+        width: 70%;
     }
 
     .media p {
@@ -1344,6 +1365,13 @@ body {
 }
 
 @media only screen and (min-width: 1440px) {
+    .header {
+        padding-top: 0%;
+    }
+
+    .nav {
+        width: 70%;
+    }
 
     .logo {
         margin-right: 5%;
@@ -1401,6 +1429,14 @@ body {
         margin-top: 16%;
     }
 
+    #home {
+        margin-top: 8%;
+    }
+
+    #lif {
+        margin: 5% 0;
+    }
+
     .lif-desc {
         font-size: 2.4rem;
         width: 50%;
@@ -1421,6 +1457,10 @@ body {
     .steps h2 {
         background-position-x: 24%;
         background-size: 15%;
+    }
+
+    .step-two {
+        margin-bottom: 30%;
     }
 
     /* METHODS CIRCLE AND STARS */
@@ -1464,5 +1504,16 @@ body {
 
     .media p {
         margin-right: 12.5%;
+    }
+}
+
+@keyframes mouse-down {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(35px);
     }
 }
