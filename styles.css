@@ -878,20 +878,19 @@ body {
     .step-one {
         position: absolute;
         margin-bottom: 20%;
-        margin-right: 55%;
+        left: 5%;
         text-align: left;
         width: 40%;
     }
 
     .list-one {
-        margin: 0 2% 0 5%;
         width: 15%;
     }
 
     .step-two {
         position: absolute;
-        margin-right: 10%;
         margin-bottom: 50%;
+        left: 10%;
         width: 70%;
     }
 
@@ -902,7 +901,7 @@ body {
 
     .step-three {
         position: absolute;
-        margin-left: 40%;
+        right: 3%;
         margin-bottom: 30%;
         text-align: right;
         width: 55%;
@@ -1235,8 +1234,7 @@ body {
     }
 
     .step-one {
-        margin-right: 65%;
-        margin-bottom: 25%;
+        margin-bottom: 30%;
         text-align: left;
         width: 25%;
     }
@@ -1246,6 +1244,7 @@ body {
     }
 
     .step-two {
+        left: 22%;
         margin-top: 1%;
         width: 50%;
     }
@@ -1255,8 +1254,7 @@ body {
     }
 
     .step-three {
-        margin-bottom: 35%;
-        margin-left: 51%;
+        margin-bottom: 40%;
         text-align: right;
         width: 45%;
     }
@@ -1675,8 +1673,8 @@ body {
     }
 
     .step-one {
-        margin-top: 20%;
-        margin-right: 65%;
+        margin-bottom: 20%;
+        left: 10%;
         width: 22%;
     }
 
@@ -1685,17 +1683,17 @@ body {
     }
 
     .step-two {
-        margin-bottom: 35%;
-        width: 35%;
+        margin-top: 15%;
+        left: 25%;
+        width: 45%;
     }
 
     .list-three {
-        margin: 10% 2% 0 34%;
+        margin: 10% 2% 0 35%;
     }
 
     .step-three {
         margin-top: 13%;
-        margin-left: 50%;
         width: 43%;
     }
 
