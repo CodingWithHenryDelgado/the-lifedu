@@ -92,7 +92,7 @@ body {
 }
 
 .top {
-    font-size: 2rem;
+    font-size: 1.3rem;
     line-height: 2.5rem;
 }
 
@@ -101,8 +101,14 @@ body {
     background-repeat: no-repeat;
     background-position-y: bottom;
     font-family: 'Abril Fatface', cursive;
+    font-size: 1.5rem;
     line-height: 3rem;
     background-size: 95%;
+}
+
+.together {
+    font-size: 1.3rem;
+    line-height: 2.688rem;
 }
 
 /* STARS AND CIRCLES */
@@ -188,12 +194,19 @@ body {
 
 /* DID YOU KNOW? */
 
+.knowledge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .know {
     font-weight: 700;
     font-size: 28px;
     line-height: 33px;
     letter-spacing: 2%;
     text-align: center;
+    font-family: 'Lato', sans-serif;
     margin-top: 20%;
 }
 
@@ -210,28 +223,30 @@ body {
     font-size: 18px;
     line-height: 21.6px;
     text-align: center;
-    width: 95%;
 }
 
 .stat {
     margin-top: 15%;
-    width: 95%;
+}
+
+.stat figcaption {
+    font-size: 1rem;
 }
 
 /* CHANGE AND LIF BUTTON */
 
 .here-to-change {
     font-family: 'Abril Fatface', cursive;
-    font-size: 2.5rem;
+    font-size: 1.3rem;
     font-weight: 400;
     line-height: 2rem;
     letter-spacing: 2%;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .here-to-change span {
     color: #8B61B7;
-    font-size: 3rem;
+    font-size: 1.5rem;
     line-height: 4rem;
 }
 
@@ -244,9 +259,10 @@ body {
     font-family: 'Abril Fatface', cursive;
     font-size: 1.2em;
     line-height: 1.5em;
-    margin: 3em 0;
+    margin: 1.5em 0;
     text-decoration: none;
     padding: 12px 0;
+    text-align: center;
     width: 150px;
 }
 
@@ -273,7 +289,7 @@ body {
 .lif-desc h1 {
     font-weight: 700;
     font-size: 4rem;
-    line-height: 8rem;
+    line-height: 4rem;
 }
 
 .lif-desc span {
@@ -343,7 +359,7 @@ body {
 }
 
 .steps img {
-    margin-top: 20%;
+    margin-top: 10%;
     width: 95%;
 }
 
@@ -390,14 +406,15 @@ body {
 }
 
 .sad-image {
-    width: 90%;
+    width: 80%;
     margin-top: 5%;
+    margin-left: 10%;
 }
 
 .tip-image {
-    width: 95%;
-    margin-top: -20%;
-    margin-left: 5%;
+    width: 80%;
+    margin-top: -10%;
+    margin-left: 15%;
 }
 
 .lif-methods {
@@ -656,7 +673,7 @@ body {
     flex-direction: column;
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
-    margin-top: 10%;
+    margin: 10% 0;
 }
 
 .footer-info a {
@@ -688,6 +705,7 @@ body {
 @media only screen and (min-width: 768px) {
 
     #home {
+        height: 95vh;
         margin-top: 5%;
     }
 
@@ -695,10 +713,14 @@ body {
         font-size: 1.2rem;
     }
 
+    #login {
+        padding: 0.4rem 1rem;
+    }
+
     .header {
         font-size: 1.5rem;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 
     .logo {
@@ -708,61 +730,65 @@ body {
 
     .nav {
         margin: 3% 0;
-        width: 65%;
     }
 
     /* END OF HEADER TABLET */
 
     .top {
-        font-size: 2.5rem;
+        font-size: 3.3rem;
         font-weight: normal;
-        line-height: 4rem;
+        line-height: 5.25rem;
     }
 
     .top span {
-        font-size: 2.8rem;
+        font-size: 3.3rem;
+        line-height: 5.9rem;
+    }
+
+    .together {
+        font-size: 2.688rem;
     }
 
     .qmc {
-        top: 40%;
-        width: 15%;
+        top: 52%;
+        width: 12%;
     }
 
     .q-sc {
         position: absolute;
         display: flex;
-        left: 15%;
-        top: 70%;
+        left: 12%;
+        top: 82%;
     }
 
     .qs {
-        top: 20%;
-        right: 20%;
+        top: 30%;
+        right: 15%;
         transform: rotate(0);
     }
 
     .qs2 {
-        top: 58%;
-        left: 20%;
+        top: 30%;
+        left: 15%;
         transform: rotate(0);
     }
 
     .qe {
         display: flex;
-        left: 22%;
-        top: 45%;
+        left: 20%;
+        top: 55%;
     }
 
     .qe2 {
         display: flex;
-        top: 56%;
-        left: 33%;
+        top: 75%;
+        left: 28%;
     }
 
     .qe3 {
         display: flex;
-        top: 25%;
-        right: 36%;
+        top: 35%;
+        right: 50%;
     }
 
     .qe4 {
@@ -772,59 +798,73 @@ body {
     }
 
     .qbs {
-        top: 50%;
+        top: 60%;
         right: 15%;
         transform: rotate(0);
     }
 
     .qps {
         display: flex;
-        right: 25%;
-        top: 65%;
+        right: 40%;
+        top: 85%;
     }
 
     .qmsc {
         position: absolute;
-        top: 35%;
+        top: 65%;
         right: 20%;
         width: 10%;
         z-index: -1;
     }
 
     .qc {
-        top: 30%;
+        top: 72%;
         right: 5%;
         z-index: -1;
     }
 
     .know {
-        margin-top: 10%;
+        margin-top: 2%;
     }
 
     .stats {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         align-items: flex-end;
         flex-wrap: wrap;
     }
 
     .stat {
-        margin: 5% 2% 5% 2%;
+        margin: 0 5% 0 5%;
+        width: 30%;
+    }
+
+    .stat figure {
+        height: 25%;
+    }
+
+    .stat figcaption {
+        font-size: 1rem;
     }
 
     .stat img {
-        width: 50%;
+        width: 60%;
     }
 
     .here-to-change {
-        margin-top: 5%;
+        margin-top: 0%;
+    }
+
+    .lifbutton {
+        margin: 1rem 0;
     }
 
     /* END OF CHANGE */
 
     #lif {
+        align-items: flex-start;
         flex-direction: row;
-        margin-bottom: 0;
     }
 
     .lif-desc {
@@ -843,31 +883,30 @@ body {
         font-size: 1.5em;
     }
 
-    .character figure {
-        width: 100%;
-    }
-
     /* END OF CHARACTER SECTION */
-
-    .step {
-        margin-top: 35%;
-    }
-
     .steps {
         font-size: 2.3rem;
-        margin-top: 2%;
+        margin-top: 0%;
+        height: 40rem;
     }
 
     .steps h2 {
-        background-position-x: 46.5%;
-        background-position-y: 14%;
-        background-size: 22%;
         font-size: 1.9rem;
         width: 80%;
     }
 
+    .steps figure {
+        width: 80%
+    }
+
     .steps img {
         margin-top: 0%;
+    }
+
+    .step {
+        display: flex;
+        justify-content: flex-end;
+        height: 35rem;
     }
 
     .step-one,
@@ -878,7 +917,6 @@ body {
 
     .step-one {
         position: absolute;
-        margin-bottom: 20%;
         left: 5%;
         text-align: left;
         width: 40%;
@@ -890,8 +928,8 @@ body {
 
     .step-two {
         position: absolute;
-        margin-bottom: 50%;
         left: 10%;
+        margin-bottom: 15%;
         width: 70%;
     }
 
@@ -903,8 +941,8 @@ body {
     .step-three {
         position: absolute;
         right: 3%;
-        margin-bottom: 30%;
         text-align: right;
+        margin-bottom: 5%;
         width: 55%;
     }
 
@@ -913,37 +951,59 @@ body {
         width: 15%;
     }
 
+    /* END OF STEPS */
+
+    .methods {
+        height: 86vh;
+    }
+
     .methods h3 {
         font-size: 2.5rem;
+        padding-top: 2%;
+    }
+
+    .methods-page {
+        display: flex;
+        align-items: flex-end;
+        padding-top: 2%;
     }
 
     .sad-image {
-        width: 70%;
-        margin-left: 7%;
+        width: 100%;
     }
 
     .tip-image {
-        width: 70%;
-        margin-left: 20%;
-        margin-top: 1%;
+        width: 95%;
+        margin-left: 30%;
     }
 
     .lif-methods-div {
         display: flex;
-        flex-direction: row;
-        margin: 0 5%
+        align-items: flex-end;
+        flex-direction: column;
+        margin: 0 5%;
+        width: 90%;
     }
 
     .lif-methods {
-        height: 250px;
-        width: 45%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        height: auto;
+        width: 75%;
         margin: 5% 2%;
     }
 
     .lif-methods-title {
-        height: 85px;
+        height: auto;
         font-size: 2rem;
-        padding-top: 10%;
+        margin-bottom: 0% !important;
+        width: 100%;
+    }
+
+    .divide {
+        margin: 3% 0;
     }
 
     .lif-methods-title span {
@@ -953,7 +1013,7 @@ body {
     }
 
     .lif-methods p {
-        margin: 0 5%;
+        margin-bottom: 10%;
     }
 
     /* END OF METHODS */
@@ -1039,11 +1099,15 @@ body {
 
     .options {
         width: 40%;
-        margin: 10% 5%;
+        margin: 5% 5%;
     }
 
     #options-div {
         flex-direction: row;
+    }
+
+    .footer-info {
+        margin: 10% 0 5% 0;
     }
 }
 
@@ -1076,10 +1140,9 @@ body {
     }
 
     .nav {
-        margin: 2% 0;
+        margin: 2% 5%;
         width: 70%;
     }
-
 
     #login {
         padding: 10% 40%;
@@ -1093,11 +1156,12 @@ body {
     }
 
     .qmc {
-        top: 40%;
+        top: 55%;
         width: 10%;
     }
 
     .q-sc {
+        top: 75%;
         left: 85%;
     }
 
@@ -1107,24 +1171,31 @@ body {
     }
 
     .qs2 {
+        top: 35%;
         left: 17%;
     }
 
     .qe {
-        top: 50%;
+        top: 59%;
     }
 
     .qe2 {
-        top: 69%;
-        left: 38%;
+        top: 70%;
+        left: 32%;
+    }
+
+    .qe3 {
+        top: 40%;
+        right: 36%;
     }
 
     .qe4 {
-        top: 17%;
+        top: 22%;
+        right: 10%;
     }
 
     .qbs {
-        top: 50%;
+        top: 58%;
         right: 12%;
     }
 
@@ -1134,12 +1205,12 @@ body {
     }
 
     .qmsc {
-        top: 49%;
+        top: 57%;
         width: 7%;
     }
 
     .qc {
-        top: 50%;
+        top: 75%;
         right: 90%;
         width: 5%;
     }
@@ -1151,11 +1222,7 @@ body {
 
     .stats {
         flex-wrap: nowrap;
-        margin-bottom: 6%;
-        width: 100%;
-    }
-
-    .stat figure img {
+        margin: 3% 0;
         width: 100%;
     }
 
@@ -1163,9 +1230,11 @@ body {
         text-align: left;
         font-size: 1.025rem;
         margin: 0 2%;
+        width: 26%;
     }
 
     .stat img {
+        height: 175px;
         width: 100%;
     }
 
@@ -1175,33 +1244,42 @@ body {
 
     .stat figcaption {
         height: 50px;
+        font-size: 1.2rem;
     }
 
     .here-to-change {
-        font-size: 1.9rem;
+        font-size: 2.1rem;
         margin-top: 2%;
     }
 
     .here-to-change span {
-        font-size: 2.1rem;
+        font-size: 2.2rem;
     }
 
     .lifbutton {
-        font-size: 1rem;
+        font-size: 1.3rem;
         margin: 0.8rem 0 2rem 0;
     }
 
-
     /* END OF HOME */
 
+    .knowledge {
+        height: 100vh;
+    }
+
+    .know {
+        margin-right: 75%;
+    }
+
     #lif {
-        margin-top: 8%;
+        height: 100vh;
     }
 
     .lif-desc {
         font-size: 1.7rem;
-        line-height: 6.5rem;
+        line-height: 5rem;
         margin-left: 5%;
+        margin-bottom: 20%;
     }
 
     .lif-desc h1 {
@@ -1212,25 +1290,26 @@ body {
         font-size: 1.8rem;
     }
 
+    .character {
+        width: 85%;
+    }
+
     .character img {
         width: 100%;
     }
 
     /* END OF LIF */
-
-    .steps {
-        font-size: 2.1rem;
-    }
-
     .steps h2 {
-        background-position-x: 46%;
-        background-size: 23%;
-        font-size: 2rem;
+        font-size: 1.8rem;
         width: 60%;
     }
 
+    .steps {
+        font-size: 1.8rem;
+    }
+
     .steps figure {
-        margin-top: -5%;
+        width: 78%;
     }
 
     .improved-circle {
@@ -1239,24 +1318,31 @@ body {
         width: 12% !important;
     }
 
+    .step-one,
+    .step-two,
+    .step-three {
+        font-size: 1.2rem;
+    }
+
     .list-one {
         margin-top: -8%;
     }
 
     .step-one {
-        margin-bottom: 30%;
+        left: 2%;
+        margin-bottom: -8%;
         text-align: left;
         width: 25%;
     }
 
     .list-two {
-        margin: -18px -2% 0 10%;
+        margin: -20px -2% 0 8%;
     }
 
     .step-two {
-        left: 22%;
-        margin-top: 1%;
-        width: 50%;
+        left: 25%;
+        margin-bottom: 5%;
+        width: 45%;
     }
 
     .list-three {
@@ -1264,13 +1350,13 @@ body {
     }
 
     .step-three {
-        margin-bottom: 40%;
+        margin-bottom: -1%;
         text-align: right;
         width: 45%;
     }
 
-    .steps figure {
-        margin-top: -8%;
+    .step {
+        height: 30rem;
     }
 
     /* END OF STEPS */
@@ -1279,15 +1365,16 @@ body {
         margin-top: 2%;
     }
 
+    .methods-page {
+        align-items: center;
+    }
+
     .sad-image {
-        margin-left: 5%;
-        width: 50%;
+        margin-left: 15%;
     }
 
     .tip-image {
-        margin-left: 20%;
-        margin-top: -7%;
-        width: 45%;
+        margin-left: 40%;
     }
 
     /* METHODS CIRCLE AND STARS */
@@ -1295,57 +1382,66 @@ body {
     .methods .green-circle {
         display: flex;
         position: absolute;
-        right: 35%;
-        margin-top: -45%;
+        right: 45%;
+        margin-top: -40%;
+        z-index: -5;
     }
 
     .methods .green-circle-2 {
         position: absolute;
         display: flex;
-        right: 20%;
+        right: 35%;
         margin-top: -15%;
+        z-index: -5;
     }
 
     .methods .yellow-circle {
         position: absolute;
         display: flex;
-        right: 5%;
-        margin-top: -25%;
+        right: 2%;
+        margin-top: -25.5%;
+        z-index: -5;
     }
 
     .methods .green-plus {
         position: absolute;
         display: flex;
-        right: 20%;
-        margin-top: -35%;
+        right: 36%;
+        margin-top: -28%;
+        z-index: -5;
     }
 
     .methods .blue-circle {
         position: absolute;
         display: flex;
-        right: 8%;
-        margin-top: -50%;
+        right: 5%;
+        margin-top: -52%;
+        z-index: -5;
     }
 
     .methods h3 {
         margin-top: 0%;
+        z-index: -5;
     }
 
     .lif-methods {
-        height: 225px;
         width: 55%;
         margin: 5% 5%;
     }
 
+    .lif-methods-div {
+        width: 75%;
+    }
+
     .lif-methods-title {
-        height: 50px;
-        padding-top: 3%;
+        height: auto;
+        padding: 10% 0 0 0 !important;
     }
 
     .lif-methods p {
         font-size: 1.3rem;
         margin: 0 5%;
-        padding-top: 5%;
+        padding: 5% 0 10% 0;
     }
 
     .lif-methods span {
@@ -1358,56 +1454,51 @@ body {
         text-align: left;
         font-size: 1.4rem;
         width: 90%;
-        margin-top: 3%;
+        margin-top: 5%;
     }
 
     .goals h4 {
         font-size: 2.5rem;
+        line-height: 3.75rem;
         text-align: center;
         width: 70%;
     }
 
     .safegoal {
-        margin: 5% 0 2% 0;
+        margin: 0 0 0 0;
     }
 
     .safegoal p {
-        font-size: 2rem;
-        line-height: 2rem;
+        font-size: 1.7rem;
+        line-height: 3rem;
         margin: 2% 0 2% 5%;
-        width: 55%;
     }
 
     .missiongoal {
-        margin: 3% 0 3% 0;
+        margin: 0 0;
     }
 
     .missiongoal p {
         line-height: 3rem;
-        font-size: 2rem;
-        margin-left: 8%;
-        margin-right: 15%;
-        width: 60%;
+        margin: 2% 0 2% 5%;
+        font-size: 1.7rem;
+        width: 100%;
     }
 
     #contact {
         font-size: 1.8rem;
         text-align: center;
-        padding: 4% 10%;
-    }
-
-    #contact p {
-        margin-top: -2%;
+        padding: 2% 10% 3% 10%;
     }
 
     .freelife {
         font-size: 2.5rem;
-        margin: 3.5% 0 5% 0 !important;
+        margin: 4% 0 4% 0 !important;
     }
 
     .contactus {
         font-size: 1.5rem;
-        padding: 1rem 2rem;
+        padding: 0.6rem 2rem;
     }
 
     /* END OF GOALS */
@@ -1426,7 +1517,7 @@ body {
 
     .journey {
         font-size: 1.4rem;
-        margin-top: 5%;
+        margin-top: 1%;
         margin-bottom: 2%;
         width: 90%;
     }
@@ -1534,60 +1625,69 @@ body {
     }
 
     .qmc {
-        top: 32%;
+        top: 55%;
         left: 9%;
-        width: 8%;
+        width: 10%;
     }
 
     .q-sc {
-        top: 55%;
+        top: 80%;
+        width: 6%;
     }
 
     .qs {
-        top: 16%;
+        top: 25%;
+        width: 2%;
+        left: 40%;
     }
 
     .qs2 {
         top: 43%;
         left: 19%;
+        width: 2%;
     }
 
     .qe {
-        top: 35%;
+        top: 63%;
         left: 25%;
     }
 
     .qe2 {
-        top: 45%;
+        top: 75%;
+        left: 35%;
     }
 
     .qe3 {
-        top: 20%;
+        top: 45%;
         right: 38%;
     }
 
     .qe4 {
-        top: 15%;
+        top: 20%;
         right: 8%;
     }
 
     .qbs {
         top: 35%;
+        width: 3%;
         right: 14%;
     }
 
     .qps {
-        top: 65%;
+        top: 85%;
     }
 
     .qmsc {
         width: 6%;
-        top: 37%;
+        top: 60%;
+        width: 9%;
         right: 23%;
     }
 
     .qc {
-        top: 36%;
+        top: 75%;
+        left: 7%;
+        width: 6%;
     }
 
     #home {
@@ -1674,12 +1774,16 @@ body {
         font-size: 2.25rem;
     }
 
+    .character {
+        width: 55%;
+    }
+
     .students {
         line-height: 1.5rem;
     }
 
     .step {
-        margin-top: 25%;
+        margin: 15% 0 5% 0;
     }
 
     .steps h2 {
@@ -1712,8 +1816,7 @@ body {
     }
 
     .step-one {
-        margin-bottom: 15%;
-        left: 6%;
+        left: 10%;
         width: 20%;
     }
 
@@ -1722,7 +1825,6 @@ body {
     }
 
     .step-two {
-        margin-top: 20%;
         left: 23%;
         width: 45%;
     }
@@ -1732,34 +1834,44 @@ body {
     }
 
     .step-three {
-        margin-bottom: 20%;
-        right: 5%;
+        right: 8%;
         width: 43%;
+    }
+
+    .steps figure {
+        width: 55%;
     }
 
     /* METHODS CIRCLE AND STARS */
 
+    .methods {
+        height: 85vh;
+        margin-top: 5%;
+    }
+
+    .methods-img {
+        width: 70%;
+    }
+
     .methods .green-circle {
-        right: 30%;
-        margin-top: -40%;
+        right: 40%;
     }
 
     .methods .green-circle-2 {
-        right: 22%;
+        right: 32%;
     }
 
     .methods .yellow-circle {
-        margin-left: 90%;
-        margin-top: -22%;
+        margin-top: -23%;
     }
 
     .methods .green-plus {
         right: 19%;
-        margin-top: -24%;
+        margin-top: -22%;
     }
 
     .methods .blue-circle {
-        margin-top: -43%;
+        margin-top: -48%;
     }
 
     .lif-methods-div {
@@ -1768,12 +1880,12 @@ body {
     }
 
     .lif-methods {
-        height: 250px;
-        width: 25%;
+        margin: 5% 10%;
+        width: 50%;
     }
 
     .lif-methods-title {
-        height: 60px;
+        height: auto;
     }
 
     .lif-methods p {
@@ -1784,18 +1896,24 @@ body {
         font-size: 2.5rem;
     }
 
+    .sad-image {
+        margin-top: 0;
+        width: 85%;
+    }
+
     .tip-image {
-        margin-left: 27%;
-        margin-top: -6%;
-        width: 40%;
+        margin-left: 50%;
+        margin-top: -12%;
+        width: 75%;
     }
 
     .goals {
+        height: 100vh;
         width: 95%;
     }
 
     .goals h4 {
-        font-size: 3.4rem;
+        font-size: 2.6rem;
         line-height: 3.75rem;
         width: 52%;
     }
@@ -1806,11 +1924,15 @@ body {
 
     .goals img {
         margin: 0 10% 0 15%;
+        width: 95;
     }
 
     .safegoal {
-        margin: 5% 0 0 0;
-        width: 95%;
+        margin: 0 0 0 0;
+    }
+
+    .safegoal figure {
+        width: 15%;
     }
 
     .safegoal p {
@@ -1821,15 +1943,12 @@ body {
     }
 
     .missiongoal {
-        margin: 2% 0 3% 10%;
         width: 95%;
     }
 
     .missiongoal p {
         font-size: 2.25rem;
-        margin-left: 5%;
         margin-right: 8%;
-        width: 60%;
     }
 
     .missiongoal img {
@@ -1841,7 +1960,7 @@ body {
     }
 
     .change-question {
-        font-size: 4.69rem;
+        font-size: 4.2rem;
         height: 155px;
     }
 
@@ -1851,8 +1970,11 @@ body {
         margin: 0 0 5% 0 !important;
     }
 
+    .change {
+        margin: 2% 0;
+    }
+
     .journey {
-        margin-top: 3%;
         margin-bottom: 1%;
         font-size: 1.75rem;
         line-height: 2.1rem;
@@ -1883,6 +2005,10 @@ body {
     .options {
         margin: 5% 1% 10% 3%;
         width: 25%;
+    }
+
+    .links {
+        margin: 0 7.5%;
     }
 }
 
