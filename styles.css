@@ -58,7 +58,7 @@ body {
     border: none;
     border-radius: 20px;
     font-family: 'Abril Fatface', cursive;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 24px;
     padding: 3px 8px;
 }
@@ -424,7 +424,6 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
     text-align: center;
-    height: 200px;
     margin: 10% 5%;
 }
 
@@ -446,6 +445,7 @@ body {
 
 .lif-methods p {
     margin: 0 5%;
+    padding: 5% 0 10% 0;
 }
 
 /* METHODS CIRCLE AND STARS */
@@ -705,8 +705,7 @@ body {
 @media only screen and (min-width: 768px) {
 
     #home {
-        height: 95vh;
-        margin-top: 5%;
+        margin-top: 0%;
     }
 
     #home figcaption {
@@ -823,6 +822,10 @@ body {
         z-index: -1;
     }
 
+    .knowledge {
+        margin-top: 5%;
+    }
+
     .know {
         margin-top: 2%;
     }
@@ -865,6 +868,7 @@ body {
     #lif {
         align-items: flex-start;
         flex-direction: row;
+        margin-top: 10%;
     }
 
     .lif-desc {
@@ -885,13 +889,12 @@ body {
 
     /* END OF CHARACTER SECTION */
     .steps {
-        font-size: 2.3rem;
+        font-size: 1.8rem;
         margin-top: 0%;
-        height: 40rem;
     }
 
     .steps h2 {
-        font-size: 1.9rem;
+        font-size: 1.5rem;
         width: 80%;
     }
 
@@ -906,7 +909,7 @@ body {
     .step {
         display: flex;
         justify-content: flex-end;
-        height: 35rem;
+        min-height: 15rem;
     }
 
     .step-one,
@@ -929,7 +932,7 @@ body {
     .step-two {
         position: absolute;
         left: 10%;
-        margin-bottom: 15%;
+        margin-bottom: 20%;
         width: 70%;
     }
 
@@ -954,7 +957,7 @@ body {
     /* END OF STEPS */
 
     .methods {
-        height: 86vh;
+        /* height: 86vh; */
     }
 
     .methods h3 {
@@ -1019,7 +1022,7 @@ body {
     /* END OF METHODS */
 
     .goals {
-        margin-top: 5%;
+        margin-top: 12%;
     }
 
     .goals h4 {
@@ -1070,7 +1073,7 @@ body {
         background-size: 28%;
         margin-top: 0%;
         height: 100px;
-        font-size: 3.2rem;
+        font-size: 2.8rem;
     }
 
 
@@ -1151,67 +1154,84 @@ body {
     /* END OF HEADER */
 
     #home {
-        margin-top: 8.5%;
+        height: 100vh;
+        min-height: 60rem;
+        margin-top: 10%;
         margin-left: 0%;
     }
 
     .qmc {
-        top: 55%;
+        top: 0;
+        margin-top: 25%;
         width: 10%;
     }
 
     .q-sc {
-        top: 75%;
-        left: 85%;
+        top: 0;
+        margin-top: 45%;
+        left: 0;
+        margin-left: 90%;
     }
 
     .qs {
-        right: 71%;
-        top: 18%
+        left: 0;
+        margin-left: 35%;
+        top: 0;
+        margin-top: 12%
     }
 
     .qs2 {
-        top: 35%;
-        left: 17%;
+        top: 0;
+        margin-top: 40%;
+        left: 18%;
     }
 
     .qe {
-        top: 59%;
+        top: 0;
+        margin-top: 28%;
     }
 
     .qe2 {
-        top: 70%;
-        left: 32%;
+        top: 0;
+        margin-top: 38%;
+        left: 35%;
     }
 
     .qe3 {
-        top: 40%;
+        top: 0;
+        margin-top: 15%;
         right: 36%;
     }
 
     .qe4 {
-        top: 22%;
+        top: 0;
+        margin-top: 10%;
         right: 10%;
     }
 
     .qbs {
-        top: 58%;
+        top: 0;
+        margin-top: 30%;
         right: 12%;
     }
 
     .qps {
-        top: 90%;
+        top: 0;
+        margin-top: 50%;
         right: 38%;
     }
 
     .qmsc {
-        top: 57%;
+        top: 0;
+        margin-top: 40%;
         width: 7%;
     }
 
     .qc {
-        top: 75%;
-        right: 90%;
+        top: 0;
+        margin-top: 40%;
+        left: 0;
+        margin-left: 5%;
         width: 5%;
     }
 
@@ -1263,16 +1283,12 @@ body {
 
     /* END OF HOME */
 
-    .knowledge {
-        height: 100vh;
-    }
-
     .know {
         margin-right: 75%;
     }
 
     #lif {
-        height: 100vh;
+        /* height: 100vh; */
     }
 
     .lif-desc {
@@ -1356,7 +1372,8 @@ body {
     }
 
     .step {
-        height: 30rem;
+        /* height: 30rem; */
+        min-height: 10rem;
     }
 
     /* END OF STEPS */
@@ -1458,10 +1475,10 @@ body {
     }
 
     .goals h4 {
-        font-size: 2.5rem;
-        line-height: 3.75rem;
+        font-size: 2rem;
+        line-height: 3.25rem;
         text-align: center;
-        width: 70%;
+        width: 60%;
     }
 
     .safegoal {
@@ -1475,12 +1492,12 @@ body {
     }
 
     .missiongoal {
-        margin: 0 0;
+        justify-content: space-evenly;
+        margin: 2% 0;
     }
 
     .missiongoal p {
         line-height: 3rem;
-        margin: 2% 0 2% 5%;
         font-size: 1.7rem;
         width: 100%;
     }
@@ -1512,7 +1529,7 @@ body {
         background-position-x: right;
         background-size: 35%;
         height: 125px;
-        font-size: 3.7rem;
+        font-size: 3rem;
     }
 
     .journey {
@@ -1625,73 +1642,64 @@ body {
     }
 
     .qmc {
-        top: 55%;
-        left: 9%;
+        margin-top: 20%;
         width: 10%;
     }
 
     .q-sc {
-        top: 80%;
+        margin-top: 35%;
         width: 6%;
     }
 
     .qs {
-        top: 25%;
         width: 2%;
-        left: 40%;
     }
 
     .qs2 {
-        top: 43%;
-        left: 19%;
+        margin-top: 27%;
         width: 2%;
     }
 
     .qe {
-        top: 63%;
-        left: 25%;
+        margin-top: 22%;
+        margin-left: 8%;
     }
 
     .qe2 {
-        top: 75%;
-        left: 35%;
+        margin-top: 28%;
+        margin-left: 5%;
     }
 
     .qe3 {
-        top: 45%;
+        margin-top: 12%;
         right: 38%;
     }
 
     .qe4 {
-        top: 20%;
-        right: 8%;
+        margin-top: 8%;
     }
 
     .qbs {
-        top: 35%;
-        width: 3%;
-        right: 14%;
+        margin-top: 20%;
+        right: 15%;
     }
 
     .qps {
-        top: 85%;
+        margin-top: 42%;
     }
 
     .qmsc {
+        margin-top: 26%;
         width: 6%;
-        top: 60%;
-        width: 9%;
-        right: 23%;
     }
 
     .qc {
-        top: 75%;
-        left: 7%;
-        width: 6%;
+        margin-top: 33%;
     }
 
     #home {
-        margin-top: 8.5%;
+        height: 100vh;
+        margin-top: 15%;
         width: 100%;
     }
 
@@ -1757,7 +1765,7 @@ body {
 
     #lif {
         align-items: flex-start;
-        margin: 5% 0 0 0;
+        padding: 10% 0 10% 0;
     }
 
     .lif-desc {
@@ -1784,14 +1792,7 @@ body {
 
     .step {
         margin: 15% 0 5% 0;
-    }
-
-    .steps h2 {
-        font-size: 2.25rem;
-    }
-
-    .steps {
-        font-size: 2.25rem;
+        min-height: 0rem;
     }
 
     .steps img {
@@ -1807,7 +1808,7 @@ body {
     .list-one,
     .list-two,
     .list-three {
-        font-size: 3rem;
+        font-size: 2.3rem;
     }
 
     .list-one {
@@ -1913,9 +1914,9 @@ body {
     }
 
     .goals h4 {
-        font-size: 2.6rem;
-        line-height: 3.75rem;
-        width: 52%;
+        font-size: 2.2rem;
+        line-height: 2.75rem;
+        width: 40%;
     }
 
     .goals span {
@@ -1928,6 +1929,7 @@ body {
     }
 
     .safegoal {
+        justify-content: space-evenly;
         margin: 0 0 0 0;
     }
 
@@ -1936,23 +1938,24 @@ body {
     }
 
     .safegoal p {
-        font-size: 2.25rem;
-        line-height: 2.8rem;
-        margin-left: 8%;
-        width: 60%;
+        font-size: 2rem;
+        line-height: 3rem;
+        width: 55%;
+        margin: 0 0;
     }
 
     .missiongoal {
         width: 95%;
+        margin-bottom: 2%;
     }
 
     .missiongoal p {
-        font-size: 2.25rem;
-        margin-right: 8%;
+        font-size: 2rem;
+        width: 65%;
     }
 
-    .missiongoal img {
-        margin: 0 0 0 4%;
+    .missiongoal figure {
+        width: 15%;
     }
 
     #contact p {
@@ -1960,7 +1963,6 @@ body {
     }
 
     .change-question {
-        font-size: 4.2rem;
         height: 155px;
     }
 
@@ -1971,7 +1973,7 @@ body {
     }
 
     .change {
-        margin: 2% 0;
+        margin: 0 0;
     }
 
     .journey {
