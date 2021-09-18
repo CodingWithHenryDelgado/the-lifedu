@@ -112,6 +112,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-weight: 300;
     text-align: center;
     width: 90%;
     font-family: 'Lato', sans-serif;
@@ -119,11 +120,17 @@ body {
 
 .story span {
     color: #62A573;
+    font-weight: bold;
     font-size: 1.5rem;
 }
 
 .story p {
     padding: 2% 0;
+}
+
+.founded {
+    line-height: 2rem;
+    width: 78%;
 }
 
 .founded span {
@@ -330,12 +337,24 @@ body {
         font-size: 2rem;
     }
 
+    .founded {
+        width: 75%;
+    }
+
     .founded p {
         padding: 1% 0;
     }
 
     .founded span {
         font-size: 1.4rem;
+    }
+
+    .story .lifedu-team {
+        margin-right: 45%;
+    }
+
+    .story .impactful {
+        margin-right: 25%;
     }
 
     .ceo {
@@ -352,7 +371,7 @@ body {
     }
 
     .ceo h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         text-align: right;
     }
 
@@ -383,6 +402,10 @@ body {
 
     .yoshitha-quote {
         width: 45%;
+    }
+
+    .yoshitha-quote {
+        margin-right: 5%;
     }
 
     .team h4 {
@@ -454,14 +477,12 @@ body {
 
     .story {
         font-size: 1.675rem;
-        font-weight: 300;
         line-height: 2.5rem;
         margin-top: 5%;
     }
 
     .story span {
         font-size: 3rem;
-        font-weight: bold;
     }
 
     .story .lifedu-team {
@@ -483,11 +504,28 @@ body {
     }
 
     .ceo {
-        font-size: 1.47rem;
+        font-size: 1.7rem;
     }
 
     .ceo h2 {
         font-size: 3rem;
+    }
+
+    .ceo h3 {
+        margin-right: 7%;
+    }
+
+    .ceo .understood,
+    .ceo .school-life {
+        width: 90%;
+    }
+
+    .yoshitha {
+        justify-content: space-around;
+    }
+
+    .yoshitha-quote {
+        width: 50%;
     }
 
     .team {
@@ -592,16 +630,45 @@ body {
     }
 
     .ceo h2 {
-        font-size: 3.8rem;
+        font-size: 4.7rem;
+        margin-right: 6%;
     }
 
     .ceo h3 {
-        margin-right: 9%;
+        margin-right: 8%;
     }
 
     .ceo p {
         font-size: 2.2rem;
         line-height: 2.6rem;
+    }
+
+    .ceo figure {
+        width: 40%;
+    }
+
+    .ceo img {
+        width: 100%;
+        height: 30rem;
+    }
+
+    .ceo .understood,
+    .ceo .school-life {
+        margin-right: 10%;
+        width: 78%;
+    }
+
+    .yoshitha {
+        margin: 7% 0;
+    }
+
+    .yoshitha-quote {
+        margin-right: 0;
+    }
+
+    .yoshitha-quote p {
+        font-size: 2.2rem;
+        width: 90%;
     }
 
     .team .join {
