@@ -283,8 +283,15 @@ hr {
     line-height: 48px;
 }
 
+.character .safe-space .hi {
+    background-image: url('./img/hi-circle.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+}
+
 .students span {
-    background-image: url(./img/small-yellow-line.svg);
+    background-image: url('./img/small-yellow-line.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: bottom;
@@ -430,6 +437,21 @@ hr {
 .one-i span {
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
+}
+
+.one-i .step-i {
+    background-image: url("./img/green-circle-i.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #FFF;
+    height: 100px;
+    padding-top: 12%;
+    width: 95px;
+}
+
+.one-i .step-i span {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.8rem;
 }
 
 /* END OF HOW DOES LIFEDU WORK */
@@ -979,6 +1001,16 @@ hr {
         width: 90%;
     }
 
+    .one-i .step-i {
+        background-size: cover;
+        padding-top: 10%;
+        width: 65px;
+    }
+
+    .one-i .step-i p {
+        font-size: 1.89rem;
+    }
+
     /* END OF THREE I */
 
     .goals {
@@ -1336,7 +1368,6 @@ hr {
     .one-i p {
         height: 100px;
         width: 225px;
-        padding-top: 5%;
     }
 
     .one-i .one-i-small {
@@ -1349,6 +1380,16 @@ hr {
         font-weight: 300;
     }
 
+    .one-i .step-i {
+        width: 90px;
+    }
+
+    .one-i .step-i p {
+        padding-top: 5%;
+        height: 90px;
+        width: 95px;
+    }
+
 
     /* END OF METHODS */
 
@@ -1356,7 +1397,7 @@ hr {
         text-align: left;
         font-size: 1.4rem;
         width: 90%;
-        margin-top: 10%;
+        margin-top: 15%;
     }
 
     .goals h4 {

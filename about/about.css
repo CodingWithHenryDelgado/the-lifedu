@@ -363,9 +363,21 @@ body {
         padding: 2% 4%;
     }
 
+    .ceo figure {
+        width: 40%;
+    }
+
+    .ceo img {
+        height: 24rem;
+    }
+
+    .ceo .understood {
+        margin-top: -7%;
+    }
+
     .yoshitha {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         margin: 5% 0;
     }
 
