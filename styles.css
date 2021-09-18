@@ -1525,12 +1525,12 @@ hr {
     }
 
     .qmc {
-        margin-top: 20%;
+        margin-top: 15%;
         width: 10%;
     }
 
     .q-sc {
-        margin-top: 35%;
+        margin-top: 30%;
         margin-left: 87%;
         width: 6%;
     }
@@ -1550,7 +1550,7 @@ hr {
     }
 
     .qe2 {
-        margin-top: 29.5%;
+        margin-top: 28%;
         margin-left: 38%;
     }
 
@@ -1574,7 +1574,7 @@ hr {
     }
 
     .qc {
-        margin-top: 33%;
+        margin-top: 25%;
     }
 
     #home {
@@ -1863,6 +1863,7 @@ hr {
     }
 }
 
+/* 
 @keyframes mouse-down {
     0% {
         opacity: 0;
@@ -1872,7 +1873,7 @@ hr {
     100% {
         transform: translateY(35px);
     }
-}
+} */
 
 a:link {
     color: #000;
