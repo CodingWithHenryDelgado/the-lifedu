@@ -121,12 +121,6 @@ body {
     z-index: -1;
 }
 
-.q-sc {
-    position: absolute;
-    display: none;
-    z-index: -1;
-}
-
 .qs {
     position: absolute;
     right: 5%;
@@ -141,25 +135,12 @@ body {
     z-index: -1;
 }
 
-.qe {
-    position: absolute;
-    display: none;
-    z-index: -1;
-}
-
-.qe2 {
-    position: absolute;
-    display: none;
-    z-index: -1;
-}
-
-.qe3 {
-    position: absolute;
-    display: none;
-    z-index: -1;
-}
-
-.qe4 {
+.q-sc,
+.qe,
+.qe2,
+.qe3,
+.qe4,
+.qps {
     position: absolute;
     display: none;
     z-index: -1;
@@ -169,12 +150,6 @@ body {
     position: absolute;
     margin-top: -30px;
     transform: rotate(40deg);
-    z-index: -1;
-}
-
-.qps {
-    position: absolute;
-    display: none;
     z-index: -1;
 }
 
@@ -220,12 +195,17 @@ body {
 /* IMAGES AND QUESTIONS */
 
 .stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-size: 18px;
     line-height: 21.6px;
     text-align: center;
 }
 
 .stat {
+    width: 90%;
     margin-top: 15%;
 }
 
@@ -266,6 +246,10 @@ body {
     width: 150px;
 }
 
+hr {
+    width: 75%;
+}
+
 /* MEET LIF */
 
 #lif {
@@ -274,7 +258,7 @@ body {
     align-items: center;
     flex-direction: column;
     font-family: 'Lato', sans-serif;
-    margin-top: 5%;
+    margin-top: 10%;
     text-align: center;
     width: 95%;
 }
@@ -293,7 +277,7 @@ body {
 }
 
 .lif-desc span {
-    color: #A583AE;
+    /* color: #A583AE; */
     font-family: 'Abril Fatface', cursive;
     font-size: 1.5em;
     line-height: 48px;
@@ -311,12 +295,29 @@ body {
     width: 95%;
 }
 
-.mouse-arrows {
+.character .safe-space {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2rem;
+}
+
+.safe-space span {
+    background-image: url('./img/yellow-line.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 95%;
+    background-size: 100%;
+}
+
+.lets-go {
+    padding: 5% 0;
+}
+
+/* .mouse-arrows {
     animation-duration: 2s;
     animation-name: mouse-down;
     animation-iteration-count: infinite;
     z-index: -2;
-}
+} */
 
 /* STEPS */
 
@@ -352,7 +353,7 @@ body {
 }
 
 .steps span {
-    color: #8B61B7;
+    /* color: #8B61B7; */
     font-family: 'Abril Fatface', cursive;
     line-height: 48px;
     font-weight: 400;
@@ -362,6 +363,7 @@ body {
     margin-top: 10%;
     width: 95%;
 }
+
 
 /* INDIVIUAL STEPS */
 
@@ -391,85 +393,44 @@ body {
 
 /* END OF LIF */
 
-/* HOW DOES IT WORK */
+/* THE 3 I'S */
 
-.methods h3 {
+.three-i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-family: 'Abril Fatface', cursive;
-    font-size: 1.4rem;
-    line-height: 3rem;
+    width: 90%;
+}
+
+.three-i h3 {
+    font-size: 1.5rem;
     text-align: center;
-    margin-top: 3%;
 }
 
-.methods span {
-    color: #62A573;
+.one-i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
-.sad-image {
-    width: 80%;
-    margin-top: 5%;
-    margin-left: 10%;
+.one-i figure {
+    height: auto;
+    width: 90%;
 }
 
-.tip-image {
-    width: 80%;
-    margin-top: -10%;
-    margin-left: 15%;
+.one-i p {
+    font-size: 2rem;
+    padding-bottom: 5%;
 }
 
-.lif-methods {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+.one-i span {
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
-    text-align: center;
-    margin: 10% 5%;
 }
-
-.lif-methods .divide {
-    width: 100%;
-}
-
-.lif-methods-title {
-    font-size: 1.4rem;
-    height: 50px;
-    padding-top: 5%;
-}
-
-.lif-methods-title span {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 1.6rem;
-    padding-right: 1%;
-}
-
-.lif-methods p {
-    margin: 0 5%;
-    padding: 5% 0 10% 0;
-}
-
-/* METHODS CIRCLE AND STARS */
-
-.methods .green-circle {
-    display: none;
-}
-
-.methods .green-circle-2 {
-    display: none;
-}
-
-.methods .yellow-circle {
-    display: none;
-}
-
-.methods .green-plus {
-    display: none;
-}
-
-.methods .blue-circle {
-    display: none;
-}
-
 
 /* END OF HOW DOES LIFEDU WORK */
 
@@ -719,12 +680,12 @@ body {
     .header {
         font-size: 1.5rem;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .logo {
-        margin-top: 0%;
-        margin-left: 5%;
+        margin-top: 0;
+        margin-left: 0;
     }
 
     .nav {
@@ -749,76 +710,99 @@ body {
     }
 
     .qmc {
-        top: 52%;
+        top: 0;
+        margin-top: 30%;
         width: 12%;
     }
 
     .q-sc {
         position: absolute;
         display: flex;
-        left: 12%;
-        top: 82%;
+        left: 0;
+        top: 0;
+        margin-left: 5%;
+        margin-top: 45%;
     }
 
     .qs {
-        top: 30%;
-        right: 15%;
+        top: 0;
+        margin-top: 12%;
+        left: 0;
+        margin-left: 30%;
         transform: rotate(0);
     }
 
     .qs2 {
-        top: 30%;
-        left: 15%;
+        top: 0;
+        margin-top: 40%;
+        left: 0;
+        margin-left: 20%;
         transform: rotate(0);
     }
 
     .qe {
         display: flex;
-        left: 20%;
-        top: 55%;
+        left: 0;
+        margin-left: 20%;
+        top: 0;
+        margin-top: 28%;
     }
 
     .qe2 {
         display: flex;
-        top: 75%;
-        left: 28%;
+        top: 0;
+        left: 0;
+        margin-top: 38%;
+        margin-left: 30%;
     }
 
     .qe3 {
         display: flex;
-        top: 35%;
-        right: 50%;
+        top: 0;
+        right: 0;
+        margin-right: 33%;
+        margin-top: 12%;
     }
 
     .qe4 {
         display: flex;
-        top: 20%;
-        right: 5%;
+        top: 0;
+        right: 0;
+        margin-top: 10%;
+        margin-right: 10%;
     }
 
     .qbs {
-        top: 60%;
-        right: 15%;
+        top: 0;
+        right: 0;
+        margin-top: 30%;
+        margin-right: 15%;
         transform: rotate(0);
     }
 
     .qps {
         display: flex;
-        right: 40%;
-        top: 85%;
+        right: 0;
+        top: 0;
+        margin-top: 45%;
+        margin-right: 40%;
     }
 
     .qmsc {
         position: absolute;
-        top: 65%;
-        right: 20%;
+        top: 0;
+        right: 0;
+        margin-top: 38%;
+        margin-right: 20%;
         width: 10%;
         z-index: -1;
     }
 
     .qc {
-        top: 72%;
-        right: 5%;
+        top: 0;
+        right: 0;
+        margin-top: 45%;
+        margin-right: 8%;
         z-index: -1;
     }
 
@@ -840,7 +824,6 @@ body {
 
     .stat {
         margin: 0 5% 0 5%;
-        width: 30%;
     }
 
     .stat figure {
@@ -856,7 +839,12 @@ body {
     }
 
     .here-to-change {
+        font-size: 2rem;
         margin-top: 0%;
+    }
+
+    .here-to-change span {
+        font-size: 2.2rem;
     }
 
     .lifbutton {
@@ -879,15 +867,27 @@ body {
 
     .lif-desc h1 {
         font-weight: 700;
-        font-size: 5rem;
-        line-height: 5rem;
+        font-size: 6rem;
+        line-height: 6rem;
+        width: 75%;
     }
 
     .lif-desc span {
         font-size: 1.5em;
     }
 
+    .students span {
+        font-size: 1.5rem;
+    }
+
+    .character .safe-space {
+        font-size: 2.25rem;
+        margin-left: 12%;
+        width: 75%;
+    }
+
     /* END OF CHARACTER SECTION */
+
     .steps {
         font-size: 1.8rem;
         margin-top: 0%;
@@ -956,70 +956,30 @@ body {
 
     /* END OF STEPS */
 
-    .methods {
-        /* height: 86vh; */
-    }
+    /* THE 3 I'S */
 
-    .methods h3 {
-        font-size: 2.5rem;
-        padding-top: 2%;
-    }
-
-    .methods-page {
+    .the-i {
         display: flex;
-        align-items: flex-end;
-        padding-top: 2%;
-    }
-
-    .sad-image {
-        width: 100%;
-    }
-
-    .tip-image {
+        justify-content: space-around;
         width: 95%;
-        margin-left: 30%;
     }
 
-    .lif-methods-div {
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-        margin: 0 5%;
+    .one-i {
+        height: 20rem;
+        width: 35%;
+    }
+
+    .one-i figure {
+        height: 15rem;
+        width: auto;
+    }
+
+    .one-i img {
+        height: 20rem;
         width: 90%;
     }
 
-    .lif-methods {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        height: auto;
-        width: 75%;
-        margin: 5% 2%;
-    }
-
-    .lif-methods-title {
-        height: auto;
-        font-size: 2rem;
-        margin-bottom: 0% !important;
-        width: 100%;
-    }
-
-    .divide {
-        margin: 3% 0;
-    }
-
-    .lif-methods-title span {
-        font-family: 'Abril Fatface', cursive;
-        font-size: 2.4rem;
-        padding-right: 1%;
-    }
-
-    .lif-methods p {
-        margin-bottom: 10%;
-    }
-
-    /* END OF METHODS */
+    /* END OF THREE I */
 
     .goals {
         margin-top: 12%;
@@ -1120,8 +1080,17 @@ body {
         width: 100%;
     }
 
+    .nav {
+        margin: 2% 5%;
+        width: 70%;
+    }
+
     .header {
         font-size: 1.1rem;
+    }
+
+    .logo {
+        margin-left: 5%;
     }
 
     .question {
@@ -1142,11 +1111,6 @@ body {
         line-height: 5.5rem;
     }
 
-    .nav {
-        margin: 2% 5%;
-        width: 70%;
-    }
-
     #login {
         padding: 10% 40%;
     }
@@ -1161,75 +1125,52 @@ body {
     }
 
     .qmc {
-        top: 0;
         margin-top: 25%;
         width: 10%;
     }
 
     .q-sc {
-        top: 0;
         margin-top: 45%;
-        left: 0;
         margin-left: 90%;
     }
 
-    .qs {
-        left: 0;
-        margin-left: 35%;
-        top: 0;
-        margin-top: 12%
-    }
-
     .qs2 {
-        top: 0;
-        margin-top: 40%;
-        left: 18%;
+        margin-top: 35%;
+        margin-left: 18%;
     }
 
     .qe {
-        top: 0;
-        margin-top: 28%;
+        margin-top: 27%;
+        margin-left: 22%;
     }
 
     .qe2 {
-        top: 0;
-        margin-top: 38%;
-        left: 35%;
+        margin-top: 35%;
+        margin-left: 35%;
     }
 
     .qe3 {
-        top: 0;
         margin-top: 15%;
-        right: 36%;
-    }
-
-    .qe4 {
-        top: 0;
-        margin-top: 10%;
-        right: 10%;
+        margin-right: 36%;
     }
 
     .qbs {
-        top: 0;
-        margin-top: 30%;
-        right: 12%;
+        margin-top: 27%;
+        margin-right: 15%;
     }
 
     .qps {
-        top: 0;
         margin-top: 50%;
-        right: 38%;
+        margin-right: 38%;
     }
 
     .qmsc {
-        top: 0;
-        margin-top: 40%;
+        margin-top: 38%;
         width: 7%;
     }
 
     .qc {
-        top: 0;
-        margin-top: 40%;
+        margin-top: 38%;
         left: 0;
         margin-left: 5%;
         width: 5%;
@@ -1243,6 +1184,7 @@ body {
     .stats {
         flex-wrap: nowrap;
         margin: 3% 0;
+        margin-bottom: 12%;
         width: 100%;
     }
 
@@ -1314,6 +1256,11 @@ body {
         width: 100%;
     }
 
+    .character .safe-space {
+        width: 55%;
+        margin-left: 22%;
+    }
+
     /* END OF LIF */
     .steps h2 {
         font-size: 1.8rem;
@@ -1378,92 +1325,30 @@ body {
 
     /* END OF STEPS */
 
-    .methods {
-        margin-top: 2%;
-    }
-
-    .methods-page {
-        align-items: center;
-    }
-
-    .sad-image {
-        margin-left: 15%;
-    }
-
-    .tip-image {
-        margin-left: 40%;
-    }
-
-    /* METHODS CIRCLE AND STARS */
-
-    .methods .green-circle {
-        display: flex;
-        position: absolute;
-        right: 45%;
-        margin-top: -40%;
-        z-index: -5;
-    }
-
-    .methods .green-circle-2 {
-        position: absolute;
-        display: flex;
-        right: 35%;
-        margin-top: -15%;
-        z-index: -5;
-    }
-
-    .methods .yellow-circle {
-        position: absolute;
-        display: flex;
-        right: 2%;
-        margin-top: -25.5%;
-        z-index: -5;
-    }
-
-    .methods .green-plus {
-        position: absolute;
-        display: flex;
-        right: 36%;
-        margin-top: -28%;
-        z-index: -5;
-    }
-
-    .methods .blue-circle {
-        position: absolute;
-        display: flex;
-        right: 5%;
-        margin-top: -52%;
-        z-index: -5;
-    }
-
-    .methods h3 {
-        margin-top: 0%;
-        z-index: -5;
-    }
-
-    .lif-methods {
-        width: 55%;
-        margin: 5% 5%;
-    }
-
-    .lif-methods-div {
-        width: 75%;
-    }
-
-    .lif-methods-title {
-        height: auto;
-        padding: 10% 0 0 0 !important;
-    }
-
-    .lif-methods p {
-        font-size: 1.3rem;
-        margin: 0 5%;
-        padding: 5% 0 10% 0;
-    }
-
-    .lif-methods span {
+    .three-i h3 {
         font-size: 2rem;
     }
+
+    .one-i figure {
+        margin-bottom: 5%;
+    }
+
+    .one-i p {
+        height: 100px;
+        width: 225px;
+        padding-top: 5%;
+    }
+
+    .one-i .one-i-small {
+        padding-top: 0%;
+        text-align: left;
+    }
+
+    .one-i span {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
 
     /* END OF METHODS */
 
@@ -1471,7 +1356,7 @@ body {
         text-align: left;
         font-size: 1.4rem;
         width: 90%;
-        margin-top: 5%;
+        margin-top: 10%;
     }
 
     .goals h4 {
@@ -1482,39 +1367,50 @@ body {
     }
 
     .safegoal {
+        justify-content: space-evenly;
         margin: 0 0 0 0;
     }
 
     .safegoal p {
-        font-size: 1.7rem;
-        line-height: 3rem;
+        font-size: 1rem;
+        line-height: 2rem;
         margin: 2% 0 2% 5%;
+        width: 60%;
+    }
+
+    .safegoal figure {
+        width: 25%;
     }
 
     .missiongoal {
         justify-content: space-evenly;
-        margin: 2% 0;
+        margin: 0 0 2% 0;
+    }
+
+    .missiongoal figure {
+        width: 25%;
     }
 
     .missiongoal p {
-        line-height: 3rem;
-        font-size: 1.7rem;
-        width: 100%;
+        line-height: 2rem;
+        font-size: 1.025rem;
+        width: 55%;
     }
 
     #contact {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
         text-align: center;
-        padding: 2% 10% 3% 10%;
+        padding: 2% 5% 3% 5%;
+        width: 80%;
     }
 
     .freelife {
-        font-size: 2.5rem;
+        font-size: 1.7rem;
         margin: 4% 0 4% 0 !important;
     }
 
     .contactus {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         padding: 0.6rem 2rem;
     }
 
@@ -1601,13 +1497,13 @@ body {
     }
 
     .media p {
-        margin-right: 9%;
+        margin-right: 12%;
         margin-bottom: 5%;
     }
 
     .links {
         width: 25%;
-        margin: 0 5%;
+        margin: 0 10% 5% 10%;
     }
 
     .links i {
@@ -1619,19 +1515,6 @@ body {
 }
 
 @media only screen and (min-width: 1440px) {
-
-    .header {
-        padding-top: 0%;
-    }
-
-    .logo {
-        margin: 0 3%;
-    }
-
-    .nav {
-        width: 100%;
-        margin-right: 4%;
-    }
 
     .nav ul li a {
         padding: 0 0.75rem;
@@ -1648,6 +1531,7 @@ body {
 
     .q-sc {
         margin-top: 35%;
+        margin-left: 87%;
         width: 6%;
     }
 
@@ -1661,27 +1545,22 @@ body {
     }
 
     .qe {
-        margin-top: 22%;
-        margin-left: 8%;
+        margin-top: 23%;
+        margin-left: 25%;
     }
 
     .qe2 {
-        margin-top: 28%;
-        margin-left: 5%;
+        margin-top: 29.5%;
+        margin-left: 38%;
     }
 
     .qe3 {
-        margin-top: 12%;
-        right: 38%;
-    }
-
-    .qe4 {
-        margin-top: 8%;
+        margin-top: 14%;
+        margin-right: 38%;
     }
 
     .qbs {
-        margin-top: 20%;
-        right: 15%;
+        margin-top: 23%;
     }
 
     .qps {
@@ -1689,7 +1568,8 @@ body {
     }
 
     .qmsc {
-        margin-top: 26%;
+        margin-top: 30%;
+        margin-right: 26%;
         width: 6%;
     }
 
@@ -1700,11 +1580,11 @@ body {
     #home {
         height: 100vh;
         margin-top: 15%;
-        width: 100%;
+        width: 95%;
     }
 
     #home figcaption {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         line-height: 1.35rem;
     }
 
@@ -1751,7 +1631,7 @@ body {
 
     .here-to-change {
         font-size: 2.8rem;
-        margin-top: 1%;
+        margin-top: 5%;
     }
 
     .here-to-change span {
@@ -1760,12 +1640,11 @@ body {
 
     .lifbutton {
         font-size: 1.4rem;
-        margin: 1.8rem 0.8rem 2rem 0.8rem;
+        margin: 0 0 3% 0;
     }
 
-    #lif {
-        align-items: flex-start;
-        padding: 10% 0 10% 0;
+    hr {
+        width: 35%;
     }
 
     .lif-desc {
@@ -1783,11 +1662,29 @@ body {
     }
 
     .character {
+        margin-left: 20%;
         width: 55%;
+    }
+
+    .character .safe-space {
+        margin-left: 10%;
+        font-size: 3rem;
+        width: 80%;
+    }
+
+    .character figure {
+        height: auto;
+        width: 65%;
+        margin-left: 20%;
     }
 
     .students {
         line-height: 1.5rem;
+        font-size: 1.8rem;
+    }
+
+    .students span {
+        font-size: 1.9rem;
     }
 
     .step {
@@ -1845,67 +1742,16 @@ body {
 
     /* METHODS CIRCLE AND STARS */
 
-    .methods {
-        height: 85vh;
-        margin-top: 5%;
+    .three-i {
+        height: 50vh;
     }
 
-    .methods-img {
-        width: 70%;
+    .one-i p {
+        width: 240px;
     }
 
-    .methods .green-circle {
-        right: 40%;
-    }
-
-    .methods .green-circle-2 {
-        right: 32%;
-    }
-
-    .methods .yellow-circle {
-        margin-top: -23%;
-    }
-
-    .methods .green-plus {
-        right: 19%;
-        margin-top: -22%;
-    }
-
-    .methods .blue-circle {
-        margin-top: -48%;
-    }
-
-    .lif-methods-div {
-        justify-content: center;
-        margin: 0;
-    }
-
-    .lif-methods {
-        margin: 5% 10%;
-        width: 50%;
-    }
-
-    .lif-methods-title {
-        height: auto;
-    }
-
-    .lif-methods p {
-        font-size: 1.5rem;
-    }
-
-    .lif-methods span {
-        font-size: 2.5rem;
-    }
-
-    .sad-image {
-        margin-top: 0;
-        width: 85%;
-    }
-
-    .tip-image {
-        margin-left: 50%;
-        margin-top: -12%;
-        width: 75%;
+    .one-i span {
+        font-size: 1.025rem;
     }
 
     .goals {
@@ -1930,50 +1776,53 @@ body {
 
     .safegoal {
         justify-content: space-evenly;
-        margin: 0 0 0 0;
+        margin: 0 5% 0 0;
     }
 
     .safegoal figure {
-        width: 15%;
+        width: 30%;
     }
 
     .safegoal p {
-        font-size: 2rem;
-        line-height: 3rem;
-        width: 55%;
-        margin: 0 0;
+        font-size: 1.2rem;
+        margin: 0 4%;
     }
 
     .missiongoal {
-        width: 95%;
+        width: 85%;
         margin-bottom: 2%;
+        margin-left: 10%;
     }
 
     .missiongoal p {
-        font-size: 2rem;
+        font-size: 1.2rem;
         width: 65%;
     }
 
     .missiongoal figure {
+        margin-right: 5%;
         width: 15%;
     }
 
-    #contact p {
-        margin-top: -5%;
+    #contact {
+        width: 70%;
     }
 
-    .change-question {
-        height: 155px;
+    #contact p {
+        margin-top: -2%;
     }
 
     .freelife {
         font-size: 2.25rem;
-        line-height: 3rem;
-        margin: 0 0 5% 0 !important;
+        margin: 0 0 3% 0 !important;
     }
 
     .change {
         margin: 0 0;
+    }
+
+    .change-question {
+        height: 155px;
     }
 
     .journey {
@@ -2023,4 +1872,14 @@ body {
     100% {
         transform: translateY(35px);
     }
+}
+
+a:link {
+    color: #000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000;
+    text-decoration: none;
 }
