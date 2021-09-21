@@ -90,7 +90,7 @@ body {
     font-family: 'Abril Fatface', cursive;
     height: 20rem;
     margin-top: 25%;
-    width: 100vw;
+    width: 95vw;
 }
 
 #abouthome h1 {
@@ -173,6 +173,11 @@ body {
     padding: 4% 4%;
 }
 
+.left-quote,
+.right-quote {
+    display: none;
+}
+
 .team {
     display: flex;
     flex-direction: column;
@@ -205,11 +210,11 @@ body {
     color: #000;
     font-family: 'Lato', sans-serif;
     font-size: 1.3rem;
-    font-weight: normal;
+    font-weight: 300;
 }
 
 .team p {
-    padding: 4% 0;
+    padding: 2% 0;
 }
 
 .contactus {
@@ -305,6 +310,7 @@ body {
         background-size: cover;
         height: 100vh;
         text-align: center;
+        width: 100vw;
         margin-top: 10%;
     }
 
@@ -406,6 +412,32 @@ body {
 
     .yoshitha-quote {
         margin-right: 5%;
+    }
+
+    .left-quote,
+    .right-quote {
+        display: flex;
+    }
+
+    .ceo .left-quote,
+    .ceo .right-quote {
+        width: 10%;
+    }
+
+    .left-quote img {
+        height: 10rem;
+        margin-left: 30%;
+        width: 100%;
+    }
+
+    .right-quote {
+        margin-left: 40%;
+        margin-top: -10%;
+    }
+
+    .right-quote img {
+        height: 5rem;
+        width: 100%;
     }
 
     .team h4 {
@@ -520,8 +552,30 @@ body {
         width: 90%;
     }
 
+    .ceo .left-quote,
+    .ceo .right-quote {
+        width: 8%;
+    }
+
+    .left-quote img {
+        margin-top: 25%;
+    }
+
+    .ceo .left-quote img {
+        width: 100%;
+    }
+
+    .right-quote {
+        margin-left: 72%;
+        margin-top: -8.5%;
+    }
+
     .yoshitha {
         justify-content: space-around;
+    }
+
+    .yoshitha-image {
+        margin-left: 5%;
     }
 
     .yoshitha-quote {
@@ -533,7 +587,59 @@ body {
     }
 
     .teamimage {
+        font-size: 1.5rem;
+        height: 35rem;
         justify-content: space-between;
+        background-image: url('../img/dotted-lines.svg');
+        background-size: 85%;
+        background-repeat: no-repeat;
+        background-position-x: center;
+    }
+
+    .teamimage .down {
+        margin-top: 24%;
+        width: 25%;
+    }
+
+    .team-info {
+        margin-top: -15%;
+    }
+
+    .teamimage figure {
+        height: 15rem;
+        width: 20rem;
+    }
+
+    .teamimage span {
+        font-size: 1.5rem;
+    }
+
+    .teamimage .shradha {
+        margin-top: -2%;
+        width: 13rem;
+    }
+
+    .teamimage img {
+        height: 14rem;
+    }
+
+    .ramya {
+        margin-top: -1%;
+        margin-left: -6%;
+    }
+
+    .amith {
+        margin-left: -8%;
+        height: 16rem;
+    }
+
+    .shradha {
+        margin-left: 0%;
+        margin-right: 1%;
+    }
+
+    .shradha img {
+        margin-left: -5%;
     }
 
     .team .join {
@@ -626,16 +732,17 @@ body {
     }
 
     .ceo {
+        margin: 2% 0;
         width: 100%;
     }
 
     .ceo h2 {
         font-size: 4.7rem;
-        margin-right: 6%;
+        margin-right: 15%;
     }
 
     .ceo h3 {
-        margin-right: 8%;
+        margin-right: 16%;
     }
 
     .ceo p {
@@ -658,21 +765,73 @@ body {
         width: 78%;
     }
 
+    .left-quote img {
+        margin-top: 0%;
+        height: 18rem;
+    }
+
+    .right-quote {
+        margin-left: 55%;
+        margin-top: -9.5%;
+    }
+
+    .right-quote img {
+        height: 10rem;
+    }
+
     .yoshitha {
         margin: 7% 0;
     }
 
     .yoshitha-quote {
         margin-right: 0;
+        width: 65%;
     }
 
     .yoshitha-quote p {
-        font-size: 2.2rem;
-        width: 90%;
+        font-size: 2.3rem;
+        width: 85%;
     }
 
     .team .join {
         font-size: 3.5rem;
+    }
+
+    .teamimage img {
+        height: 18rem;
+    }
+
+    .ramya {
+        margin-left: 0%;
+        margin-top: -2%;
+    }
+
+    .ramya img {
+        margin-top: 15%;
+    }
+
+    .teamimage .down {
+        margin-top: 25%
+    }
+
+    .amith .down {
+        height: 20rem;
+    }
+
+    .amith img {
+        margin-left: 0;
+    }
+
+    .teamimage .shradha {
+        width: 16.5rem;
+    }
+
+    .team-info {
+        margin-top: -20%;
+    }
+
+    .join {
+        margin-top: 3%;
     }
 
     .media p {
