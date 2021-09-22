@@ -1,0 +1,426 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Abril Fatface', cursive;
+    justify-content: center;
+    margin: 0;
+    overflow: scroll;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+.header {
+    background-color: #F7F7F7;
+    /* box-shadow: 0px 0px 7px #ccc; */
+    color: #8FB38E;
+    font-family: 'Abril Fatface', cursive;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.nav ul>li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nav ul li a {
+    color: #8FB38E;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.logo {
+    margin-top: 5%;
+}
+
+.happy {
+    background-color: #F7F7F7;
+    color: #8FB38E;
+    display: flex;
+    font-family: 'Abril Fatface', cursive;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15%;
+    width: 100vw;
+}
+
+.happy .message {
+    font-size: 2rem;
+    width: 50%;
+    text-align: center;
+    margin: 15% 0;
+}
+
+.happy .photo {
+    margin-bottom: 10%;
+}
+
+.happy .photo img {
+    height: 25vh;
+    width: 75vw;
+}
+
+.cube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.cube p {
+    color: #8FB38E;
+    font-family: 'Abril Fatface', cursive;
+    margin: 5% 0;
+    text-align: center;
+}
+
+.cube span {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.cube figure {
+    width: 70%;
+}
+
+.wheel {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 10% 0;
+}
+
+.wheel img {
+    height: auto;
+    width: 95vw;
+}
+
+.speak {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.3rem;
+    color: #8FB38E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 5% 0;
+    width: 95%;
+}
+
+.speak span {
+    color: #A683AD;
+}
+
+.speak img {
+    height: auto;
+    width: 95vw;
+    z-index: -2;
+}
+
+.entry {
+    background-image: url('../img/happy-journal-entry.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+    margin-top: 5%;
+    width: 95vw;
+}
+
+textarea {
+    background-color: transparent;
+    border: none;
+    margin-top: 14%;
+    resize: none;
+    width: 80vw;
+}
+
+.submit {
+    background-color: #99B38F;
+    border-radius: 30px;
+    color: #FFF;
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        font-size: 1.5rem;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .logo {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .nav {
+        margin: 3% 0 3% 15%;
+    }
+
+    /* END OF HEADER TABLET */
+
+    .happy {
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-direction: row;
+        height: auto;
+        margin-top: 8%;
+        min-height: 55vh;
+    }
+
+    .happy .message {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 3rem;
+        margin: 0 0;
+        text-align: left;
+    }
+
+    .happy .message p {
+        min-height: 45vh;
+        height: auto;
+        width: 75%;
+    }
+
+    .happy .photo {
+        margin-bottom: 5%;
+    }
+
+    .happy .photo img {
+        height: 40vh;
+        width: 60vw;
+    }
+
+    /* END OF HAPPY */
+
+    .cube {
+        font-size: 1.3rem;
+        margin-top: 3%;
+    }
+
+    .cube p {
+        margin: 2% 0;
+    }
+
+    .cube span {
+        font-size: 1rem;
+    }
+
+    .cube figure {
+        margin-top: 10%;
+    }
+
+    /* END OF CUBE */
+
+    .wheel {
+        margin: 5% 0;
+    }
+
+    .wheel img {
+        height: 80vh;
+        margin-left: 5%;
+        min-height: 55vh;
+    }
+
+    /* END OF WHEEL */
+
+    .speak {
+        font-size: 2.3rem;
+        width: 80%;
+    }
+
+    .speak .entry {
+        min-height: 32rem;
+        height: 65vh;
+    }
+
+    .entry {
+        margin-top: 10%;
+    }
+
+    textarea {
+        font-size: 1.5rem;
+        line-height: 1.95rem;
+        height: 25vh;
+        min-height: 12rem;
+        width: 75vw;
+        margin-right: 7%;
+    }
+
+    .submit {
+        font-size: 1rem;
+        padding: 1rem 4rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .nav {
+        margin: 2% 0;
+        width: 70%;
+    }
+
+    .nav ul li a {
+        padding: 0 0.6rem;
+    }
+
+    .header {
+        font-size: 1.3rem;
+    }
+
+    .logo {
+        margin-left: 5%;
+    }
+
+    /* END OF HEADER LAPTOP */
+
+    .happy {
+        margin-top: 5%;
+    }
+
+    .happy .message {
+        margin: 10% 0 8% 5%;
+    }
+
+    .happy .message p {
+        font-size: 4rem;
+    }
+
+    .happy .photo img {
+        min-height: 55vh;
+    }
+
+    /* END OF HAPPY */
+
+    .cube {
+        font-size: 1.7rem;
+    }
+
+    .cube span {
+        font-size: 1.3rem;
+    }
+
+    .cube figure {
+        width: auto;
+    }
+
+    .cube img {
+        height: 40vh;
+    }
+
+    /* END OF CUBE */
+
+    .wheel img {
+        height: 75vh;
+    }
+
+    /* END OF WHEEL */
+
+    .speak {
+        width: 60%;
+    }
+
+    .speak .entry {
+        height: 85vh;
+        width: 90vw;
+    }
+
+    textarea {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        height: 35vh;
+        width: 71vw;
+    }
+
+    /* END OF SPEAK */
+
+    .entry {
+        background-position: center center;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .header {
+        font-size: 1.8rem;
+    }
+
+    .nav ul li a {
+        padding: 0 0.75rem;
+    }
+
+    .logo {
+        margin-right: 5%;
+    }
+
+    /* END OF HEADER */
+
+    .happy {
+        height: 70vh;
+    }
+
+    .happy .message p {
+        width: 50%;
+    }
+
+    .happy .photo img {
+        height: 55vh;
+        width: 55vw;
+    }
+
+    /* END OF HAPPY */
+
+    .cube {
+        font-size: 2.3rem;
+    }
+
+    .cube span {
+        font-size: 1.5rem;
+    }
+
+    /* END OF CUBE */
+
+    .wheel img {
+        height: 85vh;
+    }
+
+    /* END OF WHEEL */
+
+    .speak {
+        font-size: 2.5rem;
+        width: 45%;
+    }
+
+    .submit {
+        font-size: 1.6rem;
+        margin: 10% 0;
+        padding: 1rem 5rem;
+    }
+}
