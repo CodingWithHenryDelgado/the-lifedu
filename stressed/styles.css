@@ -18,7 +18,7 @@ body {
 /* HEADER */
 
 .header {
-    background-color: #FFF;
+    background-color: #F7F7F7;
     /* box-shadow: 0px 0px 7px #ccc; */
     color: #8FB38E;
     font-family: 'Abril Fatface', cursive;
@@ -57,6 +57,7 @@ body {
 }
 
 .stressed {
+    background-color: #F7F7F7;
     color: #8FB38E;
     display: flex;
     justify-content: center;
@@ -407,12 +408,10 @@ body {
     .sl {
         margin-top: -3%;
         margin-left: -30%;
-        z-index: -2;
     }
 
     .sl2 {
         margin-right: -32%;
         width: 100%;
-        z-index: -2;
     }
 }
