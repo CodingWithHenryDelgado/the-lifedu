@@ -18,7 +18,8 @@ body {
 /* HEADER */
 
 .header {
-    background-color: #F7F7F7;
+    background-color: #FFF;
+    /* background-color: #F7F7F7; */
     /* box-shadow: 0px 0px 7px #ccc; */
     color: #8FB38E;
     font-family: 'Abril Fatface', cursive;
@@ -30,7 +31,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 1;
 }
 
 .nav {
@@ -56,6 +57,159 @@ body {
     margin-top: 5%;
 }
 
+.angry {
+    color: #8FB38E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    margin-top: 25%;
+    height: 30vh;
+    width: 100vw;
+}
+
+.angry img {
+    height: 25vh;
+    width: 75vw;
+}
+
+.yt {
+    position: absolute;
+    right: 0;
+    margin-right: -12%;
+    top: 0;
+    width: 25%;
+    height: 50%;
+    z-index: -1;
+}
+
+.bt {
+    position: absolute;
+    left: 0;
+    margin-left: -18%;
+    top: 0;
+    margin-top: -15%;
+    width: 30%;
+    z-index: 5;
+    height: 50%;
+}
+
+.yr {
+    position: absolute;
+    width: 25%;
+    z-index: 5;
+    height: 50%;
+    top: 0;
+    margin-top: -40%;
+}
+
+.gc {
+    position: absolute;
+    width: 25%;
+    z-index: -1;
+    height: 35%;
+    left: 0;
+    margin-left: -15%;
+    top: 0;
+    margin-top: 30%;
+}
+
+.cube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.cube p {
+    color: #8FB38E;
+    font-family: 'Abril Fatface', cursive;
+    margin: 5% 0;
+    text-align: center;
+}
+
+.cube span {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.cube figure {
+    width: 70%;
+}
+
+.al {
+    position: absolute;
+    top: 0;
+    margin-top: 75%;
+    left: 0;
+    margin-left: -12%;
+    width: 25%;
+    height: 25%;
+    z-index: -2;
+}
+
+.al2 {
+    top: 0;
+    width: 100vw;
+    margin-top: 110%;
+    position: absolute;
+    z-index: -2;
+}
+
+.maze {
+    color: #8FB38E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    margin-top: 10%;
+}
+
+.maze img {
+    width: 85vw;
+    height: 40vh;
+    margin: 10% 0;
+}
+
+.journals {
+    color: #8FB38E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.journals span {
+    color: #9D7EA5;
+}
+
+.entries p {
+    margin-top: 5%;
+}
+
+.entry {
+    background-image: url('../img/journal-entry.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width: 100vw;
+}
+
+.submit {
+    background-color: #99B38F;
+    font-family: 'Abril Fatface', cursive;
+    border-radius: 30px;
+    color: #FFF;
+    text-decoration: none;
+    margin-bottom: 10%;
+    padding: 1rem 2.5rem;
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -75,6 +229,97 @@ body {
     }
 
     /* END OF HEADER TABLET */
+
+    .angry {
+        flex-direction: row;
+        margin-top: 20%;
+        margin-bottom: 5%;
+    }
+
+    .angry p {
+        font-size: 2.7rem;
+        text-align: left;
+        width: 25%;
+    }
+
+    .angry figcaption {
+        font-size: 1.8rem;
+    }
+
+    .angry img {
+        height: 50vh;
+        width: 40vw;
+    }
+
+    .yt {
+        margin-top: 25%;
+        height: 30%;
+    }
+
+    .yr {
+        margin-top: -25%;
+        width: 20%;
+        height: 50%;
+    }
+
+    .bt {
+        margin-top: -3%;
+        width: 25%;
+    }
+
+    .gc {
+        margin-left: -10%;
+        width: 20%;
+    }
+
+    /* END OF ANGRY */
+
+    .al {
+        margin-top: 55%;
+    }
+
+    .al2 {
+        margin-top: 50%;
+    }
+
+    /* END OF CUBE */
+
+    .maze {
+        margin-top: 3%;
+    }
+
+    .maze img {
+        height: 60vh;
+        width: 60vw;
+        margin: 0 0 5% 0;
+    }
+
+    /* END OF MAZE */
+
+    .journals {
+        font-size: 2rem;
+    }
+
+    .journals p {
+        width: 75%;
+    }
+
+    .entries p {
+        font-size: 1.4rem;
+        text-align: left;
+        margin-left: 5%;
+        width: 100%;
+    }
+
+    .entry {
+        height: 70vh;
+    }
+
+    .submit {
+        margin-top: 5%;
+        font-size: 1rem;
+        padding: 1rem 4rem;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -97,6 +342,70 @@ body {
     }
 
     /* END OF HEADER LAPTOP */
+
+    .angry {
+        height: 50vh;
+        margin-top: 15%;
+    }
+
+    .angry img {
+        height: 60vh;
+    }
+
+    .angry figcaption {
+        margin-top: 0;
+    }
+
+    .yt {
+        margin-right: -10%;
+        width: 20%;
+    }
+
+    .yr {
+        margin-top: -15%;
+    }
+
+    .bt {
+        margin-top: 0%;
+    }
+
+    .gc {
+        height: 20%;
+        width: 15%;
+        margin-left: -7%;
+    }
+
+    /* END OF ANGRY */
+
+    .cube {
+        font-size: 1.2rem;
+    }
+
+    .al {
+        height: 50%;
+        margin-top: 40%;
+        margin-left: -10%;
+    }
+
+    .al2 {
+        margin-top: 35%;
+    }
+
+    /* END OF CUBE */
+
+    .maze img {
+        height: 80vh;
+    }
+
+    /* END OF MAZE */
+
+    .journals p {
+        width: 55%;
+    }
+
+    .entry {
+        height: 100vh;
+    }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -114,4 +423,46 @@ body {
     }
 
     /* END OF HEADER */
+
+    .angry p {
+        font-size: 4rem;
+        width: 20%;
+    }
+
+    /* END OF ANGRY */
+
+    .cube {
+        margin: 0;
+    }
+
+    .cube p {
+        font-size: 2rem;
+    }
+
+    .cube span {
+        font-size: 1.5rem;
+    }
+
+    /* END OF CUBE */
+
+    .maze {
+        font-size: 1.7rem;
+    }
+
+    /* END OF MAZE */
+
+    .journals {
+        font-size: 2.8rem;
+    }
+
+    .entries p {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .submit {
+        font-size: 1.6rem;
+        margin: 10% 0;
+        padding: 1rem 5rem;
+    }
 }
