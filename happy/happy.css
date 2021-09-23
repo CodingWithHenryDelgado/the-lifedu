@@ -144,12 +144,14 @@ body {
 }
 
 .entry {
-    background-image: url('../img/happy-journal-entry.svg');
+    background-image: url('../img/journal-entry.svg');
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 15rem;
+    background-size: contain;
+    background-position-x: center;
+    height: 35vh;
     margin-top: 5%;
-    width: 95vw;
+    text-align: left;
+    width: 100%;
 }
 
 textarea {
@@ -257,12 +259,14 @@ textarea {
         width: 80%;
     }
 
-    .speak .entry {
+    .speak {
         min-height: 32rem;
         height: 65vh;
     }
 
     .entry {
+        font-size: 1.5rem;
+        height: 50vh;
         margin-top: 10%;
     }
 
@@ -345,10 +349,6 @@ textarea {
     /* END OF WHEEL */
 
     .speak {
-        width: 60%;
-    }
-
-    .speak .entry {
         height: 85vh;
         width: 90vw;
     }
@@ -364,6 +364,8 @@ textarea {
 
     .entry {
         background-position: center center;
+        font-size: 2rem;
+        height: 75vh;
     }
 }
 

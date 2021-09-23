@@ -406,11 +406,13 @@ body {
 
     .sl {
         margin-top: -3%;
-        margin-left: -23%;
+        margin-left: -30%;
         z-index: -2;
     }
 
     .sl2 {
+        margin-right: -32%;
+        width: 100%;
         z-index: -2;
     }
 }

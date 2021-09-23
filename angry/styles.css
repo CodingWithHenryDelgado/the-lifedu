@@ -189,6 +189,10 @@ body {
     color: #9D7EA5;
 }
 
+.entries {
+    width: 95%;
+}
+
 .entries p {
     margin-top: 5%;
 }
@@ -196,9 +200,10 @@ body {
 .entry {
     background-image: url('../img/journal-entry.svg');
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-    width: 100vw;
+    background-size: contain;
+    background-position-x: center;
+    height: 35vh;
+    width: 100%;
 }
 
 .submit {
@@ -312,7 +317,7 @@ body {
     }
 
     .entry {
-        height: 70vh;
+        height: 50vh;
     }
 
     .submit {
@@ -399,12 +404,16 @@ body {
 
     /* END OF MAZE */
 
+    .journals {
+        width: 90%;
+    }
+
     .journals p {
         width: 55%;
     }
 
     .entry {
-        height: 100vh;
+        height: 75vh;
     }
 }
 
