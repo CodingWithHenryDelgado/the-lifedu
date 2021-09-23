@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Abril Fatface', cursive;
+    justify-content: center;
+    margin: 0;
+    overflow: scroll;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+.header {
+    background-color: #F7F7F7;
+    /* box-shadow: 0px 0px 7px #ccc; */
+    color: #8FB38E;
+    font-family: 'Abril Fatface', cursive;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.nav ul>li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nav ul li a {
+    color: #8FB38E;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.logo {
+    margin-top: 5%;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .header {
+        font-size: 1.5rem;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .logo {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .nav {
+        margin: 3% 0 3% 15%;
+    }
+
+    /* END OF HEADER TABLET */
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .nav {
+        margin: 2% 0;
+        width: 70%;
+    }
+
+    .nav ul li a {
+        padding: 0 0.6rem;
+    }
+
+    .header {
+        font-size: 1.3rem;
+    }
+
+    .logo {
+        margin-left: 5%;
+    }
+
+    /* END OF HEADER LAPTOP */
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .header {
+        font-size: 1.8rem;
+    }
+
+    .nav ul li a {
+        padding: 0 0.75rem;
+    }
+
+    .logo {
+        margin-right: 5%;
+    }
+
+    /* END OF HEADER */
+}

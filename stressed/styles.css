@@ -67,8 +67,8 @@ body {
     align-items: center;
     flex-direction: column;
     font-family: 'Abril Fatface', cursive;
-    margin-top: 20%;
-    height: 35vh;
+    margin-top: 18%;
+    height: 40vh;
     width: 100vw;
 }
 
@@ -79,6 +79,11 @@ body {
 .stressed img {
     width: 80vw;
     height: 25vh;
+}
+
+.stressed figcaption {
+    text-align: center;
+    margin-bottom: 5%;
 }
 
 .part {
@@ -102,7 +107,7 @@ body {
 @media only screen and (min-width: 768px) {
 
     .header {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         flex-direction: row;
         justify-content: space-around;
     }
@@ -117,6 +122,39 @@ body {
     }
 
     /* END OF HEADER TABLET */
+
+    .stressed {
+        flex-direction: row;
+        height: 50vh;
+        margin-top: 5%;
+    }
+
+    .stressed p {
+        font-size: 1.8rem;
+        width: 20%;
+    }
+
+    .stressed img {
+        height: 35vh;
+        margin-top: 10%;
+        width: 50vw;
+    }
+
+    .stressed figcaption {
+        font-size: 2rem;
+    }
+
+    .part {
+        font-size: 1.3rem;
+    }
+
+    .part p {
+        margin: 5% 0;
+    }
+
+    .part img {
+        margin: 5% 0 10% 0;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -139,6 +177,30 @@ body {
     }
 
     /* END OF HEADER LAPTOP */
+
+    .stressed {
+        height: 65vh;
+    }
+
+    .stressed p {
+        font-size: 3.5rem;
+        width: 25%;
+    }
+
+    .stressed img {
+        height: 50vh;
+        margin-top: 20%;
+    }
+
+    .stressed figcaption {
+        margin-bottom: 10%;
+    }
+
+    /* END OF STRESSED */
+
+    .part {
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -156,4 +218,18 @@ body {
     }
 
     /* END OF HEADER */
+
+    .stressed {
+        height: 75vh;
+    }
+
+    .stressed p {
+        font-size: 4rem;
+    }
+
+    /* END OF STRESSED */
+
+    .part p {
+        font-size: 1.7rem;
+    }
 }
