@@ -18,7 +18,7 @@ body {
 /* HEADER */
 
 .header {
-    background-color: #F7F7F7;
+    background-color: #FFF;
     /* box-shadow: 0px 0px 7px #ccc; */
     color: #8FB38E;
     font-family: 'Abril Fatface', cursive;
@@ -57,17 +57,13 @@ body {
 }
 
 .stressed {
-    background-color: #F7F7F7;
-    background-image: url('../img/stressed-line.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
     color: #8FB38E;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-family: 'Abril Fatface', cursive;
-    margin-top: 18%;
+    margin-top: 20%;
     height: 40vh;
     width: 100vw;
 }
@@ -86,6 +82,27 @@ body {
     margin-bottom: 5%;
 }
 
+.sl,
+.sl2 {
+    position: absolute;
+    top: 0;
+}
+
+.sl {
+    height: 50%;
+    width: 30%;
+    left: 0;
+    margin-left: -5%;
+    margin-top: 25%;
+}
+
+.sl2 {
+    height: 50%;
+    margin-top: 5%;
+    width: 60%;
+    right: 0;
+}
+
 .part {
     display: flex;
     justify-content: center;
@@ -100,8 +117,58 @@ body {
 }
 
 .part img {
-    height: 25vh;
-    width: 65vw;
+    height: 20vh;
+    width: 95vw;
+}
+
+.questions {
+    background-image: url('../img/stressed-phone.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 50vh;
+    width: 100vw;
+}
+
+.journals {
+    color: #8FB38E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.journals span {
+    color: #9D7EA5;
+}
+
+.entries {
+    width: 95%;
+}
+
+.entries p {
+    margin-top: 5%;
+}
+
+.entry {
+    background-image: url('../img/journal-entry.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    height: 35vh;
+    width: 100%;
+}
+
+.submit {
+    background-color: #99B38F;
+    font-family: 'Abril Fatface', cursive;
+    border-radius: 30px;
+    color: #FFF;
+    text-decoration: none;
+    margin-bottom: 10%;
+    padding: 1rem 2.5rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -144,6 +211,20 @@ body {
         font-size: 2rem;
     }
 
+    /* END OF STRESSED */
+
+    .sl {
+        width: 42%;
+        margin-top: 10%;
+        margin-left: 0%;
+    }
+
+    .sl2 {
+        margin-right: -10%;
+    }
+
+    /* END OF LINES */
+
     .part {
         font-size: 1.3rem;
     }
@@ -154,6 +235,28 @@ body {
 
     .part img {
         margin: 5% 0 10% 0;
+    }
+
+    /* END OF PARTS */
+
+    .questions {
+        height: 75vh;
+    }
+
+    /* END OF QUESTIONS */
+
+    .journals {
+        font-size: 1.5rem;
+    }
+
+    .entry {
+        height: 50vh;
+    }
+
+    .submit {
+        margin-top: 5%;
+        font-size: 1rem;
+        padding: 1rem 4rem;
     }
 }
 
@@ -179,17 +282,17 @@ body {
     /* END OF HEADER LAPTOP */
 
     .stressed {
-        height: 65vh;
+        height: 75vh;
     }
 
     .stressed p {
-        font-size: 3.5rem;
-        width: 25%;
+        font-size: 4rem;
+        width: 30%;
     }
 
     .stressed img {
         height: 50vh;
-        margin-top: 20%;
+        margin-top: 0;
     }
 
     .stressed figcaption {
@@ -198,8 +301,46 @@ body {
 
     /* END OF STRESSED */
 
+    .sl {
+        margin-left: -12%;
+        margin-top: 5%;
+        height: 75%;
+        width: 65%;
+    }
+
+    .sl2 {
+        margin-top: 10%;
+    }
+
+    /* END OF LINES */
+
     .part {
+        font-size: 1.8rem;
+    }
+
+    .part img {
+        height: 30vh;
+    }
+
+    /* END OF PENCIL */
+
+    .questions {
+        height: 100vh;
+    }
+
+    /* END OF QUESTIONS */
+
+    .journals {
+        width: 90%;
+    }
+
+    .entry {
+        height: 75vh;
+    }
+
+    .submit {
         font-size: 1.5rem;
+        padding: 1.5rem 5rem;
     }
 }
 
@@ -225,11 +366,51 @@ body {
 
     .stressed p {
         font-size: 4rem;
+        width: 25%;
+    }
+
+    .sl {
+        height: 100%;
+        margin-top: -5%;
+        margin-left: -28%;
+        width: 100%;
+    }
+
+    .sl2 {
+        height: 75%;
+        margin-top: 5%;
+        margin-right: -12%;
     }
 
     /* END OF STRESSED */
 
     .part p {
-        font-size: 1.7rem;
+        font-size: 2rem;
+    }
+
+    /* END OF PART */
+
+    .journals {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .stressed img {
+        height: 55vh;
+    }
+
+    .stressed p {
+        font-size: 4.6rem;
+    }
+
+    .sl {
+        margin-top: -3%;
+        margin-left: -23%;
+        z-index: -2;
+    }
+
+    .sl2 {
+        z-index: -2;
     }
 }
