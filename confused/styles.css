@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Abril Fatface', cursive;
+    justify-content: center;
+    margin: 0;
+    overflow: scroll;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+.header {
+    background-color: #F7F7F7;
+    /* box-shadow: 0px 0px 7px #ccc; */
+    color: #8FB38E;
+    font-family: 'Abril Fatface', cursive;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.nav ul>li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nav ul li a {
+    color: #8FB38E;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.logo {
+    margin-top: 5%;
+}
+
+.confused {
+    background-color: #F7F7F7;
+    background-image: url('../img/lif-confusion.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: 135%;
+    color: #8FB38E;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Abril Fatface', cursive;
+    height: 40vh;
+    width: 100%;
+}
+
+.confused h1 {
+    margin-top: 30%;
+}
+
+.confused span {
+    font-size: 0.7rem;
+}
+
+.confused-lif {
+    position: absolute;
+    top: 0;
+    margin-top: 45%;
+}
+
+.area {
+    color: #8FB38E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.area span {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+}
+
+.area img {
+    height: 30vh;
+    width: 90%;
+}
+
+.question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8FB38E;
+    flex-direction: column;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: #8FB38E;
+    font-family: 'Abril Fatface', cursive;
+    margin: 10% 0;
+    width: 100%;
+}
+
+.choices a {
+    text-decoration: none;
+    color: #8FB38E;
+    padding: 5% 10%;
+}
+
+.journals {
+    color: #8FB38E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.journals span {
+    color: #9D7EA5;
+}
+
+.entries {
+    width: 95%;
+}
+
+.entries p {
+    margin-top: 5%;
+}
+
+.entry {
+    background-image: url('../img/journal-entry.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    height: 35vh;
+    width: 100%;
+}
+
+.submit {
+    background-color: #99B38F;
+    border-radius: 30px;
+    color: #FFF;
+    font-family: 'Abril Fatface', cursive;
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        font-size: 1.5rem;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .logo {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .nav {
+        margin: 3% 0 3% 15%;
+    }
+
+    /* END OF HEADER TABLET */
+
+    .confused {
+        background-size: 100% 70%;
+        background-position-y: 150%;
+        font-size: 1.5rem;
+        height: 50vh;
+        margin-top: 5%;
+    }
+
+    .confused h1 {
+        margin-top: 5%;
+    }
+
+    .confused span {
+        font-size: 1rem;
+    }
+
+    .area {
+        font-size: 1.6rem;
+    }
+
+    .area img {
+        margin: 15% 0;
+    }
+
+    .question {
+        font-size: 1.6rem;
+    }
+
+    .choices a {
+        font-size: 2.5rem;
+    }
+
+    .journals {
+        font-size: 1.5rem;
+    }
+
+    .entry {
+        height: 50vh;
+    }
+
+    .submit {
+        font-size: 1rem;
+        padding: 1rem 4rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .nav {
+        margin: 2% 0;
+        width: 70%;
+    }
+
+    .nav ul li a {
+        padding: 0 0.6rem;
+    }
+
+    .header {
+        font-size: 1.3rem;
+    }
+
+    .logo {
+        margin-left: 5%;
+    }
+
+    /* END OF HEADER LAPTOP */
+
+    .confused {
+        background-size: 100% 70%;
+        font-size: 2.3rem;
+    }
+
+    .confused span {
+        font-size: 1.2rem;
+    }
+
+    .question {
+        font-size: 1.75rem;
+    }
+
+    .journals {
+        width: 90%;
+    }
+
+    .entry {
+        height: 75vh;
+    }
+
+    .entry {
+        background-position: center center;
+        font-size: 2rem;
+        height: 75vh;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .header {
+        font-size: 1.8rem;
+    }
+
+    .nav ul li a {
+        padding: 0 0.75rem;
+    }
+
+    .logo {
+        margin-right: 5%;
+    }
+
+    /* END OF HEADER */
+
+    .journals {
+        font-size: 2rem;
+    }
+
+    .submit {
+        font-size: 1.6rem;
+        margin: 5% 0;
+        padding: 1rem 5rem;
+    }
+}
