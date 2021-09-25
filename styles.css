@@ -1357,8 +1357,16 @@ hr {
 
     /* END OF STEPS */
 
+    .three-i {
+        margin-top: 2%;
+    }
+
     .three-i h3 {
         font-size: 2rem;
+    }
+
+    .the-i {
+        margin-top: 5%;
     }
 
     .one-i figure {
@@ -1702,10 +1710,10 @@ hr {
         font-size: 2.25rem;
     }
 
-    .character {
+    /* .character {
         margin-left: 20%;
         width: 55%;
-    }
+    } */
 
     .character .safe-space {
         margin-left: 10%;
@@ -1793,6 +1801,10 @@ hr {
 
     .one-i span {
         font-size: 1.025rem;
+    }
+
+    .one-i .step-i {
+        padding-top: 8%;
     }
 
     .goals {
@@ -1924,4 +1936,10 @@ a:link {
 a:visited {
     color: #000;
     text-decoration: none;
+}
+
+@media only screen and (min-width: 1600px) {
+    .one-i .step-i {
+        padding-top: 6%;
+    }
 }
