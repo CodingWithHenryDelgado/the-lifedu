@@ -175,6 +175,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+
     .header {
         font-size: 1.5rem;
         flex-direction: row;
@@ -193,15 +194,15 @@ body {
     /* END OF HEADER TABLET */
 
     .confused {
-        background-size: 100% 70%;
-        background-position-y: 150%;
+        background-size: 100% 80%;
+        background-position-y: 175%;
         font-size: 1.5rem;
         height: 50vh;
         margin-top: 5%;
     }
 
     .confused h1 {
-        margin-top: 5%;
+        margin-top: 10%;
     }
 
     .confused span {
@@ -260,8 +261,13 @@ body {
     /* END OF HEADER LAPTOP */
 
     .confused {
-        background-size: 100% 70%;
+        background-size: 100% 85%;
+        background-position-y: 210%;
         font-size: 2.3rem;
+    }
+
+    .confused h1 {
+        margin-top: 4%;
     }
 
     .confused span {
@@ -290,10 +296,11 @@ body {
 @media only screen and (min-width: 1440px) {
 
     .header {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .nav ul li a {
+        font-size: 1.5rem;
         padding: 0 0.75rem;
     }
 
@@ -303,8 +310,44 @@ body {
 
     /* END OF HEADER */
 
-    .journals {
+    .confused {
+        background-size: 100% 95%;
+        background-position-y: 480%;
+    }
+
+    .confused h1 {
+        margin-top: 1%;
+    }
+
+    /* END OF CONFUSION */
+
+    .area {
         font-size: 2rem;
+        margin-top: 2%;
+    }
+
+    .area span {
+        font-size: 1.2rem;
+    }
+
+    .area img {
+        margin: 10% 0;
+    }
+
+    /* END OF AREA */
+
+    .question {
+        font-size: 2.2rem;
+    }
+
+    .choices a {
+        font-size: 3.5rem;
+    }
+
+    /* END OF QUESTIONS */
+
+    .journals {
+        font-size: 2.5rem;
     }
 
     .submit {

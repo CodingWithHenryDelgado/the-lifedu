@@ -120,27 +120,26 @@ body {
     width: 95vw;
 }
 
-.speak {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 1.3rem;
+.journals {
     color: #8FB38E;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     flex-direction: column;
-    margin: 5% 0;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.journals span {
+    color: #9D7EA5;
+}
+
+.entries {
     width: 95%;
 }
 
-.speak span {
-    color: #A683AD;
-}
-
-.speak img {
-    height: auto;
-    width: 95vw;
-    z-index: -2;
+.entries p {
+    margin-top: 5%;
 }
 
 .entry {
@@ -149,17 +148,7 @@ body {
     background-size: contain;
     background-position-x: center;
     height: 35vh;
-    margin-top: 5%;
-    text-align: left;
     width: 100%;
-}
-
-textarea {
-    background-color: transparent;
-    border: none;
-    margin-top: 14%;
-    resize: none;
-    width: 80vw;
 }
 
 .submit {
@@ -170,6 +159,14 @@ textarea {
     text-decoration: none;
     padding: 1rem 2.5rem;
 }
+
+/* textarea {
+    background-color: transparent;
+    border: none;
+    margin-top: 14%;
+    resize: none;
+    width: 80vw;
+} */
 
 @media only screen and (min-width: 768px) {
     .header {
@@ -254,35 +251,27 @@ textarea {
 
     /* END OF WHEEL */
 
-    .speak {
-        font-size: 2.3rem;
-        width: 80%;
-    }
-
-    .speak {
-        min-height: 32rem;
-        height: 65vh;
+    .journals {
+        font-size: 1.5rem;
     }
 
     .entry {
-        font-size: 1.5rem;
         height: 50vh;
-        margin-top: 10%;
-    }
-
-    textarea {
-        font-size: 1.5rem;
-        line-height: 1.95rem;
-        height: 25vh;
-        min-height: 12rem;
-        width: 75vw;
-        margin-right: 7%;
     }
 
     .submit {
         font-size: 1rem;
         padding: 1rem 4rem;
     }
+
+    /* textarea {
+        font-size: 1.5rem;
+        line-height: 1.95rem;
+        height: 25vh;
+        min-height: 12rem;
+        width: 75vw;
+        margin-right: 7%;
+    } */
 }
 
 @media only screen and (min-width: 1024px) {
@@ -353,14 +342,22 @@ textarea {
         width: 90vw;
     }
 
-    textarea {
+    /* textarea {
         font-size: 2rem;
         line-height: 2.5rem;
         height: 35vh;
         width: 71vw;
-    }
+    } */
 
     /* END OF SPEAK */
+
+    .journals {
+        width: 90%;
+    }
+
+    .entry {
+        height: 75vh;
+    }
 
     .entry {
         background-position: center center;
@@ -376,6 +373,7 @@ textarea {
     }
 
     .nav ul li a {
+        font-size: 1.5rem;
         padding: 0 0.75rem;
     }
 
@@ -416,14 +414,13 @@ textarea {
 
     /* END OF WHEEL */
 
-    .speak {
+    .journals {
         font-size: 2.5rem;
-        width: 45%;
     }
 
     .submit {
         font-size: 1.6rem;
-        margin: 10% 0;
+        margin: 5% 0;
         padding: 1rem 5rem;
     }
 }
