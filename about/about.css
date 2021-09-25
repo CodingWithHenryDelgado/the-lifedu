@@ -8,6 +8,21 @@
     src: url("../fonts/Myriad\ Pro\ Regular.ttf");
 }
 
+@font-face {
+    font-family: 'Abril Fatface';
+    src: url("../fonts/AbrilFatface-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Lato-light';
+    src: url("../fonts/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
 * {
     box-sizing: border-box;
 }
@@ -112,10 +127,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-weight: 300;
     text-align: center;
     width: 90%;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato-light', sans-serif;
 }
 
 .story span {
@@ -207,9 +221,8 @@ body {
 
 .teamimage span {
     color: #000;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato-light', sans-serif;
     font-size: 1.3rem;
-    font-weight: 300;
 }
 
 .team p {
