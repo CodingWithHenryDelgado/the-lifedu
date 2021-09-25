@@ -151,6 +151,10 @@ body {
     width: 100%;
 }
 
+.entry p {
+    text-align: left;
+}
+
 .submit {
     background-color: #99B38F;
     border-radius: 30px;
