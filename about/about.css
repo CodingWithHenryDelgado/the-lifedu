@@ -4,12 +4,17 @@
 }
 
 @font-face {
+    font-family: "Cursive";
+    src: url("../fonts/CedarvilleCursive-Regular.ttf");
+}
+
+@font-face {
     font-family: 'Myraid';
     src: url("../fonts/Myriad\ Pro\ Regular.ttf");
 }
 
 @font-face {
-    font-family: 'Abril Fatface';
+    font-family: 'Abril';
     src: url("../fonts/AbrilFatface-Regular.ttf");
 }
 
@@ -44,7 +49,7 @@ body {
 .header {
     background-color: #FFF;
     /* box-shadow: 0px 0px 7px #ccc; */
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Abril', cursive;
     position: fixed;
     display: flex;
     justify-content: flex-end;
@@ -184,10 +189,12 @@ body {
 }
 
 .ceo p {
+    font-family: "Cursive", sans-serif;
     padding: 4% 4%;
 }
 
-.left-quote {
+.left-quote,
+.rightquote {
     display: none;
 }
 
@@ -327,17 +334,17 @@ body {
     }
 
     #abouthome h1 {
-        font-size: 3.3rem;
+        font-size: 5rem;
         margin-top: 0;
         width: 100%;
     }
 
     #abouthome p {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     #abouthome span {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .story {
@@ -385,12 +392,14 @@ body {
     }
 
     .ceo h2 {
-        font-size: 2.3rem;
+        font-size: 2rem;
+        padding-left: 10%;
     }
 
     .ceo h3 {
         font-size: 1.1rem;
         text-align: right;
+        margin-right: 2%;
     }
 
     .ceo p {
@@ -402,10 +411,6 @@ body {
 
     .ceo figure {
         width: 40%;
-    }
-
-    .ceo img {
-        height: 24rem;
     }
 
     .ceo .understood {
@@ -422,12 +427,28 @@ body {
         width: 45%;
     }
 
-    .left-quote {
+    .left-quote,
+    .rightquote {
         display: flex;
     }
 
-    .ceo .left-quote {
+    .ceo .left-quote,
+    .ceo .rightquote {
         width: 10%;
+    }
+
+    .left-quote img {
+        height: 8rem;
+        margin-left: -20%;
+    }
+
+    .rightquote {
+        align-items: flex-end;
+    }
+
+    .rightquote img {
+        height: 8rem;
+        margin-left: -60%;
     }
 
     .school-life img {
@@ -495,7 +516,7 @@ body {
         background-position: 0 0;
         background-size: cover;
         margin-top: 8%;
-        min-height: 40rem;
+        height: 100vh;
     }
 
     #abouthome h1 {
@@ -547,11 +568,7 @@ body {
     }
 
     .ceo h2 {
-        font-size: 3rem;
-    }
-
-    .ceo h3 {
-        margin-right: 7%;
+        font-size: 2.5rem;
     }
 
     .ceo .understood,
@@ -560,15 +577,7 @@ body {
     }
 
     .ceo .left-quote {
-        width: 8%;
-    }
-
-    .left-quote img {
-        margin-top: 25%;
-    }
-
-    .ceo .left-quote img {
-        width: 100%;
+        margin-top: 4%;
     }
 
     .yoshitha {
@@ -706,9 +715,20 @@ body {
     }
 
     #abouthome {
+        background-size: 100% 105%;
         margin-top: 5%;
-        min-height: 60rem;
-        height: 75rem;
+    }
+
+    #abouthome h1 {
+        font-size: 7rem;
+    }
+
+    #abouthome p {
+        font-size: 7rem;
+    }
+
+    #abouthome span {
+        font-size: 6rem;
     }
 
     .founded p {
@@ -745,12 +765,11 @@ body {
 
     .ceo h2 {
         font-size: 4.7rem;
-        margin-right: 15%;
     }
 
     .ceo h3 {
         font-size: 1.5rem;
-        margin-right: 20%;
+        margin-right: 6%;
     }
 
     .ceo p {
@@ -764,7 +783,7 @@ body {
 
     .ceo img {
         width: 100%;
-        height: 30rem;
+        height: 40rem;
     }
 
     .ceo .understood {
@@ -775,6 +794,16 @@ body {
     .ceo .school-life {
         margin-right: 0%;
         width: 90%;
+    }
+
+    .ceo .left-quote {
+        margin-top: 0;
+    }
+
+    .rightquote img {
+        height: 10rem;
+        margin-left: -100%;
+        margin-top: 100%;
     }
 
     .school-life img {
@@ -845,6 +874,10 @@ body {
 
     .join {
         margin-top: 0%;
+    }
+
+    #aboutfooter {
+        margin-top: 10%;
     }
 
     .media p {

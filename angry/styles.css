@@ -29,8 +29,7 @@ body {
 /* HEADER */
 
 .header {
-    background-color: #FFF;
-    /* background-color: #F7F7F7; */
+    background-color: #F7F7F7;
     /* box-shadow: 0px 0px 7px #ccc; */
     color: #8FB38E;
     font-family: 'Abril Fatface', cursive;
@@ -69,6 +68,7 @@ body {
 }
 
 .angry {
+    background-color: #F7F7F7;
     color: #8FB38E;
     display: flex;
     justify-content: center;
@@ -76,8 +76,8 @@ body {
     flex-direction: column;
     font-family: 'Abril Fatface', cursive;
     text-align: center;
-    margin-top: 25%;
-    height: 30vh;
+    margin-top: 20%;
+    height: 35vh;
     width: 100vw;
 }
 
@@ -93,7 +93,7 @@ body {
     top: 0;
     width: 25%;
     height: 50%;
-    z-index: -1;
+    z-index: 2;
 }
 
 .bt {
@@ -113,18 +113,18 @@ body {
     z-index: 5;
     height: 50%;
     top: 0;
-    margin-top: -40%;
+    margin-top: -65%;
 }
 
 .gc {
     position: absolute;
     width: 25%;
-    z-index: -1;
+    z-index: 2;
     height: 35%;
     left: 0;
     margin-left: -15%;
     top: 0;
-    margin-top: 30%;
+    margin-top: 50%;
 }
 
 .cube {
@@ -248,7 +248,8 @@ body {
 
     .angry {
         flex-direction: row;
-        margin-top: 20%;
+        height: 50vh;
+        margin-top: 5%;
         margin-bottom: 5%;
     }
 
@@ -263,8 +264,8 @@ body {
     }
 
     .angry img {
-        height: 50vh;
-        width: 40vw;
+        height: 35vh;
+        width: 50vw;
     }
 
     .yt {
@@ -273,7 +274,7 @@ body {
     }
 
     .yr {
-        margin-top: -18%;
+        margin-top: -28%;
         width: 20%;
         height: 50%;
         left: 0;
@@ -287,6 +288,7 @@ body {
 
     .gc {
         margin-left: -10%;
+        margin-top: 30%;
         width: 20%;
     }
 
@@ -362,12 +364,13 @@ body {
     /* END OF HEADER LAPTOP */
 
     .angry {
-        height: 50vh;
-        margin-top: 15%;
+        height: 100vh;
+        margin-top: 0%;
     }
 
     .angry img {
-        height: 40vh;
+        height: 50vh;
+        width: 50vw;
     }
 
     .angry figcaption {
@@ -375,12 +378,13 @@ body {
     }
 
     .yt {
-        margin-right: -10%;
+        margin-right: -8%;
+        margin-top: 35%;
         width: 20%;
     }
 
     .yr {
-        margin-top: -15%;
+        margin-top: -22%;
     }
 
     .bt {
@@ -391,6 +395,7 @@ body {
         height: 20%;
         width: 15%;
         margin-left: -7%;
+        margin-top: 50%;
     }
 
     /* END OF ANGRY */
@@ -447,13 +452,21 @@ body {
 
     /* END OF HEADER */
 
-    .angry {
-        margin-top: 10%;
+    .angry p {
+        font-size: 5rem;
+        width: 25%;
     }
 
-    .angry p {
-        font-size: 4rem;
-        width: 20%;
+    .angry figcaption {
+        font-size: 3rem;
+    }
+
+    .yr {
+        margin-top: -17%;
+    }
+
+    .gc {
+        margin-top: 40%;
     }
 
     /* END OF ANGRY */

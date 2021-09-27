@@ -155,7 +155,7 @@ body {
     background-image: url('../img/journal-entry.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-x: center;
+    background-position: center center;
     height: 35vh;
     width: 100%;
 }
@@ -169,17 +169,20 @@ body {
     border-radius: 30px;
     color: #FFF;
     font-family: 'Abril Fatface', cursive;
+    margin-bottom: 5%;
     text-decoration: none;
     padding: 1rem 2.5rem;
 }
 
-/* textarea {
+textarea {
     background-color: transparent;
     border: none;
-    margin-top: 14%;
+    height: 5.5rem;
+    margin-top: 15%;
+    margin-right: 8%;
     resize: none;
-    width: 80vw;
-} */
+    width: 80%;
+}
 
 @media only screen and (min-width: 768px) {
     .header {
@@ -277,14 +280,14 @@ body {
         padding: 1rem 4rem;
     }
 
-    /* textarea {
+    textarea {
         font-size: 1.5rem;
-        line-height: 1.95rem;
-        height: 25vh;
-        min-height: 12rem;
-        width: 75vw;
+        line-height: 1.6rem;
+        height: 9.5rem;
+        width: 68%;
         margin-right: 7%;
-    } */
+        margin-top: 7%;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -309,6 +312,8 @@ body {
     /* END OF HEADER LAPTOP */
 
     .happy {
+        align-items: center;
+        height: 100vh;
         margin-top: 5%;
     }
 
@@ -328,6 +333,7 @@ body {
 
     .cube {
         font-size: 1.7rem;
+        height: 100vh;
     }
 
     .cube span {
@@ -355,12 +361,13 @@ body {
         width: 90vw;
     }
 
-    /* textarea {
+    textarea {
         font-size: 2rem;
-        line-height: 2.5rem;
-        height: 35vh;
-        width: 71vw;
-    } */
+        line-height: 2.35rem;
+        height: 30vh;
+        margin-top: 8%;
+        width: 72%;
+    }
 
     /* END OF SPEAK */
 
@@ -396,10 +403,6 @@ body {
 
     /* END OF HEADER */
 
-    .happy {
-        height: 70vh;
-    }
-
     .happy .message p {
         width: 50%;
     }
@@ -429,6 +432,13 @@ body {
 
     .journals {
         font-size: 2.5rem;
+    }
+
+    textarea {
+        line-height: 2.31rem;
+        margin-right: 5%;
+        margin-top: 6%;
+        width: 44vw;
     }
 
     .submit {
