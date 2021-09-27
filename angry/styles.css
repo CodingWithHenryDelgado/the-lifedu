@@ -149,25 +149,26 @@ body {
 
 .cube figure {
     width: 70%;
+    z-index: 10;
 }
 
 .al {
     position: absolute;
     top: 0;
-    margin-top: 75%;
+    margin-top: 120%;
     left: 0;
     margin-left: -12%;
     width: 25%;
     height: 25%;
-    z-index: -2;
+    z-index: 1;
 }
 
 .al2 {
     top: 0;
     width: 100vw;
-    margin-top: 110%;
+    margin-top: 165%;
     position: absolute;
-    z-index: -2;
+    z-index: 1;
 }
 
 .maze {
@@ -295,11 +296,15 @@ body {
     /* END OF ANGRY */
 
     .al {
-        margin-top: 55%;
+        margin-top: 60%;
     }
 
     .al2 {
-        margin-top: 50%;
+        margin-top: 70%;
+    }
+
+    .cube {
+        z-index: 0;
     }
 
     /* END OF CUBE */
@@ -402,19 +407,24 @@ body {
 
     .cube {
         font-size: 1.2rem;
+        height: 100vh;
     }
 
     .al {
         height: 50%;
-        margin-top: 40%;
+        margin-top: 85%;
         margin-left: -10%;
     }
 
     .al2 {
-        margin-top: 35%;
+        margin-top: 105%;
     }
 
     /* END OF CUBE */
+
+    .maze {
+        height: 100vh;
+    }
 
     .maze img {
         height: 80vh;
@@ -427,7 +437,7 @@ body {
     }
 
     .journals p {
-        width: 55%;
+        width: 65%;
     }
 
     .entry {
@@ -486,6 +496,14 @@ body {
 
     .cube figure {
         margin: 4% 0;
+    }
+
+    .al {
+        margin-top: 55%;
+    }
+
+    .al2 {
+        margin-top: 60%;
     }
 
     /* END OF CUBE */
