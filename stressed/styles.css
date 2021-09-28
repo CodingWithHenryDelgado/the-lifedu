@@ -69,7 +69,7 @@ body {
     align-items: center;
     flex-direction: column;
     font-family: 'AbrilFatface-Regular', cursive;
-    background-image: url("../img/lif-stress-mobile.svg");
+    background-image: url("../img/lif-stress-svg.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom left;
@@ -82,10 +82,10 @@ body {
     margin: 5% 0 50% 0;
 }
 
-.stressed img {
+/* .stressed img {
     width: 80vw;
     height: 25vh;
-}
+} */
 
 .sl,
 .sl2 {
