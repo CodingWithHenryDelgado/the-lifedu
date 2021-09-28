@@ -1499,8 +1499,13 @@ hr {
     /* END OF GOALS */
 
     .change {
+        background-image: url('./img/meet\ life-01.svg');
+        background-size: 75% 75%;
+        background-repeat: no-repeat;
+        background-position-x: -75%;
+        background-position-y: bottom;
         margin: 3% 0;
-        width: 90%;
+        width: 100vw;
     }
 
     .change-question {
@@ -1527,10 +1532,14 @@ hr {
         font-size: 1.3rem;
     }
 
+    #options-div {
+        justify-content: flex-end;
+    }
+
     .options {
         font-size: 1.1rem;
         line-height: 1.5rem;
-        margin: 8% 3% 10% 3%;
+        margin: 8% 1% 10% 1%;
         text-align: left;
         padding: 0 2%;
         width: 33%;
