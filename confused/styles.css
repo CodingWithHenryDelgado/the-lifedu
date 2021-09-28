@@ -176,6 +176,16 @@ body {
     width: 100%;
 }
 
+textarea {
+    background-color: transparent;
+    border: none;
+    height: 5.5rem;
+    margin-top: 12%;
+    margin-right: 8%;
+    resize: none;
+    width: 80%;
+}
+
 .submit {
     background-color: #99B38F;
     border-radius: 30px;
@@ -242,6 +252,15 @@ body {
 
     .entry {
         height: 50vh;
+    }
+
+    textarea {
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        height: 9.5rem;
+        width: 55vw;
+        margin-right: 7%;
+        margin-top: 11%;
     }
 
     .submit {
@@ -315,6 +334,14 @@ body {
         font-size: 2rem;
         height: 75vh;
     }
+
+    textarea {
+        font-size: 2rem;
+        line-height: 2.35rem;
+        height: 30vh;
+        margin-top: 12%;
+        width: 72%;
+    }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -377,6 +404,13 @@ body {
 
     .journals {
         font-size: 2.5rem;
+    }
+
+    textarea {
+        line-height: 2.31rem;
+        margin-right: 5%;
+        margin-top: 9%;
+        width: 44vw;
     }
 
     .submit {
