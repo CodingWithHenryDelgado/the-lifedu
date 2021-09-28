@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Abril Fatface';
+    font-family: 'AbrilFatface-Regular';
     src: url("../fonts/AbrilFatface-Regular.ttf");
 }
 
@@ -12,7 +12,7 @@ body {
     background: #FFF;
     display: flex;
     flex-direction: column;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'AbrilFatface-Regular', cursive;
     justify-content: center;
     margin: 0;
     overflow: scroll;
@@ -26,7 +26,7 @@ body {
     background-color: #F7F7F7;
     /* box-shadow: 0px 0px 7px #ccc; */
     color: #8FB38E;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'AbrilFatface-Regular', cursive;
     position: fixed;
     display: flex;
     justify-content: flex-end;
@@ -68,8 +68,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: 'Abril Fatface', cursive;
-    background-image: url('../img/lif-stress-mobile.svg');
+    font-family: 'AbrilFatface-Regular', cursive;
+    background-image: url("../img/lif-stress-mobile.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom left;
@@ -112,7 +112,7 @@ body {
     align-items: center;
     flex-direction: column;
     color: #8FB38E;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'AbrilFatface-Regular', cursive;
 }
 
 .part p {
@@ -140,7 +140,7 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'AbrilFatface-Regular', cursive;
 }
 
 .journals span {
@@ -164,9 +164,19 @@ body {
     width: 100%;
 }
 
+textarea {
+    background-color: transparent;
+    border: none;
+    height: 5.5rem;
+    margin-top: 12%;
+    margin-right: 8%;
+    resize: none;
+    width: 80%;
+}
+
 .submit {
     background-color: #99B38F;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'AbrilFatface-Regular', cursive;
     border-radius: 30px;
     color: #FFF;
     text-decoration: none;
@@ -254,6 +264,15 @@ body {
 
     .entry {
         height: 50vh;
+    }
+
+    textarea {
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        height: 9.5rem;
+        width: 55vw;
+        margin-right: 7%;
+        margin-top: 11%;
     }
 
     .submit {
@@ -346,6 +365,14 @@ body {
         height: 75vh;
     }
 
+    textarea {
+        font-size: 2rem;
+        line-height: 2.35rem;
+        height: 30vh;
+        margin-top: 13%;
+        width: 65vw;
+    }
+
     .submit {
         font-size: 1.5rem;
         padding: 1.5rem 5rem;
@@ -402,6 +429,13 @@ body {
 
     .journals {
         font-size: 2rem;
+    }
+
+    textarea {
+        line-height: 2.35rem;
+        margin-right: 5%;
+        margin-top: 9.5%;
+        width: 46vw;
     }
 }
 
