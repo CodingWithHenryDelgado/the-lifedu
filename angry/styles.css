@@ -218,6 +218,16 @@ body {
     width: 100%;
 }
 
+textarea {
+    background-color: transparent;
+    border: none;
+    height: 5.5rem;
+    margin-top: 12%;
+    margin-right: 8%;
+    resize: none;
+    width: 80%;
+}
+
 .submit {
     background-color: #99B38F;
     font-family: 'Abril Fatface', cursive;
@@ -340,6 +350,15 @@ body {
         height: 50vh;
     }
 
+    textarea {
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+        height: 9.5rem;
+        width: 55vw;
+        margin-right: 7%;
+        margin-top: 9.5%;
+    }
+
     .submit {
         margin-top: 5%;
         font-size: 1rem;
@@ -443,6 +462,14 @@ body {
     .entry {
         height: 75vh;
     }
+
+    textarea {
+        font-size: 2rem;
+        line-height: 2.35rem;
+        height: 30vh;
+        margin-top: 12%;
+        width: 72%;
+    }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -526,6 +553,13 @@ body {
     .entries p {
         font-size: 2rem;
         width: 100%;
+    }
+
+    textarea {
+        line-height: 2.31rem;
+        margin-right: 5%;
+        margin-top: 9%;
+        width: 44vw;
     }
 
     .submit {
