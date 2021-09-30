@@ -131,6 +131,44 @@ body {
     background-position-x: center;
     height: 50vh;
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#question-1 {
+    color: #8FB38E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'AbrilFatface-Regular';
+    font-size: 0.8rem;
+    margin-bottom: 15%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+#question-1 p {
+    width: 20%;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    width: 100%;
+}
+
+.choices a {
+    padding: 0 3%;
+}
+
+.choices a:hover {
+    background-image: url('../img/question-choice.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .journals {
@@ -182,6 +220,10 @@ textarea {
     text-decoration: none;
     margin-bottom: 10%;
     padding: 1rem 2.5rem;
+}
+
+.hide {
+    opacity: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -254,6 +296,22 @@ textarea {
 
     .questions {
         height: 75vh;
+    }
+
+    #question-1 {
+        font-size: 0.9rem;
+    }
+
+    #question-1 p {
+        margin-right: 3%;
+        width: 30%;
+    }
+
+    .choices {
+        justify-content: space-around;
+        margin-top: 8%;
+        margin-right: 5%;
+        width: 40%;
     }
 
     /* END OF QUESTIONS */
@@ -355,6 +413,20 @@ textarea {
         height: 100vh;
     }
 
+    #question-1 {
+        font-size: 1.1rem;
+    }
+
+    #question-1 p {
+        width: 30%;
+    }
+
+    .choices a {
+        background-size: contain;
+        height: 2rem;
+        width: 2.2rem;
+    }
+
     /* END OF QUESTIONS */
 
     .journals {
@@ -427,6 +499,16 @@ textarea {
 
     /* END OF PART */
 
+    #question-1 {
+        font-size: 1.4rem;
+        margin-bottom: 0%;
+        margin-top: 8%;
+    }
+
+    #question-1 p {
+        width: 35%;
+    }
+
     .journals {
         font-size: 2rem;
     }
@@ -463,4 +545,37 @@ textarea {
         margin-top: 5vh;
         width: 100%;
     }
+
+    #question-1 {
+        font-size: 1.6rem;
+        margin-bottom: 0%;
+        margin-top: 10%;
+        margin-right: 2%;
+        margin: 15% 2% 0 5%;
+    }
+
+    #question-1 p {
+        width: 30%;
+    }
+
+    .choices a {
+        margin-top: 20%;
+        padding: 5% 4%;
+        height: 3.2rem;
+        width: 3.5rem;
+    }
+
+    .choices a:hover {
+        background-size: cover;
+    }
+}
+
+a:link {
+    color: #8FB38E;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #8FB38E;
+    text-decoration: none;
 }
