@@ -132,7 +132,7 @@ body {
     width: 100%;
     height: 15px;
     border-radius: 5px;
-    background: #d3d3d3;
+    background: linear-gradient(90deg, #FFF, #8096BE);
     outline: none;
     opacity: 0.7;
     /* Set transparency (for mouse-over effects on hover) */
@@ -148,7 +148,7 @@ body {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: #04AA6D;
+    background: #8096BE;
     cursor: pointer;
 }
 
@@ -156,7 +156,7 @@ body {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: #04AA6D;
+    background: #8096BE;
     cursor: pointer;
 }
 
@@ -288,15 +288,29 @@ textarea {
     }
 
     .area {
-        font-size: 1.6rem;
+        font-size: 2rem;
+        height: 100vh;
     }
 
-    .area img {
-        margin: 15% 0;
+    .area span {
+        font-size: 1.2rem;
+    }
+
+    .slider-images {
+        margin: 20% 0 10% 0;
+    }
+
+    .things {
+        height: 40vh;
+    }
+
+    .slider {
+        width: 50vw;
     }
 
     .question {
         font-size: 1.6rem;
+        height: 100vh;
     }
 
     .choices a {
@@ -435,12 +449,13 @@ textarea {
     /* END OF CONFUSION */
 
     .area {
-        font-size: 2rem;
-        margin-top: 2%;
+        font-size: 2.5rem;
+        margin-top: 5%;
     }
 
     .area span {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        margin-top: 5%;
     }
 
     .area img {
