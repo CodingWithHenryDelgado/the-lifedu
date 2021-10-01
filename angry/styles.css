@@ -41,7 +41,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 3;
 }
 
 .nav {
@@ -76,8 +76,8 @@ body {
     flex-direction: column;
     font-family: 'Abril Fatface', cursive;
     text-align: center;
-    margin-top: 20%;
-    height: 35vh;
+    margin-top: 15%;
+    height: 100vh;
     width: 100vw;
 }
 
@@ -128,6 +128,7 @@ body {
 }
 
 .cube {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,12 +145,11 @@ body {
 
 .cube span {
     font-family: 'Lato', sans-serif;
-    font-weight: bold;
 }
 
 .cube figure {
     width: 70%;
-    z-index: 10;
+    z-index: 2;
 }
 
 .al {
@@ -166,7 +166,7 @@ body {
 .al2 {
     top: 0;
     width: 100vw;
-    margin-top: 165%;
+    margin-top: 160%;
     position: absolute;
     z-index: 1;
 }
@@ -174,17 +174,69 @@ body {
 .maze {
     color: #8FB38E;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     font-family: 'Lato', sans-serif;
-    margin-top: 10%;
+    height: 100vh;
 }
 
-.maze img {
-    width: 85vw;
-    height: 40vh;
-    margin: 10% 0;
+.maze p {
+    margin-top: 0%;
+}
+
+.questions {
+    background-image: url('../img/maze-talk.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #FFF;
+    height: 15rem;
+    width: 75vw;
+    font-size: 0.8rem;
+    margin-top: 5%;
+    z-index: 2;
+}
+
+.questions p {
+    margin: 25% 0 5% 10%;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.choices a {
+    font-size: 1rem;
+    padding: 0 3%;
+}
+
+.choices a:hover {
+    background-image: url('../img/question-choice.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.maze-parts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%;
+}
+
+#m {
+    position: absolute;
+    width: 90%;
+}
+
+.arrow {
+    margin-top: 160%;
+    position: absolute;
+    right: 0;
+    width: 10%;
+    z-index: 2;
 }
 
 .journals {
@@ -259,7 +311,6 @@ textarea {
 
     .angry {
         flex-direction: row;
-        height: 50vh;
         margin-top: 5%;
         margin-bottom: 5%;
     }
@@ -320,13 +371,35 @@ textarea {
     /* END OF CUBE */
 
     .maze {
-        margin-top: 3%;
+        font-size: 1.2rem;
+        margin-top: 5%;
     }
 
-    .maze img {
-        height: 60vh;
-        width: 60vw;
-        margin: 0 0 5% 0;
+    .questions {
+        height: 12rem;
+        position: absolute;
+        left: 0;
+        margin-left: 2%;
+    }
+
+    .questions p {
+        margin: 10% 0 0 3%;
+        width: 40%;
+    }
+
+    .choices {
+        margin-top: 5%;
+        width: 45%;
+    }
+
+    #m {
+        margin-top: 25%;
+        width: 50%;
+    }
+
+    .arrow {
+        margin-top: 65%;
+        margin-right: 20%;
     }
 
     /* END OF MAZE */
@@ -441,12 +514,21 @@ textarea {
 
     /* END OF CUBE */
 
-    .maze {
-        height: 100vh;
+    #m {
+        margin-top: 20%;
     }
 
-    .maze img {
-        height: 80vh;
+    .questions {
+        margin-top: 0;
+        height: 15rem;
+    }
+
+    .choices {
+        width: 40%;
+    }
+
+    .arrow {
+        margin-top: 50%;
     }
 
     /* END OF MAZE */
@@ -530,14 +612,46 @@ textarea {
     }
 
     .al2 {
-        margin-top: 60%;
+        margin-top: 50%;
     }
 
     /* END OF CUBE */
 
     .maze {
         font-size: 1.7rem;
-        margin-top: 5%;
+        margin-top: 0;
+    }
+
+    #m {
+        margin-top: 10%;
+        width: 30%;
+    }
+
+    .questions {
+        height: 15rem;
+        margin-left: 15%;
+        margin-top: 2%;
+    }
+
+    .questions p {
+        font-size: 1.4rem;
+        margin: 4% 0 0 3%;
+        width: 20%;
+    }
+
+    .choices {
+        margin-top: 3%;
+        width: 23%;
+    }
+
+    .choices a {
+        font-size: 1.4rem;
+    }
+
+    .arrow {
+        margin-top: 35%;
+        margin-right: 30%;
+        width: 5%;
     }
 
     /* END OF MAZE */
@@ -567,4 +681,14 @@ textarea {
         margin: 2% 0 5% 0;
         padding: 1rem 5rem;
     }
+}
+
+a:link {
+    color: #FFF;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #FFF;
+    text-decoration: none;
 }
