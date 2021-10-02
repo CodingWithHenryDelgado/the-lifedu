@@ -202,6 +202,13 @@ body {
     padding: 5% 10%;
 }
 
+.choices a:hover {
+    background-image: url('../img/confused-hover.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 .journals {
     color: #8FB38E;
     display: flex;
@@ -392,6 +399,12 @@ textarea {
         height: 100vh;
     }
 
+    .choices a {
+        background-size: contain;
+        height: 2rem;
+        width: 2.2rem;
+    }
+
     .journals {
         width: 90%;
     }
@@ -470,6 +483,14 @@ textarea {
 
     .choices a {
         font-size: 3.5rem;
+        margin: 5% 10%;
+        padding: 6% 3%;
+        height: 11rem;
+        width: 12rem;
+    }
+
+    .choices a:hover {
+        background-size: cover;
     }
 
     /* END OF QUESTIONS */
