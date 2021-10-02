@@ -1,7 +1,8 @@
-
 //CUBE ANIMATION
 
 var cube = document.getElementById('happy-cube');
+
+var options = document.querySelector('.maze-options');
 
 var cubeclick = 0;
 
@@ -9,10 +10,13 @@ var spinthecube = () => {
     cubeclick++;
     if(cubeclick === 1){
         cube.src = '../img/happy-cube-2.svg'; 
+        options. innerHTML = "<p>Friends</p>";
     }else if (cubeclick === 2){
         cube.src = '../img/happy-cube-3.svg';
+        options. innerHTML = "<p>School</p>";
     }else {
         cube.src = '../img/happy-cube.svg';
+        options. innerHTML = "<p>Family</p>";
         cubeclick = 0;
     }
 }
