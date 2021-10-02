@@ -289,7 +289,7 @@ hr {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Abril', cursive;
     margin-top: 10%;
     text-align: center;
     width: 95%;
@@ -298,19 +298,20 @@ hr {
 /* LEFT PART */
 
 .lif-desc {
+    font-family: 'Lato', sans-serif;
     font-size: 1rem;
     line-height: 4rem;
 }
 
 .lif-desc h1 {
-    font-weight: 700;
+    font-family: 'Abril', cursive;
     font-size: 4rem;
     line-height: 4rem;
 }
 
 .lif-desc span {
-    /* color: #A583AE; */
     font-family: 'Abril', cursive;
+    /* color: #A583AE; */
     font-size: 1.5em;
     line-height: 48px;
 }
@@ -348,6 +349,7 @@ hr {
 }
 
 .lets-go {
+    font-family: 'Lato', sans-serif;
     padding: 5% 0;
 }
 
@@ -899,7 +901,7 @@ hr {
     #lif {
         align-items: flex-start;
         flex-direction: row;
-        margin-top: 10%;
+        margin-top: 0%;
     }
 
     .lif-desc {
@@ -909,10 +911,10 @@ hr {
     }
 
     .lif-desc h1 {
-        font-weight: 700;
         font-size: 6rem;
         line-height: 6rem;
-        width: 75%;
+        margin-top: 30%;
+        width: 100%;
     }
 
     .lif-desc span {
@@ -1162,7 +1164,7 @@ hr {
 
     .question {
         font-size: 2rem;
-        margin-top: 5%;
+        margin-top: 0;
     }
 
     .top {
@@ -1670,7 +1672,7 @@ hr {
 
     #home {
         height: 100vh;
-        margin-top: 15%;
+        margin-top: 12%;
         width: 95%;
     }
 
@@ -1688,14 +1690,14 @@ hr {
         line-height: 5.875rem;
     }
 
-    .question {
-        margin-top: 4%;
+    .knowledge {
+        margin-top: 0;
     }
 
     .know {
         font-size: 2rem;
         line-height: 2.5rem !important;
-        margin-top: 3%;
+        margin-top: 0;
         margin-right: 80%;
     }
 
@@ -1740,7 +1742,7 @@ hr {
 
     .lif-desc {
         font-size: 2.25rem;
-        width: 50%;
+        width: 70%;
     }
 
     .lif-desc h1 {
@@ -1752,15 +1754,14 @@ hr {
         font-size: 2.25rem;
     }
 
-    /* .character {
-        margin-left: 20%;
-        width: 55%;
-    } */
+    .character {
+        margin-top: 5%;
+    }
 
     .character .safe-space {
-        margin-left: 10%;
+        margin-left: 25%;
         font-size: 3rem;
-        width: 80%;
+        width: 50%;
     }
 
     .character figure {
@@ -1987,6 +1988,53 @@ a:visited {
 }
 
 @media only screen and (min-width: 1600px) {
+
+
+    .qmc {
+        margin-top: 7%;
+    }
+
+    .q-sc {
+        margin-left: 5%;
+        margin-top: 7%;
+    }
+
+    .qs2 {
+        margin-left: 25%;
+        margin-top: 15%;
+    }
+
+    .qe {
+        margin-top: 18%;
+        margin-left: 32%;
+    }
+
+    .qe2 {
+        margin-top: 23%;
+        margin-left: 42%;
+    }
+
+    .qe3 {
+        margin-right: 41%;
+        margin-top: 11%;
+    }
+
+    .qbs {
+        margin-top: 18%;
+    }
+
+    .qps {
+        margin-top: 28%;
+    }
+
+    .qmsc {
+        margin-top: 23%;
+    }
+
+    .qc {
+        margin-right: 5%;
+    }
+
     .one-i .step-i {
         padding-top: 6%;
     }
