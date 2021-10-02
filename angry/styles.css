@@ -213,7 +213,7 @@ body {
 }
 
 .choices a:hover {
-    background-image: url('../img/question-choice.svg');
+    background-image: url('../img/maze-hover.svg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -527,6 +527,12 @@ textarea {
         width: 40%;
     }
 
+    .choices a {
+        background-size: contain;
+        height: 2rem;
+        width: 2.2rem;
+    }
+
     .arrow {
         margin-top: 50%;
     }
@@ -640,12 +646,19 @@ textarea {
     }
 
     .choices {
-        margin-top: 3%;
+        margin-top: 1%;
         width: 23%;
     }
 
     .choices a {
         font-size: 1.4rem;
+    }
+
+    .choices a {
+        font-size: 1.4rem;
+        padding: 5% 4%;
+        height: 3.2rem;
+        width: 3.5rem;
     }
 
     .arrow {
@@ -680,6 +693,10 @@ textarea {
         font-size: 1.6rem;
         margin: 2% 0 5% 0;
         padding: 1rem 5rem;
+    }
+
+    .choices a:hover {
+        background-size: cover;
     }
 }
 
