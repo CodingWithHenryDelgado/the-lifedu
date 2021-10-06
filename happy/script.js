@@ -9,13 +9,16 @@ var cubeclick = 0;
 var spinthecube = () => {
     cubeclick++;
     if(cubeclick === 1){
-        cube.src = '../img/happy-cube-2.svg'; 
+        cube.classList.remove('cube-1');
+        cube.classList.add('cube-2');
         options. innerHTML = "<p>Friends</p>";
     }else if (cubeclick === 2){
-        cube.src = '../img/happy-cube-3.svg';
+        cube.classList.remove('cube-2');
+        cube.classList.add('cube-3');
         options. innerHTML = "<p>School</p>";
     }else {
-        cube.src = '../img/happy-cube.svg';
+        cube.classList.remove('cube-3');
+        cube.classList.add('cube-1');
         options. innerHTML = "<p>Family</p>";
         cubeclick = 0;
     }
