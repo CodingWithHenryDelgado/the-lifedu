@@ -97,7 +97,7 @@ body {
 /* END OF HEADER */
 
 #abouthome {
-    background-image: url('../img/story-image.svg');
+    background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 1476.77 994.72'%3E%3Cdefs%3E%3Cstyle%3E.cls-1,.cls-4%7Bfill:none;%7D.cls-2%7Bfill:%238aac89;%7D.cls-3%7Bclip-path:url(%23clip-path);%7D.cls-4%7Bstroke:%23fff;stroke-miterlimit:10;stroke-width:2px;%7D%3C/style%3E%3CclipPath id='clip-path'%3E%3Cpath class='cls-1' d='M1455,870.53c-103.78,26.86-270.62,56.83-468.31,27.58C781.18,867.7,700.22,796.67,513.18,778.62,402.54,767.94,233.38,773.73,15,870.53V.4H1455Z'/%3E%3C/clipPath%3E%3C/defs%3E%3Cpath class='cls-2' d='M1455,870.53c-103.78,26.86-270.62,56.83-468.31,27.58C781.18,867.7,700.22,796.67,513.18,778.62,402.54,767.94,233.38,773.73,15,870.53V.4H1455Z'/%3E%3Cg class='cls-3'%3E%3Cpath class='cls-4' d='M-187.26,291.47c59.59,15.91,167.42,35.66,291.07,3.06s279.83-121.93,269.62-193C366.26,51.61,276.6,7.44,241.68,31c-28.26,19.1-28.17,87.66,3.06,122.56,44.53,49.73,145.06,22.94,205.28,6.12C623.45,111.31,682.11,22.64,836.06-67c67.44-39.26,174-90.87,324.77-122.55'/%3E%3Cpath class='cls-4' d='M761.51,946.11c86.68-119.35,174-167.67,238.3-189.62,90.84-31,136.62-9.63,210-55.49,109.39-68.32,93-169,158.64-180.77,95.69-17.21,263.21,172.91,244.77,329.88-5.42,46.06-26.71,88.07-4.09,114.38,26.11,30.37,91.32,17.23,140.94,2'/%3E%3C/g%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-size: cover;
     height: 50vh;
@@ -252,7 +252,7 @@ body {
 }
 
 #aboutfooter {
-    background-image: url('../img/Footer.svg');
+    background-image: url("data:image/svg+xml,%3Csvg width='1440' height='326' viewBox='0 0 1440 326' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M365.654 25.174C104.569 -15.8005 24.0078 2.8228 0 14.666V96.7347V326L323.64 326H1440V96.7347C1440 96.7347 1219.93 157.618 1124.4 161.288C1106.23 162.789 1040.67 161.888 923.836 146.275C777.789 126.759 712.915 79.673 365.654 25.174Z' fill='%2392B48D'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 10%;
@@ -658,6 +658,7 @@ body {
 
     .team .join {
         font-size: 2.8rem;
+        margin-top: 8%;
     }
 
     .contactus {
