@@ -39,7 +39,7 @@ body {
     flex-direction: column;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 100;
 }
 
@@ -66,6 +66,49 @@ body {
     margin-top: 5%;
 }
 
+.slideshow-container {
+    height: 100vh;
+    width: 100vw;
+    margin-top: 0%;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    height: 100vh;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: auto;
+    margin-top: 50%;
+    padding: 16px;
+    color: #000;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 2;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
 .happy {
     background-color: #F7F7F7;
     color: #8FB38E;
@@ -74,7 +117,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 15%;
+    height: 100vh;
     width: 100vw;
 }
 
@@ -121,11 +164,13 @@ body {
 }
 
 .cube {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 5%;
+    padding-top: 0%;
 }
 
 .cube p {
@@ -143,6 +188,10 @@ body {
     width: 70%;
 }
 
+.maze-options {
+    font-size: 2rem;
+}
+
 .wheel {
     color: #8FB38E;
     display: flex;
@@ -150,8 +199,9 @@ body {
     align-items: center;
     font-family: 'Abril Fatface', cursive;
     flex-direction: column;
+    padding-top: 30%;
     margin: 10% 0;
-    height: 75vh;
+    height: 100vh;
 }
 
 .w,
@@ -161,28 +211,6 @@ body {
 .lw {
     position: absolute;
 }
-
-/* 
-.wp {
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 103.97 124.07'%3e%3cdefs%3e%3cstyle%3e.cls-1%7bisolation:isolate;%7d.cls-2%7bfill:%234c96e0;%7d.cls-3%7bfill:none;stroke:%23292929;stroke-linecap:round;stroke-linejoin:round;stroke-width:2.21px;mix-blend-mode:screen;%7d.cls-4%7bfill:%23ebebeb;mix-blend-mode:multiply;%7d%3c/style%3e%3c/defs%3e%3cg class='cls-1'%3e%3cg id='Layer_2' data-name='Layer 2'%3e%3cg id='Layer_1-2' data-name='Layer 1'%3e%3cpath class='cls-2' d='M45.49,118.91.67,12.79A8.46,8.46,0,0,1,8.36,1.05L95.41,0a8.45,8.45,0,0,1,8,11.55L61.14,118.72A8.45,8.45,0,0,1,45.49,118.91Z'/%3e%3cpath class='cls-3' d='M28.85,56.94,10,12.31a1.21,1.21,0,0,1,1.09-1.67L52,10.13'/%3e%3cpath class='cls-4' d='M101.7,2.7c-.08.27-.16.54-.27.81L59.86,114a8.45,8.45,0,0,1-15.65.19L.14,8.09a8.29,8.29,0,0,0,.53,4.7L45.49,118.91a8.45,8.45,0,0,0,15.65-.19L103.38,11.55A8.42,8.42,0,0,0,101.7,2.7Z'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e");
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 5%;
-    width: 10%;
-    z-index: 2;
-    height: 4rem;
-}
-
-.ws {
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 595.11 294.64'%3e%3cdefs%3e%3cstyle%3e.cls-1%7bisolation:isolate;%7d.cls-2%7bfill:%23b286b0;%7d.cls-3%7bfill:%23c7c7c7;%7d.cls-3,.cls-5%7bmix-blend-mode:multiply;%7d.cls-4%7bfill:none;stroke:%234d4d4d;stroke-linecap:round;stroke-linejoin:round;stroke-width:4.41px;mix-blend-mode:screen;%7d.cls-5%7bfill:%23e3e3e3;%7d%3c/style%3e%3c/defs%3e%3cg class='cls-1'%3e%3cg id='Layer_2' data-name='Layer 2'%3e%3cg id='Layer_1-2' data-name='Layer 1'%3e%3cpath class='cls-2' d='M73,283a31.69,31.69,0,0,1-29.72-42.63L124.15,20.73a31.67,31.67,0,0,1,59.44,21.9L102.67,262.24A31.68,31.68,0,0,1,73,283Z'/%3e%3cpath class='cls-2' d='M522.16,283a31.69,31.69,0,0,1-29.72-20.73L411.52,42.63A31.67,31.67,0,0,1,471,20.73l80.92,219.61A31.69,31.69,0,0,1,522.16,283Z'/%3e%3cpath class='cls-3' d='M164.82,2a31.68,31.68,0,0,0-40.67,18.77L86.52,122.87a438.54,438.54,0,0,0,57.84,26.24L183.59,42.63A31.67,31.67,0,0,0,164.82,2Z'/%3e%3cpath class='cls-3' d='M471,20.73a31.67,31.67,0,0,0-59.44,21.9l39.24,106.48a438.54,438.54,0,0,0,57.84-26.24Z'/%3e%3cpath class='cls-2' d='M31.75,236.57H563.36a31.75,31.75,0,0,1,31.75,31.75v26.31a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V268.32A31.75,31.75,0,0,1,31.75,236.57Z'/%3e%3cpath class='cls-4' d='M16.27,273.44A24,24,0,0,1,40.2,249.51H187.57'/%3e%3cpath class='cls-5' d='M560.1,236.57H548.81a35,35,0,0,1,35,35v23.06h11.29V271.58A35,35,0,0,0,560.1,236.57Z'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e");
-    background-position: center center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 6rem;
-    margin-top: 75%;
-    width: 80%;
-} */
 
 .w {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 840.89 1031.96'%3e%3cdefs%3e%3cstyle%3e.cls-1%7bisolation:isolate;%7d.cls-2%7bfill:%23f5755f;%7d.cls-3%7bfill:%23b286b0;%7d.cls-4%7bfill:%23c7c7c7;%7d.cls-12,.cls-4,.cls-6,.cls-7%7bmix-blend-mode:multiply;%7d.cls-11,.cls-5,.cls-9%7bfill:none;stroke-linecap:round;stroke-linejoin:round;mix-blend-mode:screen;%7d.cls-5%7bstroke:%23262626;%7d.cls-11,.cls-5%7bstroke-width:2.21px;%7d.cls-6%7bfill:%23e3e3e3;%7d.cls-7%7bfill:%23cfcfcf;%7d.cls-8%7bfill:%23fff;%7d.cls-9%7bstroke:%234d4d4d;stroke-width:4.41px;%7d.cls-10%7bfill:%234c96e0;%7d.cls-11%7bstroke:%23292929;%7d.cls-12%7bfill:%23ebebeb;%7d%3c/style%3e%3c/defs%3e%3cg class='cls-1'%3e%3cg id='Layer_2' data-name='Layer 2'%3e%3cg id='Layer_1-2' data-name='Layer 1'%3e%3cpath class='cls-2' d='M195.84,1020.3a31.69,31.69,0,0,1-29.72-42.64L247,758.06A31.67,31.67,0,0,1,306.48,780L225.56,999.57A31.68,31.68,0,0,1,195.84,1020.3Z'/%3e%3cpath class='cls-2' d='M645.05,1020.3a31.69,31.69,0,0,1-29.72-20.73L534.41,780a31.67,31.67,0,1,1,59.44-21.9l80.92,219.6a31.69,31.69,0,0,1-29.72,42.64Z'/%3e%3cpath class='cls-3' d='M195.84,1020.3a31.69,31.69,0,0,1-29.72-42.64L247,758.06A31.67,31.67,0,0,1,306.48,780L225.56,999.57A31.68,31.68,0,0,1,195.84,1020.3Z'/%3e%3cpath class='cls-3' d='M645.05,1020.3a31.69,31.69,0,0,1-29.72-20.73L534.41,780a31.67,31.67,0,1,1,59.44-21.9l80.92,219.6a31.69,31.69,0,0,1-29.72,42.64Z'/%3e%3cpath class='cls-4' d='M287.71,739.29A31.68,31.68,0,0,0,247,758.06L209.4,860.2a440,440,0,0,0,57.85,26.24L306.48,780A31.68,31.68,0,0,0,287.71,739.29Z'/%3e%3cpath class='cls-4' d='M593.85,758.06A31.67,31.67,0,1,0,534.41,780l39.24,106.48a439.84,439.84,0,0,0,57.84-26.24Z'/%3e%3ccircle class='cls-2' cx='420.45' cy='471.33' r='420.45'/%3e%3ccircle class='cls-3' cx='420.45' cy='471.33' r='420.45'/%3e%3cpath class='cls-5' d='M15.05,463.38C15.05,239.49,196.55,58,420.45,58'/%3e%3cpath class='cls-6' d='M794.81,279.76A418.71,418.71,0,0,1,836.2,461.88c0,232.21-188.24,420.45-420.45,420.45-163.2,0-304.69-93-374.36-228.88,67.87,141,212.09,238.32,379.06,238.32,232.2,0,420.44-188.24,420.44-420.44A418.63,418.63,0,0,0,794.81,279.76Z'/%3e%3ccircle class='cls-7' cx='420.45' cy='471.33' r='361.53'/%3e%3ccircle class='cls-3' cx='420.45' cy='471.33' r='57.02' transform='translate(-130.94 779.38) rotate(-77.46)'/%3e%3ccircle class='cls-8' cx='420.45' cy='471.33' r='41.45' transform='translate(-130.55 780.09) rotate(-77.53)'/%3e%3ccircle class='cls-8' cx='623.92' cy='133.54' r='13.79' transform='translate(-8.47 48.77) rotate(-4.45)'/%3e%3cpath class='cls-7' d='M637.63,132.22a13.77,13.77,0,0,1-27.44.19,13.78,13.78,0,1,0,27.44-.19Z'/%3e%3ccircle class='cls-8' cx='743.38' cy='246.05' r='13.79' transform='translate(445.91 970.39) rotate(-85.99)'/%3e%3cpath class='cls-7' d='M757.1,244.73a13.78,13.78,0,0,1-27.45.19,13.78,13.78,0,1,0,27.45-.19Z'/%3e%3cpath class='cls-8' d='M804.2,383.87a13.78,13.78,0,1,1-11,16.11A13.79,13.79,0,0,1,804.2,383.87Z'/%3e%3cpath class='cls-7' d='M820.47,396.1a13.61,13.61,0,0,1-2,6A13.77,13.77,0,0,1,793,396.29a13.78,13.78,0,1,0,27.44-.19Z'/%3e%3ccircle class='cls-8' cx='803.09' cy='561.48' r='13.79' transform='translate(-69.9 116.39) rotate(-7.94)'/%3e%3cpath class='cls-7' d='M816.8,560.17a13.77,13.77,0,0,1-27.44.18,13.78,13.78,0,1,0,27.44-.18Z'/%3e%3ccircle class='cls-8' cx='733.01' cy='709.86' r='13.79' transform='translate(-233.44 1037.25) rotate(-62.79)'/%3e%3cpath class='cls-7' d='M746.72,708.55a13.77,13.77,0,0,1-27.44.19,13.78,13.78,0,1,0,27.44-.19Z'/%3e%3cpath class='cls-8' d='M620.72,810.29A13.79,13.79,0,1,1,602,804.82,13.77,13.77,0,0,1,620.72,810.29Z'/%3e%3cpath class='cls-7' d='M622.34,815.6a13.77,13.77,0,0,1-27.44.19,13.78,13.78,0,1,0,27.44-.19Z'/%3e%3ccircle class='cls-8' cx='451.47' cy='864.12' r='13.79' transform='matrix(1, -0.02, 0.02, 1, -16.26, 8.69)'/%3e%3cpath class='cls-7' d='M465.18,862.8a13.77,13.77,0,0,1-27.44.19,13.78,13.78,0,1,0,27.44-.19Z'/%3e%3ccircle class='cls-8' cx='288.69' cy='843.32' r='13.79'/%3e%3cpath class='cls-7' d='M302.4,842a13.77,13.77,0,0,1-27.44.19A13.78,13.78,0,1,0,302.4,842Z'/%3e%3ccircle class='cls-8' cx='148.44' cy='758.11' r='13.79' transform='translate(-611.45 897.17) rotate(-89.29)'/%3e%3cpath class='cls-7' d='M162.15,756.8a13.63,13.63,0,0,1-1.94,6,13.78,13.78,0,0,1-25.5-5.84,13.78,13.78,0,1,0,27.44-.19Z'/%3e%3ccircle class='cls-8' cx='54.98' cy='623.23' r='13.79'/%3e%3cpath class='cls-7' d='M68.69,621.91a13.61,13.61,0,0,1-2,6,13.77,13.77,0,0,1-25.49-5.84,13.78,13.78,0,1,0,27.44-.19Z'/%3e%3ccircle class='cls-8' cx='24.46' cy='461.99' r='13.79' transform='translate(-29.32 2.49) rotate(-3.64)'/%3e%3cpath class='cls-7' d='M38.17,460.67a13.65,13.65,0,0,1-2,6,13.77,13.77,0,0,1-25.49-5.85,13.78,13.78,0,1,0,27.44-.19Z'/%3e%3ccircle class='cls-8' cx='62.16' cy='302.28' r='13.79' transform='matrix(0.98, -0.22, 0.22, 0.98, -65.07, 21.12)'/%3e%3cpath class='cls-7' d='M75.87,301a13.61,13.61,0,0,1-2,6,13.77,13.77,0,0,1-25.49-5.84A13.78,13.78,0,1,0,75.87,301Z'/%3e%3cpath class='cls-8' d='M151.11,180.7a13.79,13.79,0,1,1,19.44,1.46A13.79,13.79,0,0,1,151.11,180.7Z'/%3e%3cpath class='cls-7' d='M175.27,170.39a13.77,13.77,0,0,1-27.44.19,13.78,13.78,0,1,0,27.44-.19Z'/%3e%3ccircle class='cls-8' cx='305.48' cy='92.85' r='13.79' transform='translate(159.99 377.06) rotate(-79.8)'/%3e%3cpath class='cls-7' d='M319.19,91.54a13.78,13.78,0,0,1-27.45.19,13.78,13.78,0,1,0,27.45-.19Z'/%3e%3cpath class='cls-8' d='M455.34,77.61A13.79,13.79,0,1,1,467.27,93,13.78,13.78,0,0,1,455.34,77.61Z'/%3e%3cpath class='cls-7' d='M482.73,78a13.77,13.77,0,0,1-27.44.19A13.78,13.78,0,1,0,482.73,78Z'/%3e%3cpath class='cls-3' d='M154.64,973.9H686.25A31.75,31.75,0,0,1,718,1005.65V1032a0,0,0,0,1,0,0H122.89a0,0,0,0,1,0,0v-26.31A31.75,31.75,0,0,1,154.64,973.9Z'/%3e%3cpath class='cls-9' d='M139.16,1010.77a24,24,0,0,1,23.92-23.93H310.46'/%3e%3cpath class='cls-6' d='M683,973.9H671.7a35,35,0,0,1,35,35V1032H718v-23.05A35,35,0,0,0,683,973.9Z'/%3e%3cpath class='cls-10' d='M414,118.91,369.13,12.79a8.46,8.46,0,0,1,7.68-11.74l87.06-1a8.45,8.45,0,0,1,8,11.55L429.6,118.72A8.45,8.45,0,0,1,414,118.91Z'/%3e%3cpath class='cls-11' d='M397.31,56.94,378.48,12.31a1.21,1.21,0,0,1,1.09-1.67l40.89-.51'/%3e%3cpath class='cls-12' d='M470.16,2.7c-.08.27-.16.54-.27.81L428.32,114a8.45,8.45,0,0,1-15.65.19L368.59,8.09a8.39,8.39,0,0,0,.54,4.7L414,118.91a8.45,8.45,0,0,0,15.65-.19L471.84,11.55A8.42,8.42,0,0,0,470.16,2.7Z'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e");
@@ -240,6 +268,7 @@ body {
     flex-direction: column;
     text-align: center;
     font-family: 'Abril Fatface', cursive;
+    height: 100vh;
 }
 
 .journals span {
@@ -260,7 +289,7 @@ body {
     background-size: contain;
     background-position: center center;
     height: 35vh;
-    width: 100%;
+    width: 100vw;
 }
 
 .entry p {
@@ -288,6 +317,7 @@ textarea {
 }
 
 @media only screen and (min-width: 768px) {
+
     .header {
         font-size: 1.5rem;
         flex-direction: row;
@@ -305,13 +335,17 @@ textarea {
 
     /* END OF HEADER TABLET */
 
+    .slideshow-container {
+        margin-top: 9%;
+    }
+
+    .prev,
+    .next {
+        margin-top: 50%;
+    }
+
     .happy {
-        align-items: flex-end;
-        justify-content: flex-end;
         flex-direction: row;
-        height: auto;
-        margin-top: 8%;
-        min-height: 55vh;
     }
 
     .happy .message {
@@ -341,12 +375,11 @@ textarea {
 
     #happy-cube {
         height: 40vh;
-        width: 35vw;
     }
 
     .cube {
-        font-size: 1.3rem;
-        margin-top: 3%;
+        font-size: 2rem;
+        margin-top: 0;
     }
 
     .cube p {
@@ -354,7 +387,7 @@ textarea {
     }
 
     .cube span {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .cube figure {
@@ -366,23 +399,13 @@ textarea {
     .wheel {
         font-size: 1.5rem;
         margin: 5% 0;
+        padding-top: 0;
     }
-
-    /* .wp {
-        margin-top: 8%;
-        width: 6%;
-    } */
 
     .w {
         height: 30rem;
         margin-top: 5%;
     }
-
-    /* .ws {
-        margin-top: 55%;
-        height: 8rem;
-        width: 100%;
-    } */
 
     .iw {
         height: 25rem;
@@ -391,7 +414,7 @@ textarea {
     }
 
     #wheel-questions {
-        margin-top: 23%;
+        margin-top: 18%;
     }
 
     .lw {
@@ -410,6 +433,10 @@ textarea {
         height: 50vh;
     }
 
+    .entry p {
+        text-align: center;
+    }
+
     .submit {
         font-size: 1rem;
         padding: 1rem 4rem;
@@ -419,8 +446,8 @@ textarea {
         font-size: 1.5rem;
         line-height: 1.6rem;
         height: 9.5rem;
-        width: 68%;
-        margin-right: 7%;
+        width: 57vw;
+        margin-right: 6%;
         margin-top: 7%;
     }
 }
@@ -446,10 +473,18 @@ textarea {
 
     /* END OF HEADER LAPTOP */
 
+    .prev,
+    .next {
+        margin-top: 40%;
+    }
+
+    .slideshow-container {
+        margin-top: 5%;
+    }
+
     .happy {
         align-items: center;
         height: 100vh;
-        margin-top: 5%;
     }
 
     .happy .message {
@@ -476,6 +511,7 @@ textarea {
     }
 
     .cube figure {
+        margin-top: 0%;
         width: auto;
     }
 
@@ -485,12 +521,9 @@ textarea {
 
     /* END OF CUBE */
 
-    /* .wp {
-        margin-top: 4%;
-        right: 0;
-        margin-right: 58%;
-        width: 4%;
-    } */
+    .wheel {
+        font-size: 3rem;
+    }
 
     .w {
         height: 65vh;
@@ -500,26 +533,18 @@ textarea {
         width: 35%;
     }
 
-    /* .ws {
-        height: 8rem;
-        margin-right: 10%;
-        margin-top: 35%;
-        right: 0;
-        width: 100%;
-    } */
-
     .iw {
-        margin-right: 45%;
-        margin-top: 9%;
+        margin-right: 44.7%;
+        margin-top: 10.4%;
         right: 0;
-        width: 29%;
+        width: 29.5%;
     }
 
     .lw {
         height: 15rem;
         margin-left: 40%;
-        margin-top: 30%;
-        width: 80%;
+        margin-top: 40%;
+        width: 60%;
     }
 
     #wheel-questions {
@@ -536,17 +561,18 @@ textarea {
     }
 
     textarea {
-        font-size: 2rem;
-        line-height: 2.35rem;
-        height: 30vh;
-        margin-top: 8%;
-        width: 72%;
+        font-size: 1.7rem;
+        line-height: 1.6rem;
+        height: 20vh;
+        margin-top: 4%;
+        margin-right: 4%;
+        width: 45vw;
     }
 
     /* END OF SPEAK */
 
     .journals {
-        width: 90%;
+        font-size: 2.5rem;
     }
 
     .entry {
@@ -556,7 +582,7 @@ textarea {
     .entry {
         background-position: center center;
         font-size: 2rem;
-        height: 75vh;
+        height: 50vh;
     }
 }
 
@@ -588,6 +614,11 @@ textarea {
 
     /* END OF HAPPY */
 
+    .prev,
+    .next {
+        margin-top: 30%;
+    }
+
     .cube {
         font-size: 2.3rem;
     }
@@ -599,43 +630,31 @@ textarea {
     /* END OF CUBE */
 
     .wheel {
-        height: 100vh;
         margin: 0 0;
+        padding-top: 5%;
     }
 
-    /* .wp {
-        margin-top: 3.5%;
-        margin-right: 66%;
-        width: 3%;
-    } */
-
     .w {
-        margin-top: 2%;
+        margin-top: 5%;
         margin-right: 53%;
     }
 
     .iw {
-        margin-top: 5.5%;
+        margin-top: 9%;
         margin-right: 58%;
         width: 25%;
     }
 
-    /* .ws {
-        height: 9rem;
-        margin-top: 28%;
-        margin-right: 17%;
-    } */
-
     #wheel-questions {
         font-size: 2.5rem;
-        margin-top: 10%;
+        margin-top: 13%;
         margin-right: 65%;
     }
 
     .lw {
         height: 20rem;
-        margin-top: 20%;
-        margin-left: 20%;
+        margin-top: 25%;
+        margin-left: 40%;
     }
 
     /* END OF WHEEL */
@@ -644,24 +663,33 @@ textarea {
         font-size: 2.5rem;
     }
 
+    .entries p {
+        margin-top: 1%;
+    }
+
+    .entry {
+        height: 70vh;
+    }
+
     textarea {
         line-height: 2.31rem;
-        margin-right: 5%;
-        margin-top: 6%;
+        margin-right: 4%;
+        margin-top: 5%;
+        height: 25vh;
         width: 44vw;
     }
 
     .submit {
         font-size: 1.6rem;
-        margin: 5% 0;
+        margin: 1% 0;
         padding: 1rem 5rem;
     }
 }
 
 @media only screen and (min-width: 1600px) {
     textarea {
-        margin-top: 8%;
-        width: 38vw;
+        margin-top: 4.5%;
+        width: 35vw;
     }
 }
 

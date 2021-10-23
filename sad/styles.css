@@ -40,7 +40,7 @@ body {
     flex-direction: column;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 100;
 }
 
@@ -304,10 +304,13 @@ button {
 }
 
 #situation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     left: 0;
     margin-bottom: 55%;
-    margin-left: 49%;
-    width: 25%;
+    margin-left: 52%;
+    width: 20%;
 }
 
 #control-2 {
@@ -345,7 +348,7 @@ button {
     background-size: contain;
     background-position-x: center;
     height: 35vh;
-    width: 100%;
+    width: 100vw;
 }
 
 textarea {
@@ -499,7 +502,7 @@ textarea {
 
     .prev,
     .next {
-        margin-top: 40%;
+        margin-top: 30%;
     }
 
     .slideshow-container {
@@ -647,6 +650,7 @@ textarea {
     }
 
     .slider-images {
+        margin: 5% 0 1% 0;
         width: 60%;
     }
 

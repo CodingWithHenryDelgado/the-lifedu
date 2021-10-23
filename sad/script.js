@@ -34,40 +34,6 @@ const removeActiveClasses = () => {
     });
 }
 
-// const left = document.getElementById('left');
-
-// const right = document.getElementById('right');
-
-// const sad = document.getElementById('sad');
-
-// const area = document.getElementById('area');
-
-// var arrowclick = 0;
-
-// const turnright = () => {
-//     arrowclick++;
-//     if (arrowclick === 1){
-//         left.classList.remove('gone');
-//         sad.classList.remove('active-slide');
-//         area.classList.remove('inactive');
-//         area.classList.add('active-slide');
-//         console.log('cum');
-//     }
-// };
-
-// const turnleft = () => {
-//     arrowclick--;
-//     if(arrowclick === 0){
-//         left.classList.add('gone');
-//         area.classList.remove('active-slide');
-//         sad.classList.add('active-slide');
-//     }
-// }
-
-// right.addEventListener('click', turnright);
-
-// left.addEventListener('click', turnleft);
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
