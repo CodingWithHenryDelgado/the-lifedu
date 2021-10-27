@@ -1,0 +1,314 @@
+@font-face {
+    font-family: 'Abril';
+    src: url("../fonts/AbrilFatface-Regular.ttf");
+}
+
+/* 
+@font-face {
+    font-family: 'Lato-black';
+    src: url("../fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Lato-bold';
+    src: url("../fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Lato-light';
+    src: url("../fonts/Lato-Light.ttf");
+} */
+
+@font-face {
+    font-family: 'Lato';
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+/* 
+@font-face {
+    font-family: 'Cursive';
+    src: url('../fonts/CedarvilleCursive-Regular.ttf');
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+.header {
+    background-color: transparent;
+    /* box-shadow: 0px 0px 7px #ccc; */
+    font-family: 'Abril', cursive;
+    font-size: 1.2rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    width: 100vw;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 70%;
+    margin-bottom: 2%;
+}
+
+.nav ul>li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nav ul li a {
+    color: #FFF;
+    padding: 0 0.5rem;
+    text-decoration: none;
+}
+
+.logo a {
+    color: #FFF;
+    text-decoration: none;
+    margin-top: 5%;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.art {
+    height: 100%;
+    width: 100vw;
+}
+
+.login-form-section {
+    color: #92B48D;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Abril', sans-serif;
+    height: 50vh;
+}
+
+.login-form-section h1 {
+    font-size: 2.5rem;
+}
+
+.login-form-section p {
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container input {
+    background: #F8F8F8;
+    border: none;
+    border-left: 5px solid #9AB490;
+    letter-spacing: 2px;
+    padding-left: 0.25rem;
+    margin: 0.5rem 0;
+}
+
+#email,
+#password {
+    font-size: 1rem;
+    height: 3rem;
+    width: 80vw;
+}
+
+.container::placeholder {
+    color: #D2D3D5;
+}
+
+.keep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.keep p {
+    padding: 0 0.5rem;
+}
+
+#signed-in {
+    color: #AEB4D5;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+}
+
+#login-button {
+    background: #92B48D;
+    border: none;
+    border-radius: 50px;
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+    padding: 1rem 5rem;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .header {
+        font-size: 1.8rem;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 2%;
+    }
+
+    .logo {
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .nav {
+        font-size: 1.8rem;
+        margin-top: 1%;
+        padding: 3% 5% 3% 0;
+    }
+
+    .nav {
+        width: 60%;
+    }
+
+    .nav ul li a {
+        color: #92B48D;
+        padding: 0 10px;
+    }
+
+    .login-page {
+        flex-direction: row;
+    }
+
+    .art {
+        height: 100vh;
+        width: 50vw;
+    }
+
+    .login-form-section {
+        justify-content: center;
+        height: 100vh;
+        width: 50vw;
+    }
+
+    .login-form-section h1 {
+        font-size: 2.5em;
+    }
+
+    .login-form-section p {
+        font-size: 1rem;
+    }
+
+    #signed-in {
+        font-size: 1.1rem;
+    }
+
+    #email,
+    #password {
+        width: 35vw;
+    }
+
+    #login-button {
+        padding: 1rem 6rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .header {
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .nav {
+        padding: 2%;
+        width: 70%;
+    }
+
+    .nav ul li a {
+        font-size: 2rem;
+    }
+
+    .logo {
+        margin-left: 5%;
+    }
+
+    .logo a {
+        font-size: 2rem;
+    }
+
+    .art svg {
+        height: 100%;
+    }
+
+    .login-form-section {
+        padding-right: 50px;
+    }
+
+    .login-form-section h1 {
+        font-size: 3.5em;
+    }
+
+    .login-form-section p {
+        font-size: 1rem;
+    }
+
+    #email {
+        margin-top: 10%;
+    }
+
+    #email,
+    #password {
+        border-left: 8px solid #9AB490;
+        font-size: 1.3rem;
+        height: 4rem;
+        width: 25vw;
+    }
+
+    .container input {
+        margin: 1rem 0;
+        padding-left: 1rem;
+    }
+
+
+    #login-button {
+        font-size: 1.5rem;
+        margin-top: 10%;
+        width: 28vw;
+    }
+}

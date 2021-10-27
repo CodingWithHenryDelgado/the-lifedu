@@ -23,6 +23,11 @@
     src: url("../fonts/Lato-Regular.ttf");
 }
 
+@font-face {
+    font-family: 'Cursive';
+    src: url('../fonts/CedarvilleCursive-Regular.ttf');
+}
+
 * {
     box-sizing: border-box;
 }
@@ -341,7 +346,16 @@ body {
     }
 
     .emotions h1 {
-        font-size: 2.5rem;
+        font-size: 4rem;
+    }
+
+    .angry,
+    .lif,
+    .sad,
+    .confused,
+    .stressed {
+        font-family: 'Cursive', sans-serif;
+        font-size: 2.2rem;
     }
 
     .angry {
