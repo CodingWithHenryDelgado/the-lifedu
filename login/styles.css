@@ -211,19 +211,16 @@ body {
         padding: 0 10px;
     }
 
-    .login-page {
-        flex-direction: row;
-    }
-
     .art {
-        height: 100vh;
-        width: 50vw;
+        height: 50vh;
+        width: 102vw;
     }
 
     .login-form-section {
-        justify-content: center;
-        height: 100vh;
-        width: 50vw;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 20px;
+        margin: 5% 0;
+        padding: 4% 4% 0 4%;
     }
 
     .login-form-section h1 {
@@ -272,14 +269,6 @@ body {
         font-size: 2rem;
     }
 
-    .art svg {
-        height: 100%;
-    }
-
-    .login-form-section {
-        padding-right: 50px;
-    }
-
     .login-form-section h1 {
         font-size: 3.5em;
     }
@@ -311,4 +300,26 @@ body {
         margin-top: 10%;
         width: 28vw;
     }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .login-page {
+        flex-direction: row;
+    }
+
+    .art {
+        height: 100vh;
+        width: 50vw;
+    }
+
+    .login-form-section {
+        border-radius: 0;
+        height: 50vh;
+        margin: 0 0;
+        padding: 0 0;
+        padding-right: 50px;
+        width: 50vw;
+    }
+
 }
