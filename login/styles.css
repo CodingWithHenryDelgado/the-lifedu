@@ -225,7 +225,7 @@ body {
         height: 50%;
         margin: 5% 0;
         padding: 4% 4% 0 4%;
-        transform: translateY(75%);
+        transform: translateY(60%);
         width: 100%;
     }
 
@@ -325,26 +325,4 @@ body {
         margin-top: 10%;
         width: 28vw;
     }
-}
-
-@media only screen and (min-width: 1440px) {
-
-    .login-page {
-        flex-direction: row;
-    }
-
-    .art {
-        height: 100vh;
-        width: 50vw;
-    }
-
-    .login-form-section {
-        border-radius: 0;
-        height: 50vh;
-        margin: 0 0;
-        padding: 0 0;
-        padding-right: 50px;
-        width: 50vw;
-    }
-
 }
