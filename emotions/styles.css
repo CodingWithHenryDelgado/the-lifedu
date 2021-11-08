@@ -358,7 +358,7 @@ body {
     }
 
     .emotions h1 {
-        font-size: 4rem;
+        font-size: 2.5rem;
         margin-top: 26%;
     }
 
@@ -380,7 +380,7 @@ body {
     }
 
     .angry svg {
-        height: 40%;
+        height: 30%;
         margin-right: 2%;
     }
 
@@ -397,7 +397,7 @@ body {
     }
 
     .confused svg {
-        height: 35%;
+        height: 25%;
         margin-right: 2%;
     }
 
@@ -408,15 +408,15 @@ body {
     .lif {
         background-size: 85%;
         color: #fff;
-        height: 60vh;
-        font-size: 4rem;
+        height: 50vh;
+        font-size: 3rem;
         margin-top: 15%;
         margin-right: 10%;
         width: 45vw;
     }
 
     .lif svg {
-        height: 45%;
+        height: 40%;
     }
 
     .stressed {
@@ -429,7 +429,7 @@ body {
     }
 
     .stressed svg {
-        height: 40%;
+        height: 30%;
         margin-right: 10%;
     }
 
@@ -442,7 +442,7 @@ body {
     }
 
     .sad svg {
-        height: 45%;
+        height: 30%;
     }
 
     .hi {
@@ -463,5 +463,29 @@ body {
 
     .logo {
         margin-right: 5%;
+    }
+
+    .stressed svg {
+        height: 42%;
+    }
+
+    .sad svg {
+        height: 42%;
+    }
+
+    .angry svg {
+        height: 42%;
+    }
+
+    .confused svg {
+        height: 42%;
+    }
+
+    .lif {
+        height: 60vh;
+    }
+
+    .lif svg {
+        height: 50%;
     }
 }
