@@ -1,1 +1,31 @@
 # the-lifedu
+<!-- CSS FILE GOES DOWN LIKE THIS -->
+<!-- 
+    FONTS
+
+    ///// STARTS MOBILE SIZE UP TO 1600PX//////
+
+    HEADER & FEELINGS HEADER & NAV
+
+    HOMEPAGE
+
+    ANGRY PAGE
+
+    ABOUT US PAGE
+
+    SLIDESHOW CONTAINER (Emotion slides)
+
+    CONFUSED PAGE
+
+    EMOTIONS
+
+    LOGIN PAGE
+
+    HAPPY PAGE
+
+    SAD PAGE
+
+    STRESSED PAGE
+
+    JOURNAL ENTRIES
+ -->

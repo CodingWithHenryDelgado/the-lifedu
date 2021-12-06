@@ -17,9 +17,7 @@ showSlides(slideIndex = n);
 function showSlides(n) {
 var i;
 var slides = document.getElementsByClassName("mySlides");
-    if (n > slides.length) {
-        next.attr("disabled", "disabled");
-    } else if(n > slides.length - 1) {
+    if(n > slides.length - 1) {
         next.classList.add("isDisabled");
     } else {
         next.classList.remove("isDisabled");
@@ -28,16 +26,15 @@ var slides = document.getElementsByClassName("mySlides");
         slideIndex = slides.length;
     }
     if(n === 1){
-        prev.style.opacity = "0";
+        prev.classList.add("isDisabled");
     } else {
-        prev.style.opacity = "1";
+        prev.classList.remove("isDisabled");
     }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
     slides[slideIndex-1].style.display = "block";
 }
-
 
 //The family cube on the angry page
 var angryCube = document.getElementById('angry-family-cube');
@@ -56,8 +53,6 @@ var mazeball = document.getElementById('ball');
 var wheelclick = 0;
 
 //END OF ANGRY ELEMENTS
-
-//CONFUSED ELEMENTS
 
 //FUNCTIONS FOR VARIOUS ELEMENTS 
 
