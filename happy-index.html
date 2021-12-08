@@ -148,34 +148,24 @@
 
         var wheelquestions = document.getElementById('wheel-questions');
 
-        var wheelclick = 0;
+        var wheelclick = -1;
+
+        const happyQuestions = ["What are you grateful for?", "Why does this make you happy?", "What made you smile today?", "What do you want to remember about today?"];
+
+        function wheelanimation() {
+            wheelquestions.classList.add('hide');
+            wheelquestions.innerText = happyQuestions[wheelclick];
+            wheel.classList.add('spin-wheel');
+            setTimeout(() => {wheelquestions.classList.remove('hide')}, 3000);
+            setTimeout(() => {wheel.classList.remove('spin-wheel')}, 3000);
+        }
 
         var spinTheWheel = () => {
             wheelclick++;
-            if(wheelclick === 1){
-                setTimeout(() => {wheelquestions.classList.remove('hide')}, 3000);
-                wheel.classList.add('spin-wheel');
-                setTimeout(() => {wheel.classList.remove('spin-wheel')}, 3000);
-            } else if (wheelclick === 2){
-                wheelquestions.classList.add('hide');
-                wheelquestions.innerText = `Why does this make you happy?`;
-                wheel.classList.add('spin-wheel');
-                setTimeout(() => {wheelquestions.classList.remove('hide')}, 3000);
-                setTimeout(() => {wheel.classList.remove('spin-wheel')}, 3000);
-            } else if (wheelclick === 3) {
-                wheelquestions.classList.add('hide');
-                wheelquestions.innerText = `What made you smile today?`;
-                wheel.classList.add('spin-wheel');
-                setTimeout(() => {wheelquestions.classList.remove('hide')}, 3000);
-                setTimeout(() => {wheel.classList.remove('spin-wheel')}, 3000);
-            } else if (wheelclick === 4) {
-                wheelquestions.classList.add('hide');
-                wheelquestions.innerText = `What do you want to remember about today?`;
-                wheel.classList.add('spin-wheel');
-                setTimeout(() => {wheelquestions.classList.remove('hide')}, 3000);
-                setTimeout(() => {wheel.classList.remove('spin-wheel')}, 3000);
+            if(wheelclick < happyQuestions.length){
+                wheelanimation();
             } else {
-                wheelclick = 1;
+                wheelclick = -1;
             }
         }
 

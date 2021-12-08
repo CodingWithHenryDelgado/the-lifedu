@@ -76,7 +76,6 @@ var spinTheAngryCube = () => {
 
 angryCube.addEventListener('click', spinTheAngryCube);
 
-
 var turnTheMaze = () => {
     wheelclick++;
 
