@@ -1,0 +1,269 @@
+/* LOGIN PAGE */
+.login-header {
+    background-color: transparent;
+    /* box-shadow: 0px 0px 7px #ccc; */
+    font-family: 'Abril', cursive;
+    font-size: 1.2rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    width: 100vw;
+    z-index: 100;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 70%;
+    margin-bottom: 2%;
+}
+
+.login-nav ul>li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.login-nav ul li a {
+    color: #FFF;
+    padding: 0 0.5rem;
+    text-decoration: none;
+}
+
+.art {
+    height: 100vh;
+    width: 100vw;
+}
+
+.login-form-section {
+    background-color: #FFF;
+    color: #92B48D;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Abril', sans-serif;
+    height: 65vh;
+    position: absolute;
+    transform: translateY(25%);
+}
+
+.login-form-section h1 {
+    font-size: 2.5rem;
+}
+
+.login-form-section p {
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container input {
+    background: #F8F8F8;
+    border: none;
+    border-left: 5px solid #9AB490;
+    letter-spacing: 2px;
+    padding-left: 0.25rem;
+    margin: 0.5rem 0;
+}
+
+#email,
+#password {
+    font-size: 1rem;
+    height: 3rem;
+    width: 80vw;
+}
+
+#email:focus,
+#password:focus {
+    outline: none;
+}
+
+.container::placeholder {
+    color: #D2D3D5;
+}
+
+.keep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.keep p {
+    padding: 0 0.5rem;
+}
+
+#signed-in {
+    color: #AEB4D5;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+}
+
+#login-button {
+    background: #92B48D;
+    border-radius: 50px;
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+    padding: 1rem 5rem;
+}
+
+/* END OF LOGIN PAGE */
+
+@media (min-width: 768px) {
+
+
+    /* Login Page Tablet */
+    .login-header {
+        font-size: 1.8rem;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 2%;
+    }
+
+    .login-nav {
+        font-size: 1.8rem;
+        margin-top: 1%;
+        width: 60%;
+        padding: 3% 5% 3% 0;
+    }
+
+    .login-nav ul li a {
+        color: #92B48D;
+        padding: 0 10px;
+    }
+
+    .art {
+        width: 100vw;
+    }
+
+    .login-form-section {
+        background: rgba(255, 255, 255, 1);
+        justify-content: flex-start;
+        height: 50%;
+        margin: 5% 0;
+        padding: 4% 4% 0 4%;
+        transform: translateY(60%);
+        width: 100%;
+    }
+
+    .login-form-section h1 {
+        font-size: 2.5em;
+    }
+
+    .login-form-section p {
+        font-size: 1rem;
+    }
+
+    #signed-in {
+        font-size: 1.1rem;
+    }
+
+    #email,
+    #password {
+        width: 35vw;
+    }
+
+    #login-button {
+        padding: 1rem 6rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* LOGIN PAGE DESKTOP */
+    .login-header {
+        font-size: 3rem;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .login-nav {
+        padding: 2%;
+        width: 70%;
+    }
+
+    .login-nav ul li a {
+        font-size: 2rem;
+    }
+
+    .login-page {
+        flex-direction: row;
+    }
+
+    .art {
+        background-color: #a781ad;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .login-form-section {
+        justify-content: center;
+        position: static;
+        transform: translateY(0);
+    }
+
+    .login-form-section h1 {
+        font-size: 3.5em;
+    }
+
+    .login-form-section p {
+        font-size: 1rem;
+    }
+
+    #email {
+        margin-top: 10%;
+    }
+
+    #email,
+    #password {
+        border-left: 8px solid #9AB490;
+        font-size: 1.3rem;
+        height: 4rem;
+        width: 25vw;
+    }
+
+    .container input {
+        margin: 1rem 0;
+        padding-left: 1rem;
+    }
+
+
+    #login-button {
+        font-size: 1.5rem;
+        margin-top: 10%;
+        width: 28vw;
+    }
+
+    /* END OF LOGIN PAGE DESKTOP */
+}

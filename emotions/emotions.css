@@ -1,0 +1,393 @@
+.emotions {
+    font-family: 'Dancing', cursive;
+    margin-top: 35%;
+    text-align: center;
+}
+
+.emotions h1 {
+    font-family: inherit;
+    font-size: 2rem;
+}
+
+.angry,
+.stressed,
+.confused,
+.sad,
+.lif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 2rem;
+    height: 45vh;
+    margin: 10% 0;
+}
+
+.confused svg,
+.angry svg,
+.stressed svg,
+.lif svg,
+.sad svg {
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+/* ANGRY IN EMOTIONS */
+.angry {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 293 328'%3e%3cdefs%3e%3cstyle%3e.cls-1%7bfill:none;stroke:%23cae5dd;stroke-miterlimit:10;stroke-width:2px;%7d%3c/style%3e%3c/defs%3e%3cpath class='cls-1' d='M92.06,252.44c-40.59-20.85-56.44-99.93-18.44-150.63C105.87,58.8,164,53.39,201,71.29c8.76,4.24,26.93,13,35.36,33.37,18.89,45.58-.45,127.23-55.86,151.68C170.41,260.79,117.67,265.61,92.06,252.44Z'/%3e%3cpath class='cls-1' d='M197.6,77.16c43,21.31,65.07,94.71,30.06,139.19C198,254.09,139,255.93,99.9,237.52c-9.26-4.36-28.46-13.4-38.58-32.51C38.64,162.18,52.29,88.3,107,68.84,117,65.3,170.47,63.71,197.6,77.16Z'/%3e%3cpath class='cls-1' d='M172.84,265.26c-43.45,13.95-110.57-30.75-119.55-93.48C45.67,118.57,83,73.63,121.79,60.13c9.2-3.2,28.26-9.83,48.6-1.41C216,77.59,260,149,238.14,205.47,234.15,215.76,200.26,256.45,172.84,265.26Z'/%3e%3cpath class='cls-1' d='M123.53,66.68c45.47-15.33,113,21,119.68,77.17,5.68,47.69-34.7,90.68-75.37,105.31-9.64,3.47-29.6,10.65-50.28,4.29-46.32-14.24-88.9-76.14-64-128.6C58.15,115.28,94.83,76.35,123.53,66.68Z'/%3e%3cpath class='cls-1' d='M172.84,265.26c-43.45,13.95-110.57-30.75-119.55-93.48C45.67,118.57,83,73.63,121.79,60.13c9.2-3.2,28.26-9.83,48.6-1.41C216,77.59,260,149,238.14,205.47,234.15,215.76,200.26,256.45,172.84,265.26Z'/%3e%3cpath class='cls-1' d='M123.53,66.68c45.47-15.33,113,21,119.68,77.17,5.68,47.69-34.7,90.68-75.37,105.31-9.64,3.47-29.6,10.65-50.28,4.29-46.32-14.24-88.9-76.14-64-128.6C58.15,115.28,94.83,76.35,123.53,66.68Z'/%3e%3c/svg%3e");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+}
+
+/* STRESSED IN EMOTIONS */
+.stressed {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 296 301'%3e%3cdefs%3e%3cstyle%3e.cls-1%7bfill:none;stroke:%23ffbf64;stroke-miterlimit:10;%7d%3c/style%3e%3c/defs%3e%3cpath class='cls-1' d='M91.06,232.44C50.47,211.59,34.62,132.51,72.62,81.81,104.87,38.8,163,33.39,200,51.29c8.76,4.24,26.93,13,35.36,33.37,18.89,45.58-.45,127.23-55.86,151.68C169.41,240.79,116.67,245.61,91.06,232.44Z'/%3e%3cpath class='cls-1' d='M196.6,57.16c43,21.31,65.07,94.71,30.06,139.19C197,234.09,138,235.93,98.9,217.52c-9.26-4.36-28.46-13.4-38.58-32.51C37.64,142.18,51.29,68.3,106,48.84,116,45.3,169.47,43.71,196.6,57.16Z'/%3e%3cpath class='cls-1' d='M171.84,245.26c-43.45,13.95-110.57-30.75-119.55-93.48C44.67,98.57,82,53.63,120.79,40.13c9.2-3.2,28.26-9.83,48.6-1.41C215,57.59,259,129,237.14,185.47,233.15,195.76,199.26,236.45,171.84,245.26Z'/%3e%3cpath class='cls-1' d='M122.53,46.68c45.47-15.33,113,21,119.68,77.17,5.68,47.69-34.7,90.68-75.37,105.31-9.64,3.47-29.6,10.65-50.28,4.29-46.32-14.24-88.9-76.14-64-128.6C57.15,95.28,93.83,56.35,122.53,46.68Z'/%3e%3cpath class='cls-1' d='M171.84,245.26c-43.45,13.95-110.57-30.75-119.55-93.48C44.67,98.57,82,53.63,120.79,40.13c9.2-3.2,28.26-9.83,48.6-1.41C215,57.59,259,129,237.14,185.47,233.15,195.76,199.26,236.45,171.84,245.26Z'/%3e%3cpath class='cls-1' d='M122.53,46.68c45.47-15.33,113,21,119.68,77.17,5.68,47.69-34.7,90.68-75.37,105.31-9.64,3.47-29.6,10.65-50.28,4.29-46.32-14.24-88.9-76.14-64-128.6C57.15,95.28,93.83,56.35,122.53,46.68Z'/%3e%3c/svg%3e");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+}
+
+/* CONFUSED IN EMOTIONS */
+.confused {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 296 301'%3e%3cdefs%3e%3cstyle%3e.cls-1%7bfill:none;stroke:%23ffbf64;stroke-miterlimit:10;%7d%3c/style%3e%3c/defs%3e%3cpath class='cls-1' d='M91.06,232.44C50.47,211.59,34.62,132.51,72.62,81.81,104.87,38.8,163,33.39,200,51.29c8.76,4.24,26.93,13,35.36,33.37,18.89,45.58-.45,127.23-55.86,151.68C169.41,240.79,116.67,245.61,91.06,232.44Z'/%3e%3cpath class='cls-1' d='M196.6,57.16c43,21.31,65.07,94.71,30.06,139.19C197,234.09,138,235.93,98.9,217.52c-9.26-4.36-28.46-13.4-38.58-32.51C37.64,142.18,51.29,68.3,106,48.84,116,45.3,169.47,43.71,196.6,57.16Z'/%3e%3cpath class='cls-1' d='M171.84,245.26c-43.45,13.95-110.57-30.75-119.55-93.48C44.67,98.57,82,53.63,120.79,40.13c9.2-3.2,28.26-9.83,48.6-1.41C215,57.59,259,129,237.14,185.47,233.15,195.76,199.26,236.45,171.84,245.26Z'/%3e%3cpath class='cls-1' d='M122.53,46.68c45.47-15.33,113,21,119.68,77.17,5.68,47.69-34.7,90.68-75.37,105.31-9.64,3.47-29.6,10.65-50.28,4.29-46.32-14.24-88.9-76.14-64-128.6C57.15,95.28,93.83,56.35,122.53,46.68Z'/%3e%3cpath class='cls-1' d='M171.84,245.26c-43.45,13.95-110.57-30.75-119.55-93.48C44.67,98.57,82,53.63,120.79,40.13c9.2-3.2,28.26-9.83,48.6-1.41C215,57.59,259,129,237.14,185.47,233.15,195.76,199.26,236.45,171.84,245.26Z'/%3e%3cpath class='cls-1' d='M122.53,46.68c45.47-15.33,113,21,119.68,77.17,5.68,47.69-34.7,90.68-75.37,105.31-9.64,3.47-29.6,10.65-50.28,4.29-46.32-14.24-88.9-76.14-64-128.6C57.15,95.28,93.83,56.35,122.53,46.68Z'/%3e%3c/svg%3e");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+}
+
+/* SAD IN EMOTIONS */
+.sad {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 293 328'%3e%3cdefs%3e%3cstyle%3e.cls-1%7bfill:none;stroke:%23cae5dd;stroke-miterlimit:10;stroke-width:2px;%7d%3c/style%3e%3c/defs%3e%3cpath class='cls-1' d='M92.06,252.44c-40.59-20.85-56.44-99.93-18.44-150.63C105.87,58.8,164,53.39,201,71.29c8.76,4.24,26.93,13,35.36,33.37,18.89,45.58-.45,127.23-55.86,151.68C170.41,260.79,117.67,265.61,92.06,252.44Z'/%3e%3cpath class='cls-1' d='M197.6,77.16c43,21.31,65.07,94.71,30.06,139.19C198,254.09,139,255.93,99.9,237.52c-9.26-4.36-28.46-13.4-38.58-32.51C38.64,162.18,52.29,88.3,107,68.84,117,65.3,170.47,63.71,197.6,77.16Z'/%3e%3cpath class='cls-1' d='M172.84,265.26c-43.45,13.95-110.57-30.75-119.55-93.48C45.67,118.57,83,73.63,121.79,60.13c9.2-3.2,28.26-9.83,48.6-1.41C216,77.59,260,149,238.14,205.47,234.15,215.76,200.26,256.45,172.84,265.26Z'/%3e%3cpath class='cls-1' d='M123.53,66.68c45.47-15.33,113,21,119.68,77.17,5.68,47.69-34.7,90.68-75.37,105.31-9.64,3.47-29.6,10.65-50.28,4.29-46.32-14.24-88.9-76.14-64-128.6C58.15,115.28,94.83,76.35,123.53,66.68Z'/%3e%3cpath class='cls-1' d='M172.84,265.26c-43.45,13.95-110.57-30.75-119.55-93.48C45.67,118.57,83,73.63,121.79,60.13c9.2-3.2,28.26-9.83,48.6-1.41C216,77.59,260,149,238.14,205.47,234.15,215.76,200.26,256.45,172.84,265.26Z'/%3e%3cpath class='cls-1' d='M123.53,66.68c45.47-15.33,113,21,119.68,77.17,5.68,47.69-34.7,90.68-75.37,105.31-9.64,3.47-29.6,10.65-50.28,4.29-46.32-14.24-88.9-76.14-64-128.6C58.15,115.28,94.83,76.35,123.53,66.68Z'/%3e%3c/svg%3e");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+}
+
+/* LIF OR HAPPY IN EMOTIONS */
+.lif {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 369 355'%3e%3cdefs%3e%3cstyle%3e.cls-1%7bfill:none;stroke:%23a5add1;stroke-miterlimit:10;stroke-width:5.17px;%7d.cls-2%7bfill:%23a5add1;%7d%3c/style%3e%3c/defs%3e%3cpath class='cls-1' d='M117.15,274.37c-47.53-28.57-61.78-127.09-13-186.83C145.5,36.85,215.72,34.31,259.12,59c10.28,5.85,31.58,18,40.48,43.61,19.94,57.47-8.27,156.66-76.36,182.84C210.83,290.2,147.15,292.39,117.15,274.37Z'/%3e%3cpath class='cls-1' d='M184.13,288.83C121.24,291.92,49,221.94,60.65,148.59c9.9-62.24,76.25-102.05,132.83-106,13.4-.93,41.18-2.86,65,12.56,53.38,34.57,85,127.94,34.73,185.24C284.05,250.87,223.81,286.89,184.13,288.83Z'/%3e%3cpath class='cls-2' d='M65.92,180.66C51,121.83,103.35,40.15,174.88,37.09c60.68-2.6,111,52.45,125.44,105.16,3.43,12.49,10.55,38.36.52,63.83-22.48,57.07-104.67,104.85-168.39,68.36C120.83,267.78,75.32,217.78,65.92,180.66Z'/%3e%3c/svg%3e");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #fff;
+    background-position: center;
+    width: 100vw;
+}
+
+#lif-svg,
+#confused-svg,
+#sad-svg,
+#stressed-svg,
+#angry-svg {
+    height: 15vh;
+    margin: 10% 0;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+#stressed-svg {
+    margin-right: 20%;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+
+    /* EMOTIONS PAGE TABLET SIZE */
+    .angry,
+    .stressed,
+    .confused,
+    .sad,
+    .lif {
+        right: 0;
+        position: absolute;
+        font-size: 1.5rem;
+        width: 50vw;
+    }
+
+    .emotions {
+        margin-top: 15%;
+        width: 100vw;
+    }
+
+    .emotions h1 {
+        margin-top: 30%;
+        height: 5rem;
+        position: absolute;
+        left: 0;
+        margin-left: 5%;
+        width: 40%;
+    }
+
+    .today {
+        background-position-y: 220%;
+    }
+
+    .angry {
+        background-size: 100%;
+        height: 30vh;
+        top: 0;
+        left: 0;
+        margin-left: 28vw;
+        margin-top: 15vh;
+        width: 30vw;
+        z-index: 2;
+    }
+
+    .stressed {
+        height: 30vh;
+        top: 0;
+        right: 0;
+        margin: 0 0;
+        margin-top: 10vh;
+        width: 25vw;
+        z-index: 2;
+    }
+
+    .lif {
+        background-size: 85%;
+        top: 0;
+        right: 0;
+        margin-top: 22vh;
+        margin-right: -5%;
+        width: 75vw;
+    }
+
+    .confused {
+        background-size: 100%;
+        background-position-x: 1vw;
+        height: 30vh;
+        bottom: 0;
+        margin: 0 0;
+        margin-bottom: 25vh;
+        left: 0;
+        margin-left: 28vw;
+        width: 30vw;
+    }
+
+    .sad {
+        height: 25vh;
+        bottom: 0;
+        right: 0;
+        margin: 0 0;
+        margin-bottom: 25vh;
+        width: 25vw;
+    }
+
+    #angry-svg {
+        height: 12vh;
+        margin: 5% 0;
+        margin-right: 2vw;
+    }
+
+    #confused-svg {
+        height: 12vh;
+        margin-right: 1vw;
+    }
+
+    #sad-svg {
+        height: 10vh;
+        margin: 5% 8% 0 5%;
+    }
+
+    #stressed-svg {
+        height: 12vh;
+        margin: 5% 15% 0 0;
+        margin-right: 5vw;
+    }
+
+    #lif-svg {
+        height: 20vh;
+        margin: 5% 20% 0 -5%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* EMOTIONS Desktop */
+    .emotions {
+        height: 100vh;
+        margin-top: -4%;
+        overflow: hidden;
+    }
+
+    .emotions h1 {
+        font-size: 2.5rem;
+        margin-top: 26%;
+    }
+
+    .angry,
+    .lif,
+    .sad,
+    .confused,
+    .stressed {
+        font-family: 'Cursive', sans-serif;
+        font-size: 2.2rem;
+    }
+
+    .angry {
+        background-size: 90%;
+        font-size: 2.5rem;
+        height: 28vh;
+        margin-bottom: 0;
+        margin-top: 8vh;
+        margin-left: 40vw;
+        width: 25vw;
+    }
+
+    .confused {
+        background-size: 100%;
+        font-size: 2rem;
+        height: 30vh;
+        width: 25vw;
+        margin-bottom: 30vh;
+        margin-left: 35vw;
+    }
+
+    .confused p {
+        margin-left: 2vw;
+    }
+
+    .lif {
+        background-size: 100%;
+        height: 50vh;
+        font-size: 3rem;
+        margin-top: 15vh;
+        margin-right: 12vw;
+        width: 45vw;
+    }
+
+    .stressed {
+        background-size: 80%;
+        height: 25vh;
+        font-size: 2rem;
+        margin-top: 15vh;
+        margin-right: 1vw;
+        width: 28vw;
+    }
+
+    .sad {
+        height: 35vh;
+        font-size: 2rem;
+        width: 30vw;
+    }
+
+    #angry-svg {
+        height: 10vh;
+    }
+
+    #confused-svg {
+        height: 10vh;
+        margin: 2% 3% 10% 0;
+    }
+
+    #lif-svg {
+        height: 15vh;
+    }
+
+    #stressed-svg {
+        margin: 2% 10% 0 0;
+        margin-right: 5vw;
+    }
+
+    #sad-svg {
+        height: 15vh;
+        margin-right: 2vw;
+    }
+
+    .today {
+        background-position-y: 180%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .emotions h1 {
+        font-size: 4.5rem;
+        margin-top: 23%;
+    }
+
+    .angry {
+        background-size: 70%;
+        margin-top: 10vh;
+    }
+
+    #angry-svg {
+        height: 12vh;
+        margin-right: 2vw;
+    }
+
+    .confused {
+        background-size: 90%;
+        margin-left: 40vw;
+        margin-bottom: 20vh;
+        width: 20vw;
+    }
+
+    #confused-svg {
+        height: 13vh;
+    }
+
+    .lif {
+        background-size: 80%;
+        height: 60vh;
+    }
+
+    #stressed-svg {
+        height: 15vh;
+        margin-right: 4vw;
+    }
+
+    .stressed {
+        background-size: 90%;
+        height: 30vh;
+        margin-right: 10vw;
+        margin-top: 10vh;
+        width: 20vw;
+    }
+
+    #lif-svg {
+        height: 25vh;
+    }
+
+    .sad {
+        margin-right: 8vw;
+        width: 20vw;
+    }
+
+    #sad-svg {
+        height: 15vh;
+        margin-right: 2vw;
+    }
+}
+
+@media (min-width: 1600px) {
+    .angry {
+        background-size: 65%;
+        margin-left: 38vw;
+    }
+
+    .stressed {
+        background-size: 80%;
+    }
+
+    .lif {
+        background-size: 85%;
+    }
+
+    .confused {
+        background-size: 90%;
+        margin-left: 41vw;
+    }
+
+    .confused p {
+        margin-right: 2vw;
+    }
+
+    .sad {
+        margin-right: 8vw;
+    }
+}
