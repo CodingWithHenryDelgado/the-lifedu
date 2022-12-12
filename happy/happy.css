@@ -155,7 +155,7 @@
 }
 
 .spin-wheel {
-    animation: spin 3s linear 0s;
+    animation: spin 3s linear;
 }
 
 .just-in-case-happy {
