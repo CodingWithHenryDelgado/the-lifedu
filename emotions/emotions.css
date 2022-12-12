@@ -1,12 +1,21 @@
 .emotions {
     font-family: 'Dancing', cursive;
-    margin-top: 35%;
     text-align: center;
+    width: 100%;
 }
 
 .emotions h1 {
     font-family: inherit;
     font-size: 2rem;
+    margin-top: 10%;
+}
+
+.emotion-choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 .angry,
@@ -20,7 +29,7 @@
     text-align: center;
     flex-direction: column;
     font-size: 2rem;
-    height: 45vh;
+    height: 30%;
     margin: 10% 0;
 }
 
@@ -39,7 +48,6 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100vw;
 }
 
 /* STRESSED IN EMOTIONS */
@@ -48,7 +56,6 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100vw;
 }
 
 /* CONFUSED IN EMOTIONS */
@@ -57,7 +64,6 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100vw;
 }
 
 /* SAD IN EMOTIONS */
@@ -66,7 +72,6 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100vw;
 }
 
 /* LIF OR HAPPY IN EMOTIONS */
@@ -76,7 +81,10 @@
     background-repeat: no-repeat;
     color: #fff;
     background-position: center;
-    width: 100vw;
+}
+
+.lif p {
+    color: black;
 }
 
 #lif-svg,
@@ -95,7 +103,7 @@
     cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 
     /* EMOTIONS PAGE TABLET SIZE */
     .angry,
@@ -106,81 +114,80 @@
         right: 0;
         position: absolute;
         font-size: 1.5rem;
+        margin: 0;
         width: 50vw;
     }
 
+    .choices {
+        height: 100vh;
+        width: 100%;
+    }
+
     .emotions {
-        margin-top: 15%;
-        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .emotions h1 {
-        margin-top: 30%;
         height: 5rem;
         position: absolute;
-        left: 0;
-        margin-left: 5%;
+        top: 30%;
+        left: 5%;
         width: 40%;
     }
 
-    .today {
-        background-position-y: 220%;
+    .emotion-choices {
+        height: 100vh;
+        position: relative;
     }
 
     .angry {
-        background-size: 100%;
-        height: 30vh;
         top: 0;
-        left: 0;
-        margin-left: 28vw;
-        margin-top: 15vh;
+        left: 35%;
+        height: 30%;
         width: 30vw;
         z-index: 2;
     }
 
     .stressed {
-        height: 30vh;
+        background-size: 100%;
+        height: 30%;
         top: 0;
         right: 0;
-        margin: 0 0;
-        margin-top: 10vh;
-        width: 25vw;
         z-index: 2;
+        width: 30%;
     }
 
     .lif {
-        background-size: 85%;
-        top: 0;
+        background-size: 80%;
+        height: 50%;
+        top: 5%;
         right: 0;
-        margin-top: 22vh;
-        margin-right: -5%;
-        width: 75vw;
+        width: 65%;
+    }
+
+    .lif p {
+        color: #fff;
     }
 
     .confused {
         background-size: 100%;
-        background-position-x: 1vw;
-        height: 30vh;
-        bottom: 0;
-        margin: 0 0;
-        margin-bottom: 25vh;
-        left: 0;
-        margin-left: 28vw;
-        width: 30vw;
+        height: 30%;
+        top: 30%;
+        right: 35%;
+        width: 30%;
     }
 
     .sad {
-        height: 25vh;
-        bottom: 0;
+        height: 30%;
+        top: 30%;
         right: 0;
-        margin: 0 0;
-        margin-bottom: 25vh;
-        width: 25vw;
+        width: 30%;
     }
 
     #angry-svg {
         height: 12vh;
-        margin: 5% 0;
         margin-right: 2vw;
     }
 
@@ -210,14 +217,16 @@
 
     /* EMOTIONS Desktop */
     .emotions {
-        height: 100vh;
-        margin-top: -4%;
         overflow: hidden;
     }
 
     .emotions h1 {
+        margin-top: 5%;
         font-size: 2.5rem;
-        margin-top: 26%;
+    }
+
+    .emotion-choices {
+        max-width: 1024px;
     }
 
     .angry,
@@ -230,22 +239,19 @@
     }
 
     .angry {
-        background-size: 90%;
+        background-size: 95%;
         font-size: 2.5rem;
         height: 28vh;
-        margin-bottom: 0;
-        margin-top: 8vh;
-        margin-left: 40vw;
-        width: 25vw;
+        max-height: 225px;
+        max-width: 300px;
     }
 
     .confused {
         background-size: 100%;
-        font-size: 2rem;
+        font-size: 1.8rem;
         height: 30vh;
-        width: 25vw;
-        margin-bottom: 30vh;
-        margin-left: 35vw;
+        max-height: 250px;
+        max-width: 250px;
     }
 
     .confused p {
@@ -256,24 +262,25 @@
         background-size: 100%;
         height: 50vh;
         font-size: 3rem;
-        margin-top: 15vh;
-        margin-right: 12vw;
-        width: 45vw;
+        right: 10%;
+        max-height: 400px;
+        max-width: 450px;
     }
 
     .stressed {
         background-size: 80%;
         height: 25vh;
         font-size: 2rem;
-        margin-top: 15vh;
-        margin-right: 1vw;
-        width: 28vw;
+        right: 2%;
+        max-height: 250px;
+        max-width: 300px;
     }
 
     .sad {
         height: 35vh;
         font-size: 2rem;
-        width: 30vw;
+        max-height: 250px;
+        max-width: 300px;
     }
 
     #angry-svg {
@@ -301,93 +308,5 @@
 
     .today {
         background-position-y: 180%;
-    }
-}
-
-@media (min-width: 1440px) {
-    .emotions h1 {
-        font-size: 4.5rem;
-        margin-top: 23%;
-    }
-
-    .angry {
-        background-size: 70%;
-        margin-top: 10vh;
-    }
-
-    #angry-svg {
-        height: 12vh;
-        margin-right: 2vw;
-    }
-
-    .confused {
-        background-size: 90%;
-        margin-left: 40vw;
-        margin-bottom: 20vh;
-        width: 20vw;
-    }
-
-    #confused-svg {
-        height: 13vh;
-    }
-
-    .lif {
-        background-size: 80%;
-        height: 60vh;
-    }
-
-    #stressed-svg {
-        height: 15vh;
-        margin-right: 4vw;
-    }
-
-    .stressed {
-        background-size: 90%;
-        height: 30vh;
-        margin-right: 10vw;
-        margin-top: 10vh;
-        width: 20vw;
-    }
-
-    #lif-svg {
-        height: 25vh;
-    }
-
-    .sad {
-        margin-right: 8vw;
-        width: 20vw;
-    }
-
-    #sad-svg {
-        height: 15vh;
-        margin-right: 2vw;
-    }
-}
-
-@media (min-width: 1600px) {
-    .angry {
-        background-size: 65%;
-        margin-left: 38vw;
-    }
-
-    .stressed {
-        background-size: 80%;
-    }
-
-    .lif {
-        background-size: 85%;
-    }
-
-    .confused {
-        background-size: 90%;
-        margin-left: 41vw;
-    }
-
-    .confused p {
-        margin-right: 2vw;
-    }
-
-    .sad {
-        margin-right: 8vw;
     }
 }

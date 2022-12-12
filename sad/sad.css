@@ -140,7 +140,6 @@
 
 @media (min-width: 768px) {
 
-
     /* SAD PAGE TABLET */
     .sad-header {
         background-size: 130%;
@@ -213,7 +212,6 @@
 
 @media (min-width: 1024px) {
 
-
     .sad-area {
         font-size: 2.5rem;
         margin-top: 5%;
@@ -252,6 +250,7 @@
         margin-top: 55vh;
         margin-left: 8vw;
         width: 25vw;
+        max-width: 250px;
     }
 
     #control {
@@ -280,103 +279,4 @@
     }
 
     /* END OF SAD PAGE DESKTOP */
-}
-
-@media (min-width: 1440px) {
-    .sad-header svg {
-        margin-left: -20%;
-    }
-
-    .sad-choices a {
-        font-size: 2.5rem;
-        margin: 5% 3%;
-        padding: 6% 3%;
-        height: 11rem;
-        width: 12rem;
-    }
-
-    .sad-choices a:hover {
-        background-size: contain;
-    }
-
-    .blob {
-        margin-left: 0%;
-        margin-top: -5%;
-    }
-
-    #area {
-        margin-left: 10vw;
-    }
-
-    #control {
-        margin-left: 37.5vw;
-        margin-top: 31vh;
-        width: 15vw;
-    }
-
-    #situation {
-        margin-top: 37vh;
-    }
-
-    #control-2 {
-        margin-right: 0vw;
-    }
-
-    #control-2 a {
-        font-size: 3.3rem;
-    }
-
-    /* END OF SAD PAGE */
-}
-
-@media (min-width: 1600px) {
-    .sad-area {
-        margin-top: 1%;
-    }
-
-    .sad-header svg {
-        margin-left: -18%;
-    }
-
-    .sl {
-        height: 100%;
-        margin-top: -3vh;
-        margin-left: -22vw;
-    }
-
-    .sl2 {
-        margin-right: -30vw;
-        margin-top: 5vh;
-        width: 100%;
-    }
-
-    #area {
-        margin-left: 14.5vw;
-    }
-
-    #area a {
-        font-size: 3rem;
-    }
-
-    #control {
-        margin-left: 39.5vw;
-    }
-
-    #control a {
-        font-size: 2.8rem;
-    }
-
-    #situation {
-        margin-left: 53vw;
-    }
-
-    #control-2 {
-        margin-right: 4vw;
-    }
-
-    #control-2 a {
-        padding: 6%;
-    }
-
-    /* END OF SAD */
 }
